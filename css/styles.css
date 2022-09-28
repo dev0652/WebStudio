@@ -48,10 +48,10 @@ body {
 /* HEADER */
 
 .header {
-	padding: 32px 215px;
 	background-color: #fff;
 	border: 1px solid var(--header-border);
-	/* display: flex; */
+	padding: 32px 215px;
+	display: flex;
 }
 
 .header-flex {
