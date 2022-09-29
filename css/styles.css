@@ -89,7 +89,7 @@ body {
 	color: var(--dark-gray-text);
 }
 
-.header-nav .link.current {
+.link.current {
 	color: var(--accent-blue);
 }
 
