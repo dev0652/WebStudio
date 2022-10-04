@@ -35,8 +35,6 @@ body {
 
 .page {
 	text-align: center;
-	display: flex;
-	flex-direction: column;
 }
 
 /* Remove markers of markup ul's */
@@ -45,25 +43,65 @@ body {
 	list-style: none;
 }
 
+/* Flex */
+
+.page,
+.header,
+.header-flex,
+.header-nav,
+.header-contacts,
+.features,
+.services,
+.team-cards,
+.footer,
+.radio,
+.project-cards {
+	display: flex;
+}
+
+.page,
+.footer {
+	flex-direction: column;
+}
+
+.header-flex,
+.features,
+.services,
+.team-cards {
+	justify-content: space-between;
+}
+
+.features {
+	align-items: flex-start;
+}
+
+.services,
+.team-cards,
+.project-cards {
+	flex-flow: row wrap;
+	align-items: center;
+}
+
+.radio {
+	justify-content: center;
+	gap: 8px;
+}
+
+.project-cards {
+	gap: 30px;
+}
+
 /* HEADER */
 
 .header {
 	background-color: #fff;
 	border: 1px solid var(--header-border);
 	padding: 32px 215px;
-	display: flex;
 }
 
 .header-flex {
 	margin-left: 93px;
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-}
-
-.header-nav,
-.header-contacts {
-	display: flex;
 }
 
 .header-nav li {
@@ -173,7 +211,7 @@ body {
 
 /* Radio buttons */
 
-/* Found here: https://markheath.net/post/customize-radio-button-css */
+/* I borrowed this solution from here: https://markheath.net/post/customize-radio-button-css */
 
 .radio input[type="radio"] {
 	display: none;
@@ -181,8 +219,6 @@ body {
 
 .radio {
 	margin-bottom: 50px;
-	display: inline-flex;
-	justify-content: center;
 }
 
 .radio label {
@@ -197,7 +233,7 @@ body {
 	font-size: 16px;
 	line-height: 1.62;
 	padding: 6px 22px;
-	margin: auto 4px;
+	/* margin: auto 4px; */
 }
 
 .radio label:hover,
@@ -206,7 +242,7 @@ body {
 	color: #fff;
 }
 
-.radio input[type="radio"]:checked + label {
+.radio input[type="radio"]:checked+label {
 	background-color: var(--accent-blue);
 	color: #fff;
 }
@@ -246,12 +282,6 @@ body {
 
 /* Features */
 
-.features {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-}
-
 .feature {
 	display: block;
 	width: 270px;
@@ -276,24 +306,10 @@ body {
 	padding-top: 0;
 }
 
-.services {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
-}
-
 /* Out Team */
 
 .section.team {
 	background-color: var(--light-bg);
-}
-
-.team-cards {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .team-card {
@@ -333,14 +349,6 @@ body {
 }
 
 /* Project cards */
-
-.project-cards {
-	display: flex;
-	flex-flow: row wrap;
-	gap: 30px;
-	/* justify-content: space-between; */
-	align-items: center;
-}
 
 .project-card {
 	background-color: #fff;
@@ -384,11 +392,7 @@ body {
 	background-color: var(--dark-bg);
 	color: #fff;
 	text-align: left;
-
 	padding: 60px 215px 57px;
-
-	display: flex;
-	flex-direction: column;
 }
 
 .footer address {
