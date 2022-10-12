@@ -28,7 +28,7 @@ body {
 	width: 1600px;
 	font-family: var(--primary-font);
 	color: var(--dark-gray-text);
-	background-color: #fff;
+	background: #fff;
 	font-size: 14px;
 	letter-spacing: 0.03em;
 }
@@ -94,7 +94,7 @@ body {
 /* HEADER */
 
 .header {
-	background-color: #fff;
+	background: #fff;
 	border: 1px solid var(--header-border);
 	padding: 32px 215px;
 }
@@ -133,6 +133,10 @@ body {
 
 .contact .link {
 	color: var(--light-gray-text);
+}
+
+.footer .link {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 .link:hover,
@@ -178,7 +182,7 @@ body {
 }
 
 .button.order {
-	background-color: var(--accent-blue);
+	background: var(--accent-blue);
 	color: #fff;
 	font-weight: 700;
 	font-size: 16px;
@@ -190,11 +194,11 @@ body {
 
 .button.order:hover,
 .button.order:focus {
-	background-color: #188ce8;
+	background: #188ce8;
 }
 
 .button.filter {
-	background-color: var(--light-bg);
+	background: var(--light-bg);
 	color: var(--dark-gray-text);
 	font-weight: 500;
 	font-size: 16px;
@@ -205,7 +209,7 @@ body {
 
 .button.filter:hover,
 .button.filter:focus {
-	background-color: var(--accent-blue);
+	background: var(--accent-blue);
 	color: #fff;
 }
 
@@ -227,7 +231,7 @@ body {
 	border-radius: 4px;
 	text-align: center;
 	cursor: pointer;
-	background-color: var(--light-bg);
+	background: var(--light-bg);
 	color: var(--dark-gray-text);
 	font-weight: 500;
 	font-size: 16px;
@@ -238,12 +242,12 @@ body {
 
 .radio label:hover,
 .radio label:focus {
-	background-color: var(--accent-blue);
+	background: var(--accent-blue);
 	color: #fff;
 }
 
 .radio input[type="radio"]:checked+label {
-	background-color: var(--accent-blue);
+	background: var(--accent-blue);
 	color: #fff;
 }
 
@@ -267,7 +271,7 @@ body {
 /* Hero */
 
 .hero {
-	background-color: var(--dark-bg);
+	background: var(--dark-bg);
 	padding: 200px 452px;
 }
 
@@ -309,7 +313,7 @@ body {
 /* Out Team */
 
 .section.team {
-	background-color: var(--light-bg);
+	background: var(--light-bg);
 }
 
 .team-card {
@@ -351,7 +355,7 @@ body {
 /* Project cards */
 
 .project-card {
-	background-color: #fff;
+	background: #fff;
 	width: 370px;
 	/* margin: 15px 0; */
 	box-sizing: border-box;
@@ -389,7 +393,7 @@ body {
 /* FOOTER */
 
 .footer {
-	background-color: var(--dark-bg);
+	background: var(--dark-bg);
 	color: #fff;
 	text-align: left;
 	padding: 60px 215px 57px;
