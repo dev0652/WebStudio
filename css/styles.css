@@ -34,6 +34,105 @@ textarea {
   list-style: none;
 }
 
+/* Colors */
+:root {
+  background-color: #E5E5E5;
+  /* Color variables */
+  --accent-blue: #2196f3;
+  --dark-gray-text: #212121;
+  --light-gray-text: #757575;
+  --light-bg: #f5f4fa;
+  --dark-bg: #2f303a;
+  --header-border: #ececec;
+  --project-border: #eeeeee;
+}
+
+/* Flex */
+.page,
+.header,
+.header-flex,
+.header-nav,
+.header-contacts,
+.features,
+.services,
+.team-cards,
+.footer,
+.radio,
+.project-cards {
+  display: flex;
+}
+
+.page,
+.footer {
+  flex-direction: column;
+}
+
+.header-flex,
+.features,
+.services,
+.team-cards {
+  justify-content: space-between;
+}
+
+.features {
+  align-items: flex-start;
+}
+
+.services,
+.team-cards,
+.project-cards {
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.radio {
+  justify-content: center;
+  gap: 8px;
+}
+
+.project-cards {
+  gap: 30px;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: end;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/* Individual rules */
+/* End of Flex */
 /* HEADER */
 .header {
   background: #fff;
@@ -276,105 +375,6 @@ textarea {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* Flex */
-.page,
-.header,
-.header-flex,
-.header-nav,
-.header-contacts,
-.features,
-.services,
-.team-cards,
-.footer,
-.radio,
-.project-cards {
-  display: flex;
-}
-
-.page,
-.footer {
-  flex-direction: column;
-}
-
-.header-flex,
-.features,
-.services,
-.team-cards {
-  justify-content: space-between;
-}
-
-.features {
-  align-items: flex-start;
-}
-
-.services,
-.team-cards,
-.project-cards {
-  flex-flow: row wrap;
-  align-items: center;
-}
-
-.radio {
-  justify-content: center;
-  gap: 8px;
-}
-
-.project-cards {
-  gap: 30px;
-}
-
-/* Flex */
-.flex {
-  display: flex;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.space-around {
-  justify-content: space-around;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.justify-end {
-  justify-content: end;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.align-end {
-  align-items: end;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-/* Individual rules */
-/* End of Flex */
-:root {
-  background-color: #E5E5E5;
-  /* Color variables */
-  --accent-blue: #2196f3;
-  --dark-gray-text: #212121;
-  --light-gray-text: #757575;
-  --light-bg: #f5f4fa;
-  --dark-bg: #2f303a;
-  --header-border: #ececec;
-  --project-border: #eeeeee;
-}
-
-/* Colors */
 /* Global values */
 :root {
   --primary-font: Roboto, sans-serif;
