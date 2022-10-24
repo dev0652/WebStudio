@@ -1,0 +1,38 @@
+/* HEADER */
+
+.header {
+	background: #fff;
+	border: 1px solid var(--header-border);
+	padding: 32px 215px;
+}
+
+.header-flex {
+	margin-left: 93px;
+	width: 100%;
+}
+
+.header-nav li {
+	margin-right: 50px;
+}
+
+.header-contacts li {
+	margin-left: 50px;
+}
+
+/* Header links */
+
+.header .link {
+	letter-spacing: 0.02em;
+}
+
+.header-nav .link {
+	color: var(--dark-gray-text);
+}
+
+.link.current {
+	color: var(--accent-blue);
+}
+
+.contact .link {
+	color: var(--light-gray-text);
+}

@@ -1,0 +1,92 @@
+@import "reset.scss";
+@import "header.scss";
+@import "studio.scss";
+@import "portfolio.scss";
+@import "footer.scss";
+@import "flex.scss";
+@import "colors.scss";
+
+
+/* Global values */
+
+:root {
+	--primary-font: Roboto, sans-serif;
+}
+
+body {
+	width: 1600px;
+	font-family: var(--primary-font);
+	color: var(--dark-gray-text);
+	background: #fff;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+}
+
+.page {
+	text-align: center;
+}
+
+/* Links */
+
+.link {
+	text-decoration: none;
+	font-weight: 500;
+}
+
+.link:hover,
+.link:focus {
+	color: var(--accent-blue);
+}
+
+/* Logo */
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	color: var(--accent-blue);
+	text-decoration: none;
+	/* Line height has been intentionally adjusted and set in pixels for proper positioning of the logo within  header! */
+	line-height: 14px;
+}
+
+.logo.black:hover,
+.logo.black:focus {
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo.black span {
+	color: #000;
+}
+
+.logo.white span {
+	color: #fff;
+}
+
+/* Buttons */
+
+.button {
+	border: none;
+	border-radius: 4px;
+	text-align: center;
+	text-decoration: none;
+	font-family: inherit;
+	cursor: pointer;
+	display: inline-block;
+}
+
+
+/* Sections */
+
+.section {
+	padding: 94px 215px;
+}
+
+/* Headings inside sections */
+
+.section h2 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 50px;
+	margin-left: 0;
+}
