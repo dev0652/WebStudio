@@ -362,8 +362,9 @@ textarea {
 
 /* Individual rules */
 /* End of Flex */
-/* Color variables */
 :root {
+  background-color: #E5E5E5;
+  /* Color variables */
   --accent-blue: #2196f3;
   --dark-gray-text: #212121;
   --light-gray-text: #757575;
@@ -381,6 +382,7 @@ textarea {
 
 body {
   width: 1600px;
+  margin: 0 auto;
   font-family: var(--primary-font);
   color: var(--dark-gray-text);
   background: #fff;
