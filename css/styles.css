@@ -355,11 +355,13 @@ body {
 
 /* Project cards */
 
+.no-gap {
+	display: block;
+}
+
 .project-card {
 	background: #fff;
 	width: 370px;
-	/* margin: 15px 0; */
-	box-sizing: border-box;
 }
 
 .project-card a {
@@ -371,7 +373,7 @@ body {
 .project-card .caption {
 	padding: 24px 20px;
 	border: 1px solid var(--project-border);
-	margin-top: -5px;
+	border-top: none;
 }
 
 .project-card .caption h3 {
