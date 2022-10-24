@@ -1,10 +1,4 @@
 @import "reset.scss";
-@import "colors.scss";
-@import "flex.scss";
-@import "header.scss";
-@import "studio.scss";
-@import "portfolio.scss";
-@import "footer.scss";
 
 /* Global values */
 
@@ -21,6 +15,13 @@ body {
 	font-size: 14px;
 	letter-spacing: 0.03em;
 }
+
+@import "colors.scss";
+@import "flex.scss";
+@import "header.scss";
+@import "studio.scss";
+@import "portfolio.scss";
+@import "footer.scss";
 
 .page {
 	text-align: center;
