@@ -117,9 +117,6 @@ button,
 
 /* End of Flex */
 /* Individual flex rules */
-.header .flex.container {
-  gap: 93px;
-}
 .flex.filter-buttons {
   gap: 8px;
 }
@@ -342,6 +339,9 @@ body {
   border-style: solid;
   border-color: var(--header-border);
 }
+.header .logo {
+  margin-right: 93px;
+}
 
 .header-contacts {
   margin-left: auto;
@@ -361,16 +361,23 @@ body {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
-  margin-left: 0;
 }
 
-/* Card captions */
+/* Images */
+/* img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+} */
+/* Card captions 
+
 .caption {
-  padding: 30px 0;
-  font-size: 16px;
-}
-.caption p {
-  color: var(--light-gray-text);
+	padding: 30px 0;
+	font-size: 16px;
+
+	& p {
+		color: var(--light-gray-text);
+	}
 }
 
 /* Footer */

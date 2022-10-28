@@ -85,6 +85,10 @@ body {
 	border-width: 1px;
 	border-style: solid;
 	border-color: var(--header-border);
+
+	& .logo {
+		margin-right: 93px;
+	}
 }
 
 .header-contacts {
@@ -110,11 +114,18 @@ body {
 		font-size: 36px;
 		font-weight: 700;
 		margin-bottom: 50px;
-		margin-left: 0;
 	}
 }
 
-/* Card captions */
+/* Images */
+
+/* img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+} */
+
+/* Card captions 
 
 .caption {
 	padding: 30px 0;
