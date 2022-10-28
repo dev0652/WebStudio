@@ -1,0 +1,57 @@
+/* Radio buttons */
+
+<style>
+	/* https://markheath.net/post/customize-radio-button-css */
+
+	.radio input[type="radio"] {
+		display: none;
+	}
+
+	.radio {
+		margin-bottom: 50px;
+
+		& label {
+			background: var(--mid-bg);
+			color: var(--dark-gray-text);
+			display: inline-block;
+			border: none;
+			border-radius: 4px;
+			text-align: center;
+			cursor: pointer;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 1.62;
+			padding: 6px 22px;
+
+			&:hover,
+			&:focus,
+			& input[type="radio"]:checked+label {
+				background: var(--accent);
+				color: var(--contrast);
+			}
+		}
+	}
+</style>
+
+<ul class="markup-list radio justify-center flex">
+	<li>
+		<input type="radio" id="all" name="filter" value="all" checked>
+		<label for="all">Усі</label>
+	</li>
+	<li>
+		<input type="radio" id="websites" name="filter" value="websites">
+		<label for="websites">Веб-сайти</label>
+	</li>
+	<li>
+		<input type="radio" id="apps" name="filter" value="apps">
+		<label for="apps">Додатки</label>
+	</li>
+	<li>
+		<input type="radio" id="design" name="filter" value="design">
+		<label for="design">Дизайн</label>
+	</li>
+	<li>
+		<input type="radio" id="marketing" name="filter" value="marketing">
+		<label for="marketing">Маркетинг</label>
+	</li>
+</ul>

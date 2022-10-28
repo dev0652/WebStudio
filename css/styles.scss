@@ -4,21 +4,17 @@
 @import "studio.scss";
 @import "portfolio.scss";
 
-/* Global values */
 
-.frame {
-	outline: 1px solid beige;
-}
+/* Common properties */
 
 body {
 	font-family: "Roboto",
 		sans-serif;
 	font-size: 14px;
 	letter-spacing: 0.03em;
-}
 
-.page {
-	text-align: center;
+	color: var(--dark-gray-text);
+	background-color: var(--default-bg);
 }
 
 .container {
@@ -28,11 +24,16 @@ body {
 	margin: 0 auto;
 }
 
+.page {
+	text-align: center;
+}
+
 /* Buttons */
 
 .button {
 	border: none;
 	border-radius: 4px;
+	font-size: 16px;
 }
 
 /* Links */
@@ -40,15 +41,41 @@ body {
 .link {
 	text-decoration: none;
 	font-weight: 500;
+
+	.header-nav & {
+		color: var(--dark-gray-text);
+	}
+
+	.contact & {
+		color: var(--light-gray-text);
+	}
+
+	.footer & {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	&:hover,
+	&:focus,
+	&.current {
+		color: var(--accent);
+	}
 }
 
-/* Logo */
+/* Logos */
 
 .logo {
 	font-family: "Raleway", sans-serif;
 	font-size: 26px;
 	font-weight: 700;
 	display: block;
+
+	&.black span {
+		color: #000;
+	}
+
+	&.white span {
+		color: var(--contrast);
+	}
 }
 
 /* Header */
@@ -56,17 +83,21 @@ body {
 .header {
 	border-width: 1px;
 	border-style: solid;
-}
-
-.header-nav .link,
-.header-contacts .link {
-	display: block;
-	padding: 32px 0;
-	letter-spacing: 0.02em;
+	border-color: var(--header-border);
 }
 
 .header-contacts {
 	margin-left: auto;
+}
+
+.link {
+
+	.header-nav &,
+	.header-contacts & {
+		display: block;
+		padding: 32px 0;
+		letter-spacing: 0.02em;
+	}
 }
 
 /* Sections */
@@ -82,9 +113,15 @@ body {
 	}
 }
 
+/* Card captions */
+
 .caption {
 	padding: 30px 0;
 	font-size: 16px;
+
+	& p {
+		color: var(--light-gray-text);
+	}
 }
 
 /* Footer */
@@ -92,6 +129,9 @@ body {
 .footer {
 	text-align: left;
 	padding: 60px 0;
+
+	color: var(--contrast);
+	background-color: var(--dark-bg);
 
 	& .logo {
 		margin-bottom: 20px;

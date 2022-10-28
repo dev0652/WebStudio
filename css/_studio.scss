@@ -16,16 +16,29 @@
 		width: 700px;
 		margin: 0 auto;
 		margin-bottom: 30px;
+
+		color: var(--contrast);
 	}
 }
 
-.hero-button {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	font-weight: 700;
-	font-size: 16px;
-	letter-spacing: 0.06em;
-	line-height: 1.88;
-	padding: 10px 32px;
+.button {
+
+	&.hero-button {
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		line-height: 1.88;
+		padding: 10px 32px;
+
+		background: var(--accent);
+		color: var(--contrast);
+
+		&:hover,
+		&:focus {
+			background: var(--accent-darker);
+		}
+
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	}
 }
 
 /* Features */
@@ -46,13 +59,19 @@
 
 	& p {
 		line-height: calc(24/14);
+		color: var(--light-gray-text);
 	}
 }
 
 /* Out Team */
 
+.section.team {
+	background: var(--mid-bg);
+}
+
 .team-card {
 	border-radius: 0px 0px 4px 4px;
+	background: var(--light-bg);
 
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);

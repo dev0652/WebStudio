@@ -1,4 +1,4 @@
-/* Flex */
+/* Flex unility classes */
 
 .flex {
 	display: flex;
@@ -39,14 +39,14 @@
 /* Gap values */
 
 .flex {
-	--standard-gap: 30px;
+	--regular-gap: 30px;
 	--regular-spacing: 20px;
 	--large-spacing: 44px;
 	--list-spacing: 10px;
 	--header-items-gap: 50px;
 
-	&.standard-gap {
-		gap: var(--standard-gap);
+	&.regular-gap {
+		gap: var(--regular-gap);
 	}
 
 	&.regular-spacing {
@@ -61,10 +61,21 @@
 	&.header-contacts {
 		gap: var(--header-items-gap);
 	}
+}
+
+/* End of Flex */
+
+/* Individual flex rules */
+
+.flex {
 
 	.header &.container {
 		gap: 93px;
 	}
+
+	&.filter-buttons {
+		gap: 8px;
+	}
 }
 
-/* End of Flex */
+/* End of Individual flex rules */

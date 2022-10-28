@@ -4,13 +4,14 @@
 	/* Accent */
 	--accent: #2196f3;
 	--accent-darker: #188ce8;
+	--contrast: #fff;
 
 	/* Text */
 	--dark-gray-text: #212121;
 	--light-gray-text: #757575;
 
 	/* Background */
-	--default-bg: #fff;
+	--light-bg: #fff;
 	--mid-bg: #f5f4fa;
 	--dark-bg: #2f303a;
 
@@ -19,12 +20,8 @@
 	--project-border: #eeeeee;
 }
 
-body {
-	color: var(--dark-gray-text);
-	background-color: var(--default-bg);
-}
+/* Utility classes */
 
-.footer,
 .dark-bg {
 	background-color: var(--dark-bg);
 }
@@ -33,123 +30,8 @@ body {
 	background-color: var(--mid-bg);
 }
 
+/* For testing */
 
-/* Links */
-
-.link {
-
-	.header-nav & {
-		color: var(--dark-gray-text);
-	}
-
-	.contact & {
-		color: var(--light-gray-text);
-	}
-
-	.footer & {
-		color: rgba(255, 255, 255, 0.6);
-	}
-
-	&:hover,
-	&:focus,
-	&.current {
-		color: var(--accent);
-	}
-}
-
-/* Logos */
-
-.logo {
-	color: var(--accent);
-
-	&.black span {
-		color: #000;
-	}
-
-	&.white span {
-		color: #fff;
-	}
-}
-
-/* Buttons */
-
-.button {
-
-	&.hero-button {
-		background: var(--accent);
-		color: #fff;
-
-		&:hover,
-		&:focus {
-			background: var(--accent-darker);
-		}
-	}
-
-	&.filter {
-		background: var(--mid-bg);
-		color: var(--dark-gray-text);
-
-		&:hover,
-		&:focus {
-			background: var(--accent);
-			color: #fff;
-		}
-	}
-}
-
-// .radio {
-// 	& label {
-// 		background: var(--mid-bg);
-// 		color: var(--dark-gray-text);
-// 		&:hover,
-// 		&:focus,
-// 		& input[type="radio"]:checked+label {
-// 			background: var(--accent);
-// 			color: #fff;
-// 		}
-// 	}
-// }
-
-/* Header */
-
-.header {
-	border-color: var(--header-border);
-}
-
-/* Page Studio */
-/* Hero */
-
-.hero {
-	& h1 {
-		color: #fff;
-	}
-}
-
-/* Features */
-
-.feature,
-.caption {
-	& p {
-		color: var(--light-gray-text);
-	}
-}
-
-/* Our Team */
-
-.section.team {
-	background: var(--mid-bg);
-}
-
-.team-card,
-.project-card {
-	background: #fff;
-}
-
-/* Page Portfolio */
-
-
-/* Footer */
-
-.footer {
-	color: #fff;
+.frame {
+	outline: 1px solid beige;
 }

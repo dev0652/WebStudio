@@ -7,44 +7,44 @@
 	display: inline-flex;
 }
 
-.filter {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.62;
-	padding: 6px 22px;
-	margin: auto 4px;
+.button {
+	&.filter {
+		font-weight: 500;
+		line-height: 1.62;
+		padding: 6px 22px;
+		margin: auto 4px;
+
+		background: var(--mid-bg);
+		color: var(--dark-gray-text);
+
+		&:hover,
+		&:focus {
+			background: var(--accent);
+			box-shadow:
+				0px 3px 1px rgba(0, 0, 0, 0.1),
+				0px 1px 2px rgba(0, 0, 0, 0.08),
+				0px 2px 2px rgba(0, 0, 0, 0.12);
+			color: var(--contrast);
+		}
+	}
 }
-
-// /* Radio buttons */
-// /* https://markheath.net/post/customize-radio-button-css */
-// .radio input[type="radio"] {
-// 	display: none;
-// }
-// .radio {
-// 	margin-bottom: 50px;
-// }
-// .radio label {
-// 	display: inline-block;
-// 	border: none;
-// 	border-radius: 4px;
-// 	text-align: center;
-// 	cursor: pointer;
-// 	font-weight: 500;
-// 	font-size: 16px;
-// 	line-height: 1.62;
-// 	padding: 6px 22px;
-// 	/* margin: auto 4px; */
-// }
-
 
 /* Project cards */
 
 .no-gap {
+	/* Remove extra space below images */
 	display: block;
 }
 
 .project-card {
-	width: 370px;
+	flex-basis: 370px;
+
+	background: var(--light-bg);
+
+	&:hover,
+	&:focus {
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
 
 	& a {
 		color: inherit;
