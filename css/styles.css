@@ -369,15 +369,13 @@ body {
 	max-width: 100%;
 	height: auto;
 } */
-/* Card captions 
-
+/* Card captions */
 .caption {
-	padding: 30px 0;
-	font-size: 16px;
-
-	& p {
-		color: var(--light-gray-text);
-	}
+  padding: 30px 0;
+  font-size: 16px;
+}
+.caption p {
+  color: var(--light-gray-text);
 }
 
 /* Footer */
