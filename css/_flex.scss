@@ -1,89 +1,70 @@
 /* Flex */
 
-.page,
-.header,
-.header-flex,
-.header-nav,
-.header-contacts,
-.features,
-.services,
-.team-cards,
-.footer,
-.radio,
-.project-cards {
-	display: flex;
-}
-
-.page,
-.footer {
-	flex-direction: column;
-}
-
-.header-flex,
-.features,
-.services,
-.team-cards {
-	justify-content: space-between;
-}
-
-.features {
-	align-items: flex-start;
-}
-
-.services,
-.team-cards,
-.project-cards {
-	flex-flow: row wrap;
-	align-items: center;
-}
-
-.radio {
-	justify-content: center;
-	gap: 8px;
-}
-
-.project-cards {
-	gap: 30px;
-}
-
-/* Flex */
-
 .flex {
 	display: flex;
+
+	&.column {
+		flex-direction: column;
+	}
+
+	&.space-between {
+		justify-content: space-between;
+	}
+
+	&.space-around {
+		justify-content: space-around;
+	}
+
+	&.justify-center {
+		justify-content: center;
+	}
+
+	&.justify-end {
+		justify-content: end;
+	}
+
+	&.align-center {
+		align-items: center;
+	}
+
+	&.align-end {
+		align-items: end;
+	}
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
 }
 
-.column {
-	flex-direction: column;
-}
+/* Gap values */
 
-.space-between {
-	justify-content: space-between;
-}
+.flex {
+	--standard-gap: 30px;
+	--regular-spacing: 20px;
+	--large-spacing: 44px;
+	--list-spacing: 10px;
+	--header-items-gap: 50px;
 
-.space-around {
-	justify-content: space-around;
-}
+	&.standard-gap {
+		gap: var(--standard-gap);
+	}
 
-.justify-center {
-	justify-content: center;
-}
+	&.regular-spacing {
+		gap: var(--regular-spacing);
+	}
 
-.justify-end {
-	justify-content: end;
-}
+	&.large-spacing {
+		gap: var(--large-spacing);
+	}
 
-.align-center {
-	align-items: center;
-}
+	&.header-nav,
+	&.header-contacts {
+		gap: var(--header-items-gap);
+	}
 
-.align-end {
-	align-items: end;
+	.header &.container {
+		gap: 93px;
+	}
 }
-
-.wrap {
-	flex-wrap: wrap;
-}
-
-/* Individual rules */
 
 /* End of Flex */

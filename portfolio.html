@@ -2,10 +2,16 @@
 <html lang="uk">
 
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Портфоліо</title>
+
+	<!-- ---------- CSS ---------- -->
 	<link rel="stylesheet" href="./css/styles.css" />
-	<!-- Fonts -->
+
+	<!-- ---------- Fonts ---------- -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -14,198 +20,189 @@
 
 <body>
 
-	<!-- Верхня лінія (Header)) -->
 	<header class="header">
-		<!-- Логотип хедера -->
-		<a class="logo black" href="./index.html"> Web<span>Studio</span> </a>
 
-		<div class="header-flex">
-			<!-- Навігація -->
+		<div class="container flex align-center">
+
+			<!-- Header logo -->
+			<a class="logo link black" href="./index.html">
+				Web<span>Studio</span>
+			</a>
+
+			<!-- <div class="header-items flex space-between"> -->
+
+			<!-- Header navigation -->
 			<nav>
-				<ul class="markup-list header-nav">
+				<ul class="header-nav markup-list flex">
 					<li>
-						<a class="link" href="./index.html"> Студія </a>
+						<a class="link" href="./index.html">Студія</a>
 					</li>
 					<li>
-						<a class="link current" aria-current="page" href="./portfolio.html"> Портфоліо </a>
+						<a class="link current" aria-current="page" href="./portfolio.html">Портфоліо</a>
 					</li>
 					<li>
-						<a class="link" href=""> Контакти </a>
+						<a class="link" href="#">Контакти</a>
 					</li>
 				</ul>
 			</nav>
 
-			<!-- Контакти -->
-			<ul class="markup-list header-contacts">
+			<!-- Header contacts -->
+			<ul class="header-contacts markup-list flex">
 				<li class="contact">
-					<a class="link" href="mailto:info@devstudio.com">
-						info@devstudio.com
-					</a>
+					<a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 				</li>
 				<li class="contact">
-					<a class="link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+					<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
 				</li>
 			</ul>
+
 		</div>
 	</header>
 
 
 	<main class="page portfolio">
-		<!-- Портфоліо -->
 
 		<section class="section projects">
 
-			<!-- Кнопки-фільтри -->
+			<div class="container">
 
-			<!-- <ul class="markup-list filter-buttons">
-				<li>
-					<button type="button" class="button filter">Усі</button>
-				</li>
-				<li>
-					<button type="button" class="button filter">Веб-сайти</button>
-				</li>
-				<li>
-					<button type="button" class="button filter">Додатки</button>
-				</li>
-				<li>
-					<button type="button" class="button filter">Дизайн</button>
-				</li>
-				<li>
-					<button type="button" class="button filter">Маркетинг</button>
-				</li>
-			</ul> -->
+				<!-- Filter buttons -->
 
+				<ul class="markup-list filter-buttons">
+					<li>
+						<button type="button" class="button filter">Усі</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Веб-сайти</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Додатки</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Дизайн</button>
+					</li>
+					<li>
+						<button type="button" class="button filter">Маркетинг</button>
+					</li>
+				</ul>
 
-			<ul class="markup-list radio">
-				<li>
-					<input type="radio" id="all" name="filter" value="all" checked>
-					<label for="all">Усі</label>
-				</li>
-				<li>
-					<input type="radio" id="websites" name="filter" value="websites">
-					<label for="websites">Веб-сайти</label>
-				</li>
-				<li>
-					<input type="radio" id="apps" name="filter" value="apps">
-					<label for="apps">Додатки</label>
-				</li>
-				<li>
-					<input type="radio" id="design" name="filter" value="design">
-					<label for="design">Дизайн</label>
-				</li>
-				<li>
-					<input type="radio" id="marketing" name="filter" value="marketing">
-					<label for="marketing">Маркетинг</label>
-				</li>
-			</ul>
+				<!-- <ul class="markup-list radio justify-center flex">
+					<li>
+						<input type="radio" id="all" name="filter" value="all" checked>
+						<label for="all">Усі</label>
+					</li>
+					<li>
+						<input type="radio" id="websites" name="filter" value="websites">
+						<label for="websites">Веб-сайти</label>
+					</li>
+					<li>
+						<input type="radio" id="apps" name="filter" value="apps">
+						<label for="apps">Додатки</label>
+					</li>
+					<li>
+						<input type="radio" id="design" name="filter" value="design">
+						<label for="design">Дизайн</label>
+					</li>
+					<li>
+						<input type="radio" id="marketing" name="filter" value="marketing">
+						<label for="marketing">Маркетинг</label>
+					</li>
+				</ul> -->
 
-			<!-- <div class="radio">
-				<input type="radio" id="all" name="filter" value="all" checked> <label for="all">Усі</label>
+				<!-- Projects -->
+				<ul class="markup-list project-cards flex wrap">
 
-				<input type="radio" id="websites" name="filter" value="websites"> <label for="websites">Веб-сайти</label>
-
-				<input type="radio" id="apps" name="filter" value="apps"> <label for="apps">Додатки</label>
-
-				<input type="radio" id="design" name="filter" value="design"> <label for="design">Дизайн</label>
-
-				<input type="radio" id="marketing" name="filter" value="marketing"> <label for="marketing">Маркетинг</label>
-			</div> -->
-
-
-			<!-- Проекти -->
-
-			<ul class="markup-list project-cards">
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project1.jpg" alt="Сайт-візитівка, відкритий на екрані ноутбука"
-							width="370" />
-						<div class="caption">
-							<h3>Технокряк</h3>
-							<p>Веб-сайт</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project2.jpg"
-							alt="Постер з двома баскетболістами - в білій та бузковій формі" width="370" />
-						<div class="caption">
-							<h3>Постер New Orlean vs Golden Star</h3>
-							<p>Дизайн</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project3.jpg"
-							alt="Логотип з назвою ресторану та зображенням риби на фоні" width="370" />
-						<div class="caption">
-							<h3>Ресторан Seafood</h3>
-							<p>Додаток</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project4.jpg" alt="Великі навушники" width="370" />
-						<div class="caption">
-							<h3>Проєкт Prime</h3>
-							<p>Маркетинг</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project5.jpg" alt="Біла та коричнева коробки різного розміру"
-							width="370" />
-						<div class="caption">
-							<h3>Проєкт Boxes</h3>
-							<p>Додаток</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project6.jpg"
-							alt="Веб-сайт в темних тонах, відритий на ерані Apple iMac" width="370" />
-						<div class="caption">
-							<h3>Inspiration has no Borders</h3>
-							<p>Веб-сайт</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project7.jpg" alt="Розворот друкованого видання з фотографіями"
-							width="370" />
-						<div class="caption">
-							<h3>Видання Limited Edition</h3>
-							<p>Дизайн</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project8.jpg"
-							alt="Біла бірка із золотистою мотузкою та написом Lab El Tag" width="370" />
-						<div class="caption">
-							<h3>Проєкт LAB</h3>
-							<p>Маркетинг</p>
-						</div>
-					</a>
-				</li>
-				<li class="project-card">
-					<a href="">
-						<img class="no-gap" src="./images/portfolio/project9.jpg" alt="Додаток, відкритий на украні ноутбука"
-							width="370" />
-						<div class="caption">
-							<h3>Growing Business</h3>
-							<p>Додаток</p>
-						</div>
-					</a>
-				</li>
-			</ul>
-
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project1.jpg"
+								alt="Сайт-візитівка, відкритий на екрані ноутбука" width="370" />
+							<div class="caption">
+								<h3>Технокряк</h3>
+								<p>Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project2.jpg"
+								alt="Постер з двома баскетболістами - в білій та бузковій формі" width="370" />
+							<div class="caption">
+								<h3>Постер New Orlean vs Golden Star</h3>
+								<p>Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project3.jpg"
+								alt="Логотип з назвою ресторану та зображенням риби на фоні" width="370" />
+							<div class="caption">
+								<h3>Ресторан Seafood</h3>
+								<p>Додаток</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project4.jpg" alt="Великі навушники" width="370" />
+							<div class="caption">
+								<h3>Проєкт Prime</h3>
+								<p>Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project5.jpg" alt="Біла та коричнева коробки різного розміру"
+								width="370" />
+							<div class="caption">
+								<h3>Проєкт Boxes</h3>
+								<p>Додаток</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project6.jpg"
+								alt="Веб-сайт в темних тонах, відритий на ерані Apple iMac" width="370" />
+							<div class="caption">
+								<h3>Inspiration has no Borders</h3>
+								<p>Веб-сайт</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project7.jpg"
+								alt="Розворот друкованого видання з фотографіями" width="370" />
+							<div class="caption">
+								<h3>Видання Limited Edition</h3>
+								<p>Дизайн</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project8.jpg"
+								alt="Біла бірка із золотистою мотузкою та написом Lab El Tag" width="370" />
+							<div class="caption">
+								<h3>Проєкт LAB</h3>
+								<p>Маркетинг</p>
+							</div>
+						</a>
+					</li>
+					<li class="project-card">
+						<a href="">
+							<img class="no-gap" src="./images/portfolio/project9.jpg" alt="Додаток, відкритий на украні ноутбука"
+								width="370" />
+							<div class="caption">
+								<h3>Growing Business</h3>
+								<p>Додаток</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 
 
