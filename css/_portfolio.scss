@@ -12,7 +12,6 @@
 		font-weight: 500;
 		line-height: 1.62;
 		padding: 6px 22px;
-		margin: auto 4px;
 
 		background: var(--mid-bg);
 		color: var(--dark-gray-text);
@@ -31,13 +30,16 @@
 
 /* Project cards */
 
-.no-gap {
-	/* Remove extra space below images */
-	display: block;
-}
+// .project-cards{}
 
 .project-card {
-	flex-basis: 370px;
+	/* Variables for flex-basis calculation */
+	--items-per-row: 3;
+	--spacing: var(--regular-gap);
+	--number-of-gaps: var(--items-per-row) - 1;
+
+	/* Flex-basis calculation */
+	flex-basis: calc((100% - var(--spacing)*var(--number-of-gaps)) / var(--items-per-row));
 
 	background: var(--light-bg);
 

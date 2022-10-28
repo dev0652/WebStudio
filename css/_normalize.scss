@@ -58,7 +58,10 @@ button,
 	overflow: hidden;
 }
 
-/* Remove markers in markup ul's: */
+.no-end-spacing {
+	/* Remove extra space after images */
+	display: block;
+}
 
 .markup-list {
 	list-style: none;

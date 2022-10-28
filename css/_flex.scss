@@ -43,7 +43,7 @@
 	--regular-spacing: 20px;
 	--large-spacing: 44px;
 	--list-spacing: 10px;
-	--header-items-gap: 50px;
+	--header-items-spacing: 50px;
 
 	&.regular-gap {
 		gap: var(--regular-gap);
@@ -59,7 +59,7 @@
 
 	&.header-nav,
 	&.header-contacts {
-		gap: var(--header-items-gap);
+		gap: var(--header-items-spacing);
 	}
 }
 

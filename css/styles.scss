@@ -28,14 +28,6 @@ body {
 	text-align: center;
 }
 
-/* Buttons */
-
-.button {
-	border: none;
-	border-radius: 4px;
-	font-size: 16px;
-}
-
 /* Links */
 
 .link {
@@ -68,6 +60,7 @@ body {
 	font-size: 26px;
 	font-weight: 700;
 	display: block;
+	color: var(--accent);
 
 	&.black span {
 		color: #000;
@@ -76,6 +69,14 @@ body {
 	&.white span {
 		color: var(--contrast);
 	}
+}
+
+/* Buttons */
+
+.button {
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
 }
 
 /* Header */

@@ -56,7 +56,11 @@ button,
   overflow: hidden;
 }
 
-/* Remove markers in markup ul's: */
+.no-end-spacing {
+  /* Remove extra space after images */
+  display: block;
+}
+
 .markup-list {
   list-style: none;
 }
@@ -96,7 +100,7 @@ button,
   --regular-spacing: 20px;
   --large-spacing: 44px;
   --list-spacing: 10px;
-  --header-items-gap: 50px;
+  --header-items-spacing: 50px;
 }
 .flex.regular-gap {
   gap: var(--regular-gap);
@@ -108,7 +112,7 @@ button,
   gap: var(--large-spacing);
 }
 .flex.header-nav, .flex.header-contacts {
-  gap: var(--header-items-gap);
+  gap: var(--header-items-spacing);
 }
 
 /* End of Flex */
@@ -230,7 +234,6 @@ button,
   font-weight: 500;
   line-height: 1.62;
   padding: 6px 22px;
-  margin: auto 4px;
   background: var(--mid-bg);
   color: var(--dark-gray-text);
 }
@@ -241,13 +244,13 @@ button,
 }
 
 /* Project cards */
-.no-gap {
-  /* Remove extra space below images */
-  display: block;
-}
-
 .project-card {
-  flex-basis: 370px;
+  /* Variables for flex-basis calculation */
+  --items-per-row: 3;
+  --spacing: var(--regular-gap);
+  --number-of-gaps: var(--items-per-row) - 1;
+  /* Flex-basis calculation */
+  flex-basis: calc((100% - var(--spacing) * var(--number-of-gaps)) / var(--items-per-row));
   background: var(--light-bg);
 }
 .project-card:hover, .project-card:focus {
@@ -293,13 +296,6 @@ body {
   text-align: center;
 }
 
-/* Buttons */
-.button {
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
 /* Links */
 .link {
   text-decoration: none;
@@ -324,12 +320,20 @@ body {
   font-size: 26px;
   font-weight: 700;
   display: block;
+  color: var(--accent);
 }
 .logo.black span {
   color: #000;
 }
 .logo.white span {
   color: var(--contrast);
+}
+
+/* Buttons */
+.button {
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 /* Header */
