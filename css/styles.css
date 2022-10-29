@@ -65,6 +65,45 @@ button,
   list-style: none;
 }
 
+/* Color variables */
+:root {
+  /* Accent */
+  --accent: #2196f3;
+  --accent-darker: #188ce8;
+  --contrast: #fff;
+  /* Text */
+  --dark-gray-text: #212121;
+  --light-gray-text: #757575;
+  /* Background */
+  --light-bg: #fff;
+  --mid-bg: #f5f4fa;
+  --dark-bg: #2f303a;
+  /* Borders */
+  --header-border: #ececec;
+  --project-border: #eeeeee;
+}
+
+/* Variables for flex-basis calculation */
+:root {
+  --items-per-row: 3;
+  --spacing: var(--regular-gap);
+  --number-of-gaps: var(--items-per-row) - 1;
+}
+
+/* Utility classes for colors */
+.dark-bg {
+  background-color: var(--dark-bg);
+}
+
+.mid-bg {
+  background-color: var(--mid-bg);
+}
+
+/* For testing */
+.frame {
+  outline: 1px solid beige;
+}
+
 /* Flex unility classes */
 .flex {
   display: flex;
@@ -122,38 +161,6 @@ button,
 }
 
 /* End of Individual flex rules */
-/* Color variables */
-:root {
-  /* Accent */
-  --accent: #2196f3;
-  --accent-darker: #188ce8;
-  --contrast: #fff;
-  /* Text */
-  --dark-gray-text: #212121;
-  --light-gray-text: #757575;
-  /* Background */
-  --light-bg: #fff;
-  --mid-bg: #f5f4fa;
-  --dark-bg: #2f303a;
-  /* Borders */
-  --header-border: #ececec;
-  --project-border: #eeeeee;
-}
-
-/* Utility classes */
-.dark-bg {
-  background-color: var(--dark-bg);
-}
-
-.mid-bg {
-  background-color: var(--mid-bg);
-}
-
-/* For testing */
-.frame {
-  outline: 1px solid beige;
-}
-
 /* Page STUDIO */
 /* Hero */
 .hero {
@@ -242,10 +249,6 @@ button,
 
 /* Project cards */
 .project-card {
-  /* Variables for flex-basis calculation */
-  --items-per-row: 3;
-  --spacing: var(--regular-gap);
-  --number-of-gaps: var(--items-per-row) - 1;
   /* Flex-basis calculation */
   flex-basis: calc((100% - var(--spacing) * var(--number-of-gaps)) / var(--items-per-row));
   background: var(--light-bg);

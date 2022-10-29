@@ -20,7 +20,15 @@
 	--project-border: #eeeeee;
 }
 
-/* Utility classes */
+/* Variables for flex-basis calculation */
+
+:root {
+	--items-per-row: 3;
+	--spacing: var(--regular-gap);
+	--number-of-gaps: var(--items-per-row) - 1;
+}
+
+/* Utility classes for colors */
 
 .dark-bg {
 	background-color: var(--dark-bg);

@@ -33,11 +33,6 @@
 // .project-cards{}
 
 .project-card {
-	/* Variables for flex-basis calculation */
-	--items-per-row: 3;
-	--spacing: var(--regular-gap);
-	--number-of-gaps: var(--items-per-row) - 1;
-
 	/* Flex-basis calculation */
 	flex-basis: calc((100% - var(--spacing)*var(--number-of-gaps)) / var(--items-per-row));
 
