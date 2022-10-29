@@ -82,9 +82,7 @@ body {
 /* Header */
 
 .header {
-	border-width: 1px;
-	border-style: solid;
-	border-color: var(--header-border);
+	border-bottom: 1px solid var(--header-border);
 
 	& .logo {
 		margin-right: 93px;
