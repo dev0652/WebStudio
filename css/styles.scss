@@ -28,7 +28,6 @@ body {
 	text-align: center;
 }
 
-
 /* Links */
 
 .link {
@@ -51,6 +50,22 @@ body {
 	&:focus,
 	&.current {
 		color: var(--accent);
+	}
+
+	&.social {
+		height: 44px;
+		width: 44px;
+		border: none;
+		padding: 12px;
+		border-radius: 50%;
+
+		color: var(--icon-inactive);
+
+		&:hover,
+		&:focus {
+			color: var(--contrast);
+			background-color: var(--accent);
+		}
 	}
 }
 

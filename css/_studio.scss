@@ -74,6 +74,37 @@
 		line-height: calc(24/14);
 		color: var(--light-gray-text);
 	}
+
+	&:before {
+		display: block;
+		content: '';
+		// height: 70px;
+		// width: 70px;
+		height: 120px;
+		// padding: 25px 100px;
+		margin-bottom: 30px;
+		background-color: var(--mid-bg);
+		// background-image: url(../images/studio/radar.png);
+		// background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	&:nth-child(1):before {
+		background-image: url(../images/studio/radar.png);
+	}
+
+	&:nth-child(2):before {
+		background-image: url(../images/studio/clock.png);
+	}
+
+	&:nth-child(3):before {
+		background-image: url(../images/studio/diagram.png);
+	}
+
+	&:nth-child(4):before {
+		background-image: url(../images/studio/astronaut.png);
+	}
 }
 
 /* Out Team */

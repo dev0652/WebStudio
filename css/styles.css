@@ -79,6 +79,8 @@ button,
   --mid-bg: #f5f4fa;
   --gray-bg: #C4C4C4;
   --dark-bg: #2f303a;
+  /* SVG */
+  --icon-inactive: #AFB1B8;
   /* Borders */
   --header-border: #ececec;
   --project-border: #eeeeee;
@@ -107,6 +109,9 @@ button,
 }
 .flex.large-spacing {
   gap: var(--large-spacing);
+}
+.flex.spaced-list {
+  gap: var(--list-spacing);
 }
 .flex.header-nav, .flex.header-contacts {
   gap: var(--header-items-spacing);
@@ -242,6 +247,27 @@ button,
   line-height: 1.7142857143;
   color: var(--light-gray-text);
 }
+.feature:before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--mid-bg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.feature:nth-child(1):before {
+  background-image: url(../images/studio/radar.png);
+}
+.feature:nth-child(2):before {
+  background-image: url(../images/studio/clock.png);
+}
+.feature:nth-child(3):before {
+  background-image: url(../images/studio/diagram.png);
+}
+.feature:nth-child(4):before {
+  background-image: url(../images/studio/astronaut.png);
+}
 
 /* Out Team */
 .section.team {
@@ -348,6 +374,18 @@ body {
 }
 .link:hover, .link:focus, .link.current {
   color: var(--accent);
+}
+.link.social {
+  height: 44px;
+  width: 44px;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--icon-inactive);
+}
+.link.social:hover, .link.social:focus {
+  color: var(--contrast);
+  background-color: var(--accent);
 }
 
 /* Logos */

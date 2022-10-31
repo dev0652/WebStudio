@@ -16,6 +16,9 @@
 	--gray-bg: #C4C4C4;
 	--dark-bg: #2f303a;
 
+	/* SVG */
+	--icon-inactive: #AFB1B8;
+
 	/* Borders */
 	--header-border: #ececec;
 	--project-border: #eeeeee;
@@ -48,6 +51,10 @@
 
 	&.large-spacing {
 		gap: var(--large-spacing);
+	}
+
+	&.spaced-list {
+		gap: var(--list-spacing);
 	}
 
 	&.header-nav,
