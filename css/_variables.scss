@@ -28,18 +28,29 @@
 	--number-of-gaps: var(--items-per-row) - 1;
 }
 
-/* Utility classes for colors */
+/* Flex gap values */
 
-.dark-bg {
-	background-color: var(--dark-bg);
-}
+.flex {
+	--regular-gap: 30px;
+	--regular-spacing: 20px;
+	--large-spacing: 44px;
+	--list-spacing: 10px;
+	--header-items-spacing: 50px;
 
-.mid-bg {
-	background-color: var(--mid-bg);
-}
+	&.regular-gap {
+		gap: var(--regular-gap);
+	}
 
-/* For testing */
+	&.regular-spacing {
+		gap: var(--regular-spacing);
+	}
 
-.frame {
-	outline: 1px solid beige;
+	&.large-spacing {
+		gap: var(--large-spacing);
+	}
+
+	&.header-nav,
+	&.header-contacts {
+		gap: var(--header-items-spacing);
+	}
 }

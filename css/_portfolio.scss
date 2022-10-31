@@ -7,6 +7,13 @@
 	display: inline-flex;
 }
 
+.flex {
+
+	&.filter-buttons {
+		gap: 8px;
+	}
+}
+
 .button {
 	&.filter {
 		font-weight: 500;

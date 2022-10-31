@@ -1,9 +1,8 @@
 @import "normalize.scss";
 @import "variables.scss";
-@import "flex.scss";
+@import "utilities.scss";
 @import "studio.scss";
 @import "portfolio.scss";
-
 
 /* Common properties */
 
@@ -27,6 +26,7 @@ body {
 .page {
 	text-align: center;
 }
+
 
 /* Links */
 
