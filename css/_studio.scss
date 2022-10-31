@@ -28,7 +28,8 @@
 	max-width: 1600px;
 	height: 600px;
 	margin: 0 auto;
-	background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero.jpg);
+	background-color: var(--gray-bg);
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero.jpg);
 	background-position: center;
 	background-size: cover;
 }
