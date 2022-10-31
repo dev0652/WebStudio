@@ -3,8 +3,11 @@
 /* Hero */
 
 .hero {
-	padding: 200px 0;
 	text-align: center;
+
+	& .container {
+		padding: 200px 0;
+	}
 
 	& h1 {
 		font-weight: 900;
@@ -19,6 +22,15 @@
 
 		color: var(--contrast);
 	}
+}
+
+.overlay {
+	max-width: 1600px;
+	height: 600px;
+	margin: 0 auto;
+	background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .button {
