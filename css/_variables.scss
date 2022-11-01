@@ -1,64 +1,63 @@
-/* Color variables */
+/* Variables */
+/* Colors */
 
-:root {
-	/* Accent */
-	--accent: #2196f3;
-	--accent-darker: #188ce8;
-	--contrast: #fff;
+/* Accent */
+$accent: #2196f3;
+$accent-darker: #188ce8;
+$contrast: #fff;
 
-	/* Text */
-	--dark-gray-text: #212121;
-	--light-gray-text: #757575;
+/* Text */
+$dark-gray-text: #212121;
+$light-gray-text: #757575;
 
-	/* Background */
-	--light-bg: #fff;
-	--mid-bg: #f5f4fa;
-	--gray-bg: #C4C4C4;
-	--dark-bg: #2f303a;
+/* Background */
+$light-bg: #fff;
+$mid-bg: #f5f4fa;
+$gray-bg: #C4C4C4;
+$dark-bg: #2f303a;
 
-	/* SVG */
-	--icon-inactive: #AFB1B8;
+/* SVG */
+$icon-inactive: #AFB1B8;
 
-	/* Borders */
-	--header-border: #ececec;
-	--project-border: #eeeeee;
-}
+/* Borders */
+$header-border: #ececec;
+$project-border: #eeeeee;
 
-/* Variables for flex-basis calculation */
-
-:root {
-	--items-per-row: 3;
-	--spacing: var(--regular-gap);
-	--number-of-gaps: var(--items-per-row) - 1;
-}
 
 /* Flex gap values */
 
+$regular-gap: 30px;
+$regular-spacing: 20px;
+$large-spacing: 44px;
+$list-spacing: 10px;
+$header-items-spacing: 50px;
+
+/* For flex-basis calculation */
+
+$items-per-row: 3;
+$spacing: $regular-gap;
+$number-of-gaps: $items-per-row - 1;
+
 .flex {
-	--regular-gap: 30px;
-	--regular-spacing: 20px;
-	--large-spacing: 44px;
-	--list-spacing: 10px;
-	--header-items-spacing: 50px;
 
-	&.regular-gap {
-		gap: var(--regular-gap);
+	.regular-gap {
+		gap: $regular-gap;
 	}
 
-	&.regular-spacing {
-		gap: var(--regular-spacing);
+	.regular-spacing {
+		gap: $regular-spacing;
 	}
 
-	&.large-spacing {
-		gap: var(--large-spacing);
+	.large-spacing {
+		gap: $large-spacing;
 	}
 
-	&.spaced-list {
-		gap: var(--list-spacing);
+	.spaced-list {
+		gap: $list-spacing;
 	}
 
-	&.header-nav,
-	&.header-contacts {
-		gap: var(--header-items-spacing);
+	.header-nav,
+	.header-contacts {
+		gap: $header-items-spacing;
 	}
 }
