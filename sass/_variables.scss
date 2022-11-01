@@ -1,4 +1,5 @@
 /* Variables */
+
 /* Colors */
 
 /* Accent */
@@ -27,37 +28,37 @@ $project-border: #eeeeee;
 /* Flex gap values */
 
 $regular-gap: 30px;
+
 $regular-spacing: 20px;
 $large-spacing: 44px;
 $list-spacing: 10px;
 $header-items-spacing: 50px;
 
-/* For flex-basis calculation */
-
+/* For 'flex-basis' calculation */
 $items-per-row: 3;
 $spacing: $regular-gap;
 $number-of-gaps: $items-per-row - 1;
 
 .flex {
 
-	.regular-gap {
+	&.regular-gap {
 		gap: $regular-gap;
 	}
 
-	.regular-spacing {
+	&.regular-spacing {
 		gap: $regular-spacing;
 	}
 
-	.large-spacing {
+	&.large-spacing {
 		gap: $large-spacing;
 	}
 
-	.spaced-list {
+	&.spaced-list {
 		gap: $list-spacing;
 	}
+}
 
-	.header-nav,
-	.header-contacts {
-		gap: $header-items-spacing;
-	}
+.header-nav,
+.header-contacts {
+	gap: $header-items-spacing;
 }

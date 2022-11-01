@@ -1,6 +1,6 @@
-@import "normalize";
+@import "../../_sass/normalize";
 @import "variables";
-@import "utilities";
+@import "../../_sass/utilities";
 @import "studio";
 @import "portfolio";
 
@@ -27,6 +27,15 @@ body {
 .page {
 	text-align: center;
 }
+
+// .dark-bg {
+// 	background-color: $dark-bg;
+// }
+
+// .mid-bg {
+// 	background-color: $mid-bg;
+// }
+
 
 /* Links */
 
@@ -100,7 +109,7 @@ body {
 .header {
 	border-bottom: 1px solid $header-border;
 
-	& .logo {
+	.logo {
 		margin-right: 93px;
 	}
 }
@@ -124,7 +133,7 @@ body {
 .section {
 	padding: 94px 0;
 
-	& h2 {
+	h2 {
 		font-size: 36px;
 		font-weight: 700;
 		margin-bottom: 50px;
@@ -145,7 +154,7 @@ body {
 	padding: 30px 0;
 	font-size: 16px;
 
-	& p {
+	p {
 		color: $light-gray-text;
 	}
 }
@@ -159,14 +168,14 @@ body {
 	color: $contrast;
 	background-color: $dark-bg;
 
-	& .logo {
+	.logo {
 		margin-bottom: 20px;
 	}
 
-	& address {
+	address {
 		font-style: normal;
 
-		& li {
+		li {
 			line-height: calc(24/14);
 			letter-spacing: 0.03em;
 

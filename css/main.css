@@ -73,35 +73,37 @@ button,
 /* SVG */
 /* Borders */
 /* Flex gap values */
-/* For flex-basis calculation */
-.flex .regular-gap {
+/* For 'flex-basis' calculation */
+.flex.regular-gap {
   gap: 30px;
 }
-.flex .regular-spacing {
+.flex.regular-spacing {
   gap: 20px;
 }
-.flex .large-spacing {
+.flex.large-spacing {
   gap: 44px;
 }
-.flex .spaced-list {
+.flex.spaced-list {
   gap: 10px;
 }
-.flex .header-nav,
-.flex .header-contacts {
+
+.header-nav,
+.header-contacts {
   gap: 50px;
 }
 
 /* Utility classes */
-/* For colors */
-.dark-bg {
-  background-color: var(--dark-bg);
+/* Colors */
+.black {
+  color: black;
 }
 
-.mid-bg {
-  background-color: var(--mid-bg);
+.white {
+  color: white;
 }
 
-/* For letter case */
+/* Background */
+/* Letter case */
 .uppercase {
   text-transform: uppercase;
 }
@@ -110,7 +112,7 @@ button,
   text-transform: lowercase;
 }
 
-/* For flex-boxes */
+/* Flex-boxes */
 .flex {
   display: flex;
 }
@@ -139,8 +141,8 @@ button,
   flex-wrap: wrap;
 }
 
-.flex {
-  gap: var(--standard-gap);
+.regular-gap {
+  gap: var(--regular-gap);
 }
 
 .regular-spacing {
@@ -151,13 +153,13 @@ button,
   gap: var(--large-spacing);
 }
 
-/* For testing */
+/* Testing */
 .outline {
   outline: auto;
 }
 
 .frame {
-  outline: 1px solid beige;
+  outline: 1px solid steelblue;
 }
 
 /* Page STUDIO */
@@ -285,9 +287,9 @@ button,
 
 /* Project cards */
 .project-card {
+  background: #fff;
   /* Flex-basis calculation */
   flex-basis: calc((100% - 60px) / 3);
-  background: #fff;
 }
 .project-card:hover, .project-card:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -440,4 +442,4 @@ body {
 }
 .footer address li:not(:last-child) {
   margin-bottom: 9px;
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */
