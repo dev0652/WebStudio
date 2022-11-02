@@ -140,17 +140,14 @@ button,
 .flex.wrap {
   flex-wrap: wrap;
 }
-
-.regular-gap {
-  gap: var(--regular-gap);
+.flex.regular-gap {
+  gap: 30px;
 }
-
-.regular-spacing {
-  gap: var(--regular-spacing);
+.flex.regular-spacing {
+  gap: 20px;
 }
-
-.large-spacing {
-  gap: var(--large-spacing);
+.flex.large-spacing {
+  gap: 44px;
 }
 
 /* Testing */
