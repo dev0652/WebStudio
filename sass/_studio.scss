@@ -75,36 +75,44 @@
 		color: $light-gray-text;
 	}
 
-	&:before {
-		display: block;
-		content: '';
-		// height: 70px;
-		// width: 70px;
-		height: 120px;
-		// padding: 25px 100px;
-		margin-bottom: 30px;
-		background-color: $mid-bg;
-		// background-image: url(../images/studio/radar.png);
-		// background-size: contain;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
+	// &:before {
+	// 	display: block;
+	// 	content: '';
+	// 	height: 120px;
+	// border-radius: 4px;
+	// 	margin-bottom: 30px;
+	// 	background-color: $mid-bg;
+	// 	background-position: center;
+	// 	background-repeat: no-repeat;
+	// }
 
-	&:nth-child(1):before {
-		background-image: url(../images/studio/radar.png);
-	}
+	// &:nth-child(1):before {
+	// 	background-image: url(../images/studio/radar.png);
+	// }
 
-	&:nth-child(2):before {
-		background-image: url(../images/studio/clock.png);
-	}
+	// &:nth-child(2):before {
+	// 	background-image: url(../images/studio/clock.png);
+	// }
 
-	&:nth-child(3):before {
-		background-image: url(../images/studio/diagram.png);
-	}
+	// &:nth-child(3):before {
+	// 	background-image: url(../images/studio/diagram.png);
+	// }
 
-	&:nth-child(4):before {
-		background-image: url(../images/studio/astronaut.png);
-	}
+	// &:nth-child(4):before {
+	// 	background-image: url(../images/studio/astronaut.png);
+	// }
+}
+
+.feature-icon-wrapper {
+	background-color: $mid-bg;
+	border-radius: 4px;
+	padding: 25px 100px;
+	margin-bottom: 30px;
+}
+
+.feature-icon {
+	height: 70px;
+	width: 70px;
 }
 
 /* Out Team */
@@ -124,5 +132,21 @@
 		font-size: 16px;
 		font-weight: 500;
 		margin-bottom: 10px;
+	}
+
+	& p {
+		margin-bottom: 16px;
+	}
+}
+
+.social-link {
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+	color: currentColor;
+	padding: 12px;
+
+	&:hover {
+		background: $accent;
 	}
 }

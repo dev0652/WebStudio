@@ -14,7 +14,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!-- ---------- CSS ---------- -->
-	<link rel="stylesheet" href="./css/main.min.css" />
+	<link rel="stylesheet" href="./css/styles.min.css" />
 
 	<!-- ---------- Fonts ---------- -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -52,10 +52,20 @@
 			<!-- Header contacts -->
 			<ul class="header-contacts markup-list flex">
 				<li class="contact">
-					<a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<svg class="icon">
+						<use href="./images/icons/symbol-defs.svg#icon-envelope"></use>
+					</svg>
+					<a class="link" href="mailto:info@devstudio.com">
+
+						info@devstudio.com</a>
 				</li>
 				<li class="contact">
-					<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+					<a class="link" href="tel:+380961111111">
+						<svg class="icon">
+							<use href="./images/icons/symbol-defs.svg#icon-smartphone"></use>
+						</svg>
+						+38 096 111 11 11
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -83,6 +93,11 @@
 			<div class="container">
 				<ul class="markup-list features flex space-between">
 					<li class="feature">
+						<div class="feature-icon-wrapper">
+							<svg class="feature-icon">
+								<use href="./images/icons/symbol-defs.svg#icon-antenna"></use>
+							</svg>
+						</div>
 						<h3>Увага до деталей</h3>
 						<p>
 							Ідейні міркування, і навіть початок повсякденної роботи з
@@ -90,6 +105,11 @@
 						</p>
 					</li>
 					<li class="feature">
+						<div class="feature-icon-wrapper">
+							<svg class="feature-icon">
+								<use href="./images/icons/symbol-defs.svg#icon-clock"></use>
+							</svg>
+						</div>
 						<h3>Пунктуальність</h3>
 						<p>
 							Завдання організації, особливо рамки і місце навчання кадрів
@@ -97,12 +117,22 @@
 						</p>
 					</li>
 					<li class="feature">
+						<div class="feature-icon-wrapper">
+							<svg class="feature-icon">
+								<use href="./images/icons/symbol-defs.svg#icon-diagram"></use>
+							</svg>
+						</div>
 						<h3>Планування</h3>
 						<p>
 							Так само консультація з широким активом значною мірою зумовлює.
 						</p>
 					</li>
 					<li class="feature">
+						<div class="feature-icon-wrapper">
+							<svg class="feature-icon">
+								<use href="./images/icons/symbol-defs.svg#icon-astronaut"></use>
+							</svg>
+						</div>
 						<h3>Сучасні технології</h3>
 						<p>
 							Значимість цих проблем настільки очевидна, що реалізація
@@ -144,9 +174,47 @@
 					<li class="team-card">
 						<img src="./images/studio/photo1.jpg" alt="Усміхнений молодий чоловік в сорочці, з бородою та в окулярах."
 							width="270" />
+
 						<div class="caption">
 							<h3>Ігор Дем'яненко</h3>
 							<p lang="en">Product Designer</p>
+
+							<!-- Social media links -->
+							<ul class="markup-list social-links flex spaced-list justify-center">
+								<!-- Instagram -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow"
+										target="_blank">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+										</svg></a>
+								</li>
+								<!-- Twitter -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- Facebook -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- LinkedIn -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+
+							</ul>
 						</div>
 					</li>
 
@@ -156,6 +224,44 @@
 						<div class="caption">
 							<h3>Ольга Рєпіна</h3>
 							<p lang="en">Frontend Developer</p>
+
+							<!-- Social media links -->
+							<ul class="markup-list social-links flex spaced-list justify-center">
+								<!-- Instagram -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow"
+										target="_blank">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- Twitter -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- Facebook -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- LinkedIn -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+
+							</ul>
 						</div>
 					</li>
 
@@ -164,35 +270,91 @@
 						<div class="caption">
 							<h3>Микола Тарасов</h3>
 							<p lang="en">Marketing</p>
+
+							<!-- Social media links -->
+							<ul class="markup-list social-links flex spaced-list justify-center">
+								<!-- Instagram -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow"
+										target="_blank">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- Twitter -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- Facebook -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+										</svg>
+									</a>
+								</li>
+								<!-- LinkedIn -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+										</svg>
+									</a>
+								</li>
+
+							</ul>
 						</div>
 					</li>
 
 					<li class="team-card">
 						<img src="./images/studio/photo4.jpg"
 							alt="Темноволосий молодий чоловік в футболці, з бородою та в окулярах." width="270" />
-						<div class="caption">
 
+						<!-- Team card caption -->
+						<div class="caption">
 							<h3>Михайло Єрмаков</h3>
 
 							<p lang="en">UI Designer</p>
 
 							<!-- Social media links -->
-							<ul class="markup-list social-links flex spaced-list space-between">
-								<li class="social">
-									<!-- Instagram -->
-									<a href="" class="link social" target="_blank" rel="noopener noreferrer nofollow" target="_blank"></a>
+							<ul class="markup-list social-links flex spaced-list justify-center">
+								<!-- Instagram -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow"
+										target="_blank">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+										</svg>
+									</a>
 								</li>
-								<li class="social">
-									<!-- Twitter -->
-									<a href="" class="link social" target="_blank" rel="noopener noreferrer nofollow"></a>
+								<!-- Twitter -->
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+										</svg>
+									</a>
 								</li>
 								<!-- Facebook -->
-								<li class="social">
-									<a href="" class="link social" target="_blank" rel="noopener noreferrer nofollow"></a>
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-facebook"></use>
+										</svg>
+									</a>
 								</li>
 								<!-- LinkedIn -->
-								<li class="social">
-									<a href="" class="link social" target="_blank" rel="noopener noreferrer nofollow"></a>
+								<li class="social-links-list-item">
+									<a href="" class="link social-link" target="_blank" rel="noopener noreferrer nofollow">
+										<svg class="icon social-icon">
+											<use href="./images/icons/symbol-defs.svg#icon-linkedin"></use>
+										</svg>
+									</a>
 								</li>
 
 							</ul>

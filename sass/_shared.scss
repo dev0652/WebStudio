@@ -1,10 +1,3 @@
-@import "../../_sass/normalize";
-@import "variables";
-@import "../../_sass/utilities";
-@import "studio";
-@import "portfolio";
-// @import "icons";
-
 /* Common properties */
 
 body {
@@ -29,6 +22,7 @@ body {
 	text-align: center;
 }
 
+
 // .dark-bg {
 // 	background-color: $dark-bg;
 // }
@@ -50,6 +44,7 @@ body {
 
 	.contact & {
 		color: $light-gray-text;
+		// display: flex;
 	}
 
 	.footer & {
@@ -123,7 +118,7 @@ body {
 
 	.header-nav &,
 	.header-contacts & {
-		display: block;
+		display: inline-block;
 		padding: 32px 0;
 		letter-spacing: 0.02em;
 	}
