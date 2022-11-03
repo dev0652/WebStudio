@@ -12,17 +12,24 @@
 			fill: $accent;
 		}
 	}
-
-	.social-link & {
-		width: 20px;
-		height: 20px;
-	}
 }
 
 #icon-envelope {
 	height: 16px;
 }
 
-.social-link:hover .icon {
-	fill: $contrast;
+.social-link {
+
+	& .icon {
+		width: 20px;
+		height: 20px;
+
+		.footer & {
+			fill: $contrast;
+		}
+	}
+
+	&:hover .icon {
+		fill: $contrast;
+	}
 }

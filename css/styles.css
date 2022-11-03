@@ -118,6 +118,9 @@ button,
 .flex.align-end {
   align-items: end;
 }
+.flex.align-baseline {
+  align-items: baseline;
+}
 .flex.wrap {
   flex-wrap: wrap;
 }
@@ -270,6 +273,22 @@ body {
   color: #757575;
 }
 
+/* Social media links */
+/* (icons styled separately) */
+.social-link {
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  color: currentColor;
+  padding: 12px;
+}
+.footer .social-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.social-link:hover {
+  background: #2196f3;
+}
+
 /* Footer */
 .footer {
   text-align: left;
@@ -284,11 +303,23 @@ body {
   font-style: normal;
 }
 .footer address li {
+  min-width: 231px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
 .footer address li:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.join-us h3 {
+  font-size: inherit;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-container {
+  gap: 70px;
+  align-items: baseline;
 }
 
 /* SVG icons */
@@ -303,15 +334,18 @@ body {
 .link:hover .contact .icon {
   fill: #2196f3;
 }
-.social-link .icon {
-  width: 20px;
-  height: 20px;
-}
 
 #icon-envelope {
   height: 16px;
 }
 
+.social-link .icon {
+  width: 20px;
+  height: 20px;
+}
+.footer .social-link .icon {
+  fill: #fff;
+}
 .social-link:hover .icon {
   fill: #fff;
 }
@@ -407,17 +441,6 @@ body {
 }
 .team-card p {
   margin-bottom: 16px;
-}
-
-.social-link {
-  display: block;
-  border-radius: 50%;
-  overflow: hidden;
-  color: currentColor;
-  padding: 12px;
-}
-.social-link:hover {
-  background: #2196f3;
 }
 
 /* Page PORTFOLIO */

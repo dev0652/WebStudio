@@ -155,6 +155,25 @@ body {
 	}
 }
 
+/* Social media links */
+/* (icons styled separately) */
+
+.social-link {
+	display: block;
+	border-radius: 50%;
+	overflow: hidden;
+	color: currentColor;
+	padding: 12px;
+
+	.footer & {
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	&:hover {
+		background: $accent;
+	}
+}
+
 /* Footer */
 
 .footer {
@@ -165,13 +184,14 @@ body {
 	background-color: $dark-bg;
 
 	.logo {
-		margin-bottom: 20px;
+		margin-bottom: $regular-spacing;
 	}
 
 	address {
 		font-style: normal;
 
 		li {
+			min-width: 231px;
 			line-height: calc(24/14);
 			letter-spacing: 0.03em;
 
@@ -180,4 +200,17 @@ body {
 			}
 		}
 	}
+}
+
+.join-us {
+	& h3 {
+		font-size: inherit;
+		text-transform: uppercase;
+		margin-bottom: $regular-spacing;
+	}
+}
+
+.footer-container {
+	gap: $footer-items-spacing;
+	align-items: baseline;
 }
