@@ -140,12 +140,31 @@ body {
 	}
 }
 
+/* SVG icons */
+
+.icon {
+	// display: block;
+	fill: currentColor;
+
+	.social-link & {
+
+		.footer & {
+			fill: $contrast;
+		}
+	}
+
+	&:hover .icon {
+		fill: $contrast;
+
+	}
+}
+
 /* Social media links */
 /* (icons styled separately) */
 
 .social-link {
 	display: block;
-	color: currentColor;
+	color: $link-inactive;
 	height: 44px;
 	width: 44px;
 	border: none;
@@ -164,6 +183,31 @@ body {
 
 	&:hover {
 		background: $accent;
+	}
+}
+
+.client {
+	outline: auto;
+}
+
+.client-link {
+	display: block;
+	// height: 60px;
+	// width: 106px;
+	// padding: 16px 32px;
+	width: 170px;
+	height: 92px;
+	outline: 1px solid red;
+
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+
+	color: $link-inactive;
+
+	&:hover,
+	&:focus {
+		color: $accent;
+		border-color: $accent;
 	}
 }
 

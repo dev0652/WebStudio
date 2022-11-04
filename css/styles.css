@@ -52,11 +52,7 @@ button,
 /* Text */
 /* Background */
 /* SVG */
-:root {
-  --color1: $dark-gray-text;
-  --color2: $accent;
-}
-
+/* Features */
 /* Borders */
 /* Flex gap values */
 /* For 'flex-basis' calculation */
@@ -268,11 +264,22 @@ body {
   color: #757575;
 }
 
+/* SVG icons */
+.icon {
+  fill: currentColor;
+}
+.footer .social-link .icon {
+  fill: #fff;
+}
+.icon:hover .icon {
+  fill: #fff;
+}
+
 /* Social media links */
 /* (icons styled separately) */
 .social-link {
   display: block;
-  color: currentColor;
+  color: #AFB1B8;
   height: 44px;
   width: 44px;
   border: none;
@@ -288,6 +295,24 @@ body {
 }
 .social-link:hover {
   background: #2196f3;
+}
+
+.client {
+  outline: auto;
+}
+
+.client-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  outline: 1px solid red;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+}
+.client-link:hover, .client-link:focus {
+  color: #2196f3;
+  border-color: #2196f3;
 }
 
 /* Footer */
@@ -321,22 +346,6 @@ body {
 .footer-container {
   gap: 70px;
   align-items: baseline;
-}
-
-/* SVG icons */
-.icon {
-  fill: currentColor;
-}
-
-.social-link .icon {
-  width: 20px;
-  height: 20px;
-}
-.footer .social-link .icon {
-  fill: #fff;
-}
-.social-link:hover .icon {
-  fill: #fff;
 }
 
 /* Page STUDIO */
@@ -432,6 +441,7 @@ body {
   margin-bottom: 16px;
 }
 
+/* Regular Clients */
 /* Page PORTFOLIO */
 /* 'Filter' buttons */
 .filter-buttons {
