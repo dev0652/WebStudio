@@ -334,6 +334,7 @@ body {
 /* Hero */
 .hero {
   text-align: center;
+  color: #fff;
 }
 .hero .container {
   padding: 200px 0;
@@ -347,7 +348,6 @@ body {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 30px;
-  color: #fff;
 }
 
 .overlay {
@@ -366,7 +366,7 @@ body {
   line-height: 1.88;
   padding: 10px 32px;
   background: #2196f3;
-  color: #fff;
+  color: currentColor;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.hero-button:hover, .button.hero-button:focus {
@@ -399,11 +399,6 @@ body {
   margin-bottom: 30px;
 }
 
-.feature-icon {
-  height: 70px;
-  width: 70px;
-}
-
 /* Out Team */
 .section.team {
   background: #f5f4fa;
@@ -431,13 +426,12 @@ body {
 .client-link {
   display: block;
   padding: 16px 32px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
   color: #AFB1B8;
+  border: 1px solid currentColor;
+  border-radius: 4px;
 }
 .client-link:hover, .client-link:focus {
   color: #2196f3;
-  border-color: #2196f3;
 }
 
 /* Page PORTFOLIO */

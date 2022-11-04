@@ -4,6 +4,7 @@
 
 .hero {
 	text-align: center;
+	color: $contrast;
 
 	& .container {
 		padding: 200px 0;
@@ -19,8 +20,6 @@
 		width: 700px;
 		margin: 0 auto;
 		margin-bottom: 30px;
-
-		color: $contrast;
 	}
 }
 
@@ -44,7 +43,7 @@
 		padding: 10px 32px;
 
 		background: $accent;
-		color: $contrast;
+		color: currentColor;
 
 		&:hover,
 		&:focus {
@@ -75,33 +74,6 @@
 		line-height: calc(24/14);
 		color: $light-gray-text;
 	}
-
-	// &:before {
-	// 	display: block;
-	// 	content: '';
-	// 	height: 120px;
-	// border-radius: 4px;
-	// 	margin-bottom: 30px;
-	// 	background-color: $mid-bg;
-	// 	background-position: center;
-	// 	background-repeat: no-repeat;
-	// }
-
-	// &:nth-child(1):before {
-	// 	background-image: url(../images/studio/radar.png);
-	// }
-
-	// &:nth-child(2):before {
-	// 	background-image: url(../images/studio/clock.png);
-	// }
-
-	// &:nth-child(3):before {
-	// 	background-image: url(../images/studio/diagram.png);
-	// }
-
-	// &:nth-child(4):before {
-	// 	background-image: url(../images/studio/astronaut.png);
-	// }
 }
 
 .feature-icon-wrapper {
@@ -109,11 +81,6 @@
 	border-radius: 4px;
 	padding: 25px 100px;
 	margin-bottom: 30px;
-}
-
-.feature-icon {
-	height: 70px;
-	width: 70px;
 }
 
 /* Out Team */
@@ -155,21 +122,16 @@
 
 .client-link {
 	display: block;
-	// height: 60px;
-	// width: 106px;
 	padding: 16px 32px;
 
-	// width: 170px;
-	// height: 92px;
-
-	border: 1px solid #AFB1B8;
+	color: $link-inactive;
+	border: 1px solid currentColor;
 	border-radius: 4px;
 
-	color: $link-inactive;
+
 
 	&:hover,
 	&:focus {
 		color: $accent;
-		border-color: $accent;
 	}
 }
