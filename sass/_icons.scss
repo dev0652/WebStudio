@@ -1,21 +1,8 @@
 /* SVG icons */
 
 .icon {
-	display: block;
-	fill: $icon-inactive;
-
-	.contact & {
-		height: 16px;
-		fill: #757575;
-
-		.link:hover & {
-			fill: $accent;
-		}
-	}
-}
-
-#icon-envelope {
-	height: 16px;
+	// display: block;
+	fill: currentColor;
 }
 
 .social-link {

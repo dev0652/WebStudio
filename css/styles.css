@@ -52,6 +52,11 @@ button,
 /* Text */
 /* Background */
 /* SVG */
+:root {
+  --color1: $dark-gray-text;
+  --color2: $accent;
+}
+
 /* Borders */
 /* Flex gap values */
 /* For 'flex-basis' calculation */
@@ -194,24 +199,15 @@ body {
 }
 .contact .link {
   color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
 }
 .link:hover, .link:focus, .link.current {
   color: #2196f3;
-}
-.link.social {
-  height: 44px;
-  width: 44px;
-  border: none;
-  padding: 12px;
-  border-radius: 50%;
-  color: #AFB1B8;
-}
-.link.social:hover, .link.social:focus {
-  color: #fff;
-  background-color: #2196f3;
 }
 
 /* Logos */
@@ -249,7 +245,6 @@ body {
 }
 
 .header-nav .link, .header-contacts .link {
-  display: inline-block;
   padding: 32px 0;
   letter-spacing: 0.02em;
 }
@@ -277,10 +272,16 @@ body {
 /* (icons styled separately) */
 .social-link {
   display: block;
-  border-radius: 50%;
-  overflow: hidden;
   color: currentColor;
+  height: 44px;
+  width: 44px;
+  border: none;
   padding: 12px;
+  border-radius: 50%;
+}
+.social-link:hover, .social-link:focus {
+  color: #fff;
+  background-color: #2196f3;
 }
 .footer .social-link {
   background: rgba(255, 255, 255, 0.1);
@@ -324,19 +325,7 @@ body {
 
 /* SVG icons */
 .icon {
-  display: block;
-  fill: #AFB1B8;
-}
-.contact .icon {
-  height: 16px;
-  fill: #757575;
-}
-.link:hover .contact .icon {
-  fill: #2196f3;
-}
-
-#icon-envelope {
-  height: 16px;
+  fill: currentColor;
 }
 
 .social-link .icon {

@@ -20,6 +20,11 @@ $dark-bg: #2f303a;
 /* SVG */
 $icon-inactive: #AFB1B8;
 
+:root {
+	--color1: $dark-gray-text;
+	--color2: $accent;
+}
+
 /* Borders */
 $header-border: #ececec;
 $project-border: #eeeeee;

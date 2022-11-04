@@ -44,7 +44,9 @@ body {
 
 	.contact & {
 		color: $light-gray-text;
-		// display: flex;
+		display: flex;
+		align-items: center;
+		gap: $list-spacing;
 	}
 
 	.footer & {
@@ -55,22 +57,6 @@ body {
 	&:focus,
 	&.current {
 		color: $accent;
-	}
-
-	&.social {
-		height: 44px;
-		width: 44px;
-		border: none;
-		padding: 12px;
-		border-radius: 50%;
-
-		color: $icon-inactive;
-
-		&:hover,
-		&:focus {
-			color: $contrast;
-			background-color: $accent;
-		}
 	}
 }
 
@@ -118,7 +104,6 @@ body {
 
 	.header-nav &,
 	.header-contacts & {
-		display: inline-block;
 		padding: 32px 0;
 		letter-spacing: 0.02em;
 	}
@@ -160,10 +145,18 @@ body {
 
 .social-link {
 	display: block;
-	border-radius: 50%;
-	overflow: hidden;
 	color: currentColor;
+	height: 44px;
+	width: 44px;
+	border: none;
 	padding: 12px;
+	border-radius: 50%;
+
+	&:hover,
+	&:focus {
+		color: $contrast;
+		background-color: $accent;
+	}
 
 	.footer & {
 		background: rgba(255, 255, 255, 0.1);
