@@ -297,24 +297,6 @@ body {
   background: #2196f3;
 }
 
-.client {
-  outline: auto;
-}
-
-.client-link {
-  display: block;
-  width: 170px;
-  height: 92px;
-  outline: 1px solid red;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  color: #AFB1B8;
-}
-.client-link:hover, .client-link:focus {
-  color: #2196f3;
-  border-color: #2196f3;
-}
-
 /* Footer */
 .footer {
   text-align: left;
@@ -442,6 +424,22 @@ body {
 }
 
 /* Regular Clients */
+.clients h2 {
+  margin-bottom: 44px;
+}
+
+.client-link {
+  display: block;
+  padding: 16px 32px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  color: #AFB1B8;
+}
+.client-link:hover, .client-link:focus {
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
 /* Page PORTFOLIO */
 /* 'Filter' buttons */
 .filter-buttons {
