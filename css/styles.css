@@ -277,12 +277,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+.footer .social-link {
+  background: rgba(255, 255, 255, 0.1);
+}
 .social-link:hover, .social-link:focus {
   color: #fff;
   background-color: #2196f3;
-}
-.footer .social-link {
-  background: rgba(255, 255, 255, 0.1);
 }
 .social-link:hover {
   background: #2196f3;
@@ -312,6 +312,7 @@ body {
 
 .join-us h3 {
   font-size: inherit;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
