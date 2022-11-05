@@ -66,9 +66,23 @@ button,
 }
 
 /* Utility classes */
-/* Remove markers in semantic ul's and ol's */
-.markup-list {
-  list-style: none;
+/* Colors */
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+/* Background */
+/* Letter case */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 /* Flex-boxes */
@@ -124,36 +138,22 @@ button,
   overflow: hidden;
 }
 
-/* Get rid of user-agent-defined spacing after list items and images by changing their display to "block" */
 .no-end-spacing {
+  /* Remove extra space after images */
   display: block;
 }
 
-/* For testing */
+.markup-list {
+  list-style: none;
+}
+
+/* Testing */
 .outline {
   outline: auto;
 }
 
 .frame {
   outline: 1px solid steelblue;
-}
-
-/* Colors */
-.black {
-  color: black;
-}
-
-.white {
-  color: white;
-}
-
-/* Letter case */
-.uppercase {
-  text-transform: uppercase;
-}
-
-.lowercase {
-  text-transform: lowercase;
 }
 
 /* Common properties */
@@ -269,13 +269,13 @@ body {
 /* Social media links */
 /* (icons styled separately) */
 .social-link {
-  display: block;
   color: #AFB1B8;
   height: 44px;
   width: 44px;
-  border: none;
-  padding: 12px;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .social-link:hover, .social-link:focus {
   color: #fff;
@@ -386,8 +386,12 @@ body {
 .feature-icon-wrapper {
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Out Team */
@@ -415,8 +419,11 @@ body {
 }
 
 .client-link {
-  display: block;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #AFB1B8;
   border: 1px solid currentColor;
   border-radius: 4px;
