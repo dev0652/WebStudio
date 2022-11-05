@@ -66,23 +66,9 @@ button,
 }
 
 /* Utility classes */
-/* Colors */
-.black {
-  color: black;
-}
-
-.white {
-  color: white;
-}
-
-/* Background */
-/* Letter case */
-.uppercase {
-  text-transform: uppercase;
-}
-
-.lowercase {
-  text-transform: lowercase;
+/* Remove markers in semantic ul's and ol's */
+.markup-list {
+  list-style: none;
 }
 
 /* Flex-boxes */
@@ -138,22 +124,36 @@ button,
   overflow: hidden;
 }
 
+/* Get rid of user-agent-defined spacing after list items and images by changing their display to "block" */
 .no-end-spacing {
-  /* Remove extra space after images */
   display: block;
 }
 
-.markup-list {
-  list-style: none;
-}
-
-/* Testing */
+/* For testing */
 .outline {
   outline: auto;
 }
 
 .frame {
   outline: 1px solid steelblue;
+}
+
+/* Colors */
+.black {
+  color: black;
+}
+
+.white {
+  color: white;
+}
+
+/* Letter case */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
 }
 
 /* Common properties */
