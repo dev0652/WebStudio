@@ -80,7 +80,7 @@
 					<h1>Ефективні рішення для вашого бізнесу</h1>
 
 					<!-- Hero button -->
-					<button type="button" class="button hero-button">
+					<button type="button" class="button hero-button" data-open-modal>
 						Замовити послугу
 					</button>
 				</div>
@@ -495,6 +495,54 @@
 
 		</div>
 	</footer>
+
+	<!-- Modal window -->
+	<div class="backdrop is-hidden" data-backdrop>
+
+		<div class="modal">
+
+			<button type="button" class="close-button" data-close-modal aria-label="Close modal window">
+				<svg class="icon close-icon" width="11" height="11">
+					<use href="./images/icons/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+
+		</div>
+
+	</div>
+
+
+	<!-- Script -->
+	<!-- Modal window open/close -->
+	<script>
+		const refs = {
+			openModalBtn: document.querySelector("[data-open-modal"),
+			closeModalBtn: document.querySelector("[data-close-modal"),
+			backdrop: document.querySelector("[data-backdrop"),
+		};
+
+		refs.openModalBtn.addEventListener("click", toggleModal);
+		refs.closeModalBtn.addEventListener("click", toggleModal);
+		refs.backdrop.addEventListener("click", logBackdropClick);
+
+		function toggleModal() {
+			refs.backdrop.classList.toggle("is-hidden");
+		}
+
+		function logBackdropClick() {
+			console.log("This is clicking on backdrop");
+		}
+	</script>
+
+	<!-- Dynamic padding-top for "main" -->
+	<script>
+		const { height: pageHeaderHeight } = document
+			.querySelector(".header")
+			.getBoundingClientRect()
+
+		document.body.style.paddingTop = `${pageHeaderHeight}px`
+	</script>
+
 </body>
 
 </html>
