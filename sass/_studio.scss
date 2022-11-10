@@ -88,6 +88,21 @@
 	justify-content: center;
 }
 
+/* What We Do */
+
+.activities {
+	position: relative;
+}
+
+.activity {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	// padding: 27px 107px;
+	background: rgba(47, 48, 58, 0.8);
+}
+
 /* Out Team */
 
 .section.team {
