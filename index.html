@@ -13,10 +13,10 @@
 		integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- ---------- CSS ---------- -->
+	<!-- CSS -->
 	<link rel="stylesheet" href="./css/styles.min.css" />
 
-	<!-- ---------- Fonts ---------- -->
+	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-	<!-- ---------- Header ---------- -->
+	<!-- Header -->
 	<header class="header">
 		<div class="container flex align-center">
 
@@ -70,7 +70,7 @@
 		</div>
 	</header>
 
-	<!-- ---------- Main ---------- -->
+	<!-- Main -->
 	<main class="page studio">
 		<!-- Hero -->
 		<section class="hero">
@@ -80,7 +80,7 @@
 					<h1>Ефективні рішення для вашого бізнесу</h1>
 
 					<!-- Hero button -->
-					<button type="button" class="button hero-button" data-open-modal>
+					<button type="button" class="button hero-button" data-modal-open>
 						Замовити послугу
 					</button>
 				</div>
@@ -428,7 +428,7 @@
 		</section>
 	</main>
 
-	<!-- ---------- Footer ---------- -->
+	<!-- Footer -->
 	<footer class="footer">
 		<div class="container flex footer-container">
 
@@ -497,11 +497,11 @@
 	</footer>
 
 	<!-- Modal window -->
-	<div class="backdrop is-hidden" data-backdrop>
+	<div class="backdrop is-hidden" data-modal>
 
 		<div class="modal">
 
-			<button type="button" class="close-button" data-close-modal aria-label="Close modal window">
+			<button type="button" class="close-button" data-modal-close aria-label="Close modal window">
 				<svg class="icon close-icon" width="11" height="11">
 					<use href="./images/icons/icons.svg#icon-close"></use>
 				</svg>
@@ -511,38 +511,10 @@
 
 	</div>
 
+	<!-- Scripts -->
+	<script src="./js/modal.js"></script>
 
-	<!-- Script -->
-	<!-- Modal window open/close -->
-	<script>
-		const refs = {
-			openModalBtn: document.querySelector("[data-open-modal"),
-			closeModalBtn: document.querySelector("[data-close-modal"),
-			backdrop: document.querySelector("[data-backdrop"),
-		};
-
-		refs.openModalBtn.addEventListener("click", toggleModal);
-		refs.closeModalBtn.addEventListener("click", toggleModal);
-		refs.backdrop.addEventListener("click", logBackdropClick);
-
-		function toggleModal() {
-			refs.backdrop.classList.toggle("is-hidden");
-		}
-
-		function logBackdropClick() {
-			console.log("This is clicking on backdrop");
-		}
-	</script>
-
-	<!-- Dynamic padding-top for "main" -->
-	<script>
-		const { height: pageHeaderHeight } = document
-			.querySelector(".header")
-			.getBoundingClientRect()
-
-		document.body.style.paddingTop = `${pageHeaderHeight}px`
-	</script>
-
+	<script src="./js/dynamic-padding.js"></script>
 </body>
 
 </html>

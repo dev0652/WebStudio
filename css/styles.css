@@ -209,6 +209,17 @@ body {
   color: #2196f3;
 }
 
+.current::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 48px;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+}
+
 /* Logos */
 .logo {
   font-family: "Raleway", sans-serif;
