@@ -79,27 +79,10 @@
 }
 
 .description {
-	// position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	opacity: 0;
-
 	font-size: 18px;
 	line-height: calc(28/18);
 	color: $contrast;
-	// background-color: rgba(33, 150, 243, 0.9);
-
 	padding: 63px 24px;
-
-
-
-	.project-card:hover & {
-		opacity: 1;
-	}
-}
-
-.project-card:hover .thumb-overlay {
-	transform: translatey(0);
 }
 
 .thumb-overlay {
@@ -112,4 +95,8 @@
 
 	transform: translatey(100%);
 	transition: transform 250ms ease;
+}
+
+.project-card:hover .thumb-overlay {
+	transform: translatey(0);
 }

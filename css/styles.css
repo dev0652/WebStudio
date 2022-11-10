@@ -209,17 +209,6 @@ body {
   color: #2196f3;
 }
 
-.current::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 48px;
-  height: 4px;
-  background: #2196F3;
-  border-radius: 2px;
-}
-
 /* Logos */
 .logo {
   font-family: "Raleway", sans-serif;
@@ -265,7 +254,23 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Sections */
+.current {
+  position: relative;
+  box-sizing: border-box;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(0.5px);
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+}
+
+/* Sections other than hero */
 .section {
   padding: 94px 0;
 }
@@ -346,50 +351,6 @@ body {
 .footer-container {
   gap: 70px;
   align-items: baseline;
-}
-
-/* Modal window */
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.modal {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  width: 528px;
-  height: 581px;
-  border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-}
-
-.close-button {
-  position: fixed;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  color: #000;
-  background-color: #fff;
 }
 
 /* Page STUDIO */
@@ -503,6 +464,50 @@ body {
   color: #2196f3;
 }
 
+/* Modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 528px;
+  height: 581px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.close-button {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  color: #000;
+  background-color: #fff;
+}
+
 /* Page PORTFOLIO */
 /* 'Filter' buttons */
 .filter-buttons {
@@ -567,13 +572,6 @@ body {
   color: #fff;
   padding: 63px 24px;
 }
-.project-card:hover .description {
-  opacity: 1;
-}
-
-.project-card:hover .thumb-overlay {
-  transform: translatey(0);
-}
 
 .thumb-overlay {
   position: absolute;
@@ -584,4 +582,8 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translatey(100%);
   transition: transform 250ms ease;
+}
+
+.project-card:hover .thumb-overlay {
+  transform: translatey(0);
 }/*# sourceMappingURL=styles.css.map */
