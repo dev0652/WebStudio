@@ -235,6 +235,7 @@ body {
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid red;
   width: 100%;
   position: fixed;
   top: 0;
@@ -256,16 +257,15 @@ body {
 
 .current {
   position: relative;
-  box-sizing: border-box;
 }
 .current::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 1px;
   width: 100%;
   height: 4px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 2px;
 }
 
