@@ -113,8 +113,8 @@ body {
 		content: '';
 		position: absolute;
 		left: 0;
-		bottom: 0;
-		transform: translateY(.5px);
+		bottom: -1px;
+		// transform: translateY(1px);
 
 		width: 100%;
 		height: 4px;
