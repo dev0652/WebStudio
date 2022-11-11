@@ -80,7 +80,6 @@ body {
 .header {
 	background-color: $light-bg;
 	border-bottom: 1px solid $header-border;
-	border-bottom: 1px solid red;
 
 	width: 100%;
 	position: fixed;
@@ -113,9 +112,10 @@ body {
 		content: '';
 		position: absolute;
 		left: 0;
-		bottom: 1px;
-		// bottom: 0;
+		// bottom: -1px;
 		// bottom: -.5px;
+		bottom: 0;
+
 
 		// transform: translateY(1px);
 
