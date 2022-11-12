@@ -27,6 +27,8 @@ body {
 	text-decoration: none;
 	font-weight: 500;
 
+	transition: color $transition-duration $transition-timing-function;
+
 	.header-nav & {
 		color: $dark-gray-text;
 	}
@@ -161,8 +163,8 @@ body {
 /* SVG icons */
 
 .icon {
-	// display: block;
 	fill: currentColor;
+	transition: fill $transition-duration $transition-timing-function;
 
 	.social-link & {
 
@@ -171,7 +173,8 @@ body {
 		}
 	}
 
-	&:hover .icon {
+	&:hover .icon,
+	&:focus .icon {
 		fill: $contrast;
 	}
 }
@@ -185,6 +188,8 @@ body {
 	width: 44px;
 	// border: none;
 	border-radius: 50%;
+
+	transition: color $transition-duration $transition-timing-function, background-color $transition-duration $transition-timing-function;
 
 	display: flex;
 	justify-content: center;
