@@ -90,7 +90,17 @@
 	line-height: calc(28/18);
 	color: $contrast;
 	padding: 63px 24px;
+
+	opacity: 0;
+	transition: opacity $transition-duration $transition-timing-function 200ms;
+
+	.project-card:hover &,
+	.project-card:focus & {
+		opacity: 1;
+	}
 }
+
+
 
 .thumb-overlay {
 	position: absolute;
