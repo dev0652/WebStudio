@@ -177,7 +177,6 @@
 	height: 100%;
 
 	background: rgba(0, 0, 0, 0.2);
-	// opacity: 0;
 }
 
 .backdrop.is-hidden {
@@ -197,6 +196,10 @@
 	border-radius: 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	background-color: $contrast;
+
+	transform: scale(0, 0);
+
+	transition: transform $transition-duration $transition-timing-function;
 }
 
 .close-button {
