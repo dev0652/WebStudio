@@ -179,7 +179,7 @@
 
 	opacity: 1;
 	transition: opacity $transition-duration $transition-timing-function;
-	// transition: opacity 5000ms ease-in;
+	// transition: opacity 2000ms ease-in;
 }
 
 .modal {
@@ -205,7 +205,7 @@
 	pointer-events: none;
 
 	& .modal {
-		transform: translate(-50%, -50%) scale(0);
+		transform: translate(-50%, -50%) scale(0.8);
 	}
 }
 

@@ -517,7 +517,7 @@ body {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
+  transform: translate(-50%, -50%) scale(0.8);
 }
 
 .close-button {
