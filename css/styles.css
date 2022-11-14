@@ -46,10 +46,6 @@ address {
   font-style: normal;
 }
 
-:focus {
-  outline: none;
-}
-
 /* Variables */
 .flex.regular-gap {
   gap: 30px;
@@ -520,7 +516,7 @@ body {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .close-button {
