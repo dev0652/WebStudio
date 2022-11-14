@@ -176,6 +176,15 @@ body {
 	}
 }
 
+.rotatable {
+	transition: transform 200ms ease-in-out 10ms;
+
+	.icon-transformable:hover &,
+	.icon-transformable:focus & {
+		transform: rotate(360deg);
+	}
+}
+
 /* Social media links */
 /* (icons styled separately) */
 
