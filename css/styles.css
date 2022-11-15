@@ -300,29 +300,6 @@ body {
   fill: #fff;
 }
 
-@-webkit-keyframes iconScroll {
-  0% {
-    transform: translate(0, -200%);
-  }
-  50% {
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(0, 200%);
-  }
-}
-
-@keyframes iconScroll {
-  0% {
-    transform: translate(0, -200%);
-  }
-  50% {
-    transform: translate(0, 100%);
-  }
-  100% {
-    transform: translate(0, 200%);
-  }
-}
 .rotatable {
   transition: transform 200ms ease-in-out 10ms;
 }

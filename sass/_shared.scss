@@ -176,20 +176,6 @@ body {
 	}
 }
 
-@keyframes iconScroll {
-	0% {
-		transform: translate(0, -200%);
-	}
-
-	50% {
-		transform: translate(0, 100%);
-	}
-
-	100% {
-		transform: translate(0, 200%);
-	}
-}
-
 .rotatable {
 	transition: transform 200ms ease-in-out 10ms;
 
@@ -199,6 +185,20 @@ body {
 		// animation: iconScroll 2500ms;
 	}
 }
+
+// @keyframes iconScroll {
+// 	0% {
+// 		transform: translate(0, -200%);
+// 	}
+
+// 	50% {
+// 		transform: translate(0, 100%);
+// 	}
+
+// 	100% {
+// 		transform: translate(0, 200%);
+// 	}
+// }
 
 /* Social media links */
 /* (icons styled separately) */
