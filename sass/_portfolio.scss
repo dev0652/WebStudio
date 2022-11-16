@@ -14,29 +14,27 @@
 	}
 }
 
-.button {
-	&.filter {
-		font-weight: 500;
-		line-height: 1.62;
-		padding: 6px 22px;
+.filter-button {
+	font-weight: 500;
+	line-height: calc(26/16);
+	padding: 6px 22px;
 
-		transition:
-			color $transition-duration $transition-timing-function,
-			background-color $transition-duration $transition-timing-function,
-			box-shadow $transition-duration $transition-timing-function;
+	transition:
+		color $transition-duration $transition-timing-function,
+		background-color $transition-duration $transition-timing-function,
+		box-shadow $transition-duration $transition-timing-function;
 
-		background-color: $mid-bg;
-		color: $dark-gray-text;
+	background-color: $mid-bg;
+	color: $dark-gray-text;
 
-		&:hover,
-		&:focus {
-			background-color: $accent;
-			box-shadow:
-				0px 3px 1px rgba(0, 0, 0, 0.1),
-				0px 1px 2px rgba(0, 0, 0, 0.08),
-				0px 2px 2px rgba(0, 0, 0, 0.12);
-			color: $contrast;
-		}
+	&:hover,
+	&:focus {
+		background-color: $accent;
+		box-shadow:
+			0px 3px 1px rgba(0, 0, 0, 0.1),
+			0px 1px 2px rgba(0, 0, 0, 0.08),
+			0px 2px 2px rgba(0, 0, 0, 0.12);
+		color: $contrast;
 	}
 }
 

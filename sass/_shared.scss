@@ -71,15 +71,16 @@ body {
 
 /* Buttons */
 
-// .button {
-// 	border: none;
-// 	border-radius: 4px;
-// 	font-size: 16px;
-// }
-
 .button {
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.accented-button {
+	background-color: $accent;
 	color: $contrast;
-	background: $accent;
+	// color: currentColor;
 
 	font-weight: 700;
 	font-size: 16px;
@@ -88,8 +89,6 @@ body {
 
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
-
-	padding: 10px;
 }
 
 /* Header */

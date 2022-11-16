@@ -34,25 +34,15 @@
 	background-size: cover;
 }
 
-.button {
+.hero-button {
+	padding: 10px 32px;
+	color: currentColor;
 
-	&.hero-button {
-		font-weight: 700;
-		letter-spacing: 0.06em;
-		line-height: 1.88;
-		padding: 10px 32px;
+	transition: background-color $transition-duration $transition-timing-function;
 
-		background-color: $accent;
-		color: currentColor;
-
-		transition: background-color $transition-duration $transition-timing-function;
-
-		&:hover,
-		&:focus {
-			background-color: $accent-darker;
-		}
-
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	&:hover,
+	&:focus {
+		background-color: $accent-darker;
 	}
 }
 
