@@ -527,7 +527,8 @@
 	</footer>
 
 	<!-- Modal window -->
-	<div class="backdrop is-hidden" data-modal>
+	<!-- <div class="backdrop is-hidden" data-modal> -->
+	<div class="backdrop" data-modal>
 
 		<div class="modal">
 
@@ -536,6 +537,49 @@
 					<use href="./images/icons/icons.svg#icon-close"></use>
 				</svg>
 			</button>
+
+			<form class="modal-form">
+
+				<p class="modal-title">
+					Залиште свої дані, ми вам передзвонимо
+				</p>
+
+				<ul class="markup-list text-fields">
+
+					<li>
+						<label for="name" class="text-field-label">Ім'я</label>
+						<input type="text" name="name" id="name" class="text-field">
+					</li>
+
+					<li>
+						<label for="telephone" class="text-field-label">Телефон</label>
+						<input type="tel" name="telephone" id="telephone" class="text-field">
+					</li>
+
+					<li>
+						<label for="email" class="text-field-label">Пошта</label>
+						<input type="email" name="email" id="email" class="text-field">
+					</li>
+
+					<li>
+						<label for="comment" class="text-field-label">Коментар</label>
+						<textarea name="comment" id="comment" class="text-field comment-field"
+							placeholder="Введіть текст"></textarea>
+					</li>
+				</ul>
+
+				<div class="accept-terms-wrapper">
+
+					<input type="checkbox" name="accept_terms" id="accept-terms-checkbox">
+					<label for="accept-terms-checkbox" class="accept-terms-label">Погоджуюся з розсилкою та приймаю <a
+							class="accented underlined" href="">Умови
+							договору</a></label>
+
+				</div>
+
+				<button type="submit" class="button accented-button modal-submit-button">Відправити</button>
+
+			</form>
 
 		</div>
 
