@@ -182,11 +182,11 @@ body {
 		.footer & {
 			fill: $contrast;
 		}
-	}
 
-	&:hover .icon,
-	&:focus .icon {
-		fill: $contrast;
+		// &:hover .icon,
+		// &:focus .icon {
+		// 	fill: $contrast;
+		// }
 	}
 }
 
@@ -224,7 +224,9 @@ body {
 	// border: none;
 	border-radius: 50%;
 
-	transition: color $transition-duration $transition-timing-function, background-color $transition-duration $transition-timing-function;
+	transition:
+		color $transition-duration $transition-timing-function,
+		background-color $transition-duration $transition-timing-function;
 
 	display: flex;
 	justify-content: center;
@@ -269,13 +271,11 @@ body {
 	}
 }
 
-.join-us {
-	& h3 {
-		font-size: 14px;
-		font-weight: 700;
-		text-transform: uppercase;
-		margin-bottom: $regular-spacing;
-	}
+.footer-title {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: $regular-spacing;
 }
 
 .footer-container {
@@ -285,4 +285,42 @@ body {
 
 .footer-submit-button {
 	padding: 10px 28px;
+}
+
+// Subscribe
+
+.subscribe {
+	flex-grow: 1;
+}
+
+.subscribe-form {
+
+	.subscribe-wrapper {
+		display: flex;
+		gap: 12px;
+		width: 100%;
+	}
+
+	.text-field {
+
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+		border-radius: 4px;
+		background-color: inherit;
+
+		padding: 15px 16px;
+
+		flex-grow: 1;
+
+		&::placeholder {
+			font-size: 16px;
+			line-height: calc(20/16);
+			letter-spacing: 0.03em;
+			color: rgba(255, 255, 255, 0.6);
+		}
+	}
+
+	.footer-submit-button {
+		padding: 13px 28px;
+	}
 }
