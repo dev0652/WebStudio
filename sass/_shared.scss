@@ -78,10 +78,6 @@ body {
 }
 
 .accented-button {
-	background-color: $accent;
-	color: $contrast;
-	// color: currentColor;
-
 	font-weight: 700;
 	font-size: 16px;
 	line-height: calc(30/16);
@@ -89,6 +85,16 @@ body {
 
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
+
+	background-color: $accent;
+	color: $contrast;
+
+	transition: background-color $transition-duration $transition-timing-function;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-darker;
+	}
 }
 
 /* Header */
@@ -304,9 +310,20 @@ body {
 	.text-field {
 
 		border: 1px solid rgba(255, 255, 255, 0.3);
+
+		transition: border-color $transition-duration $transition-timing-function;
+
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: $accent;
+			outline: none;
+		}
+
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 		border-radius: 4px;
 		background-color: inherit;
+		color: currentColor;
 
 		padding: 15px 16px;
 

@@ -37,13 +37,6 @@
 .hero-button {
 	padding: 10px 32px;
 	color: currentColor;
-
-	transition: background-color $transition-duration $transition-timing-function;
-
-	&:hover,
-	&:focus {
-		background-color: $accent-darker;
-	}
 }
 
 /* Features */
