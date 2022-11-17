@@ -223,22 +223,6 @@
 
 	.text-field-wrapper {
 		position: relative;
-
-		color: $dark-gray-text;
-
-		transition: color $transition-duration $transition-timing-function;
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: $accent;
-		}
-
-		&:hover,
-		&:focus,
-		&:active {
-			color: $accent;
-		}
 	}
 
 	.text-field {
@@ -253,13 +237,18 @@
 
 		color: $dark-gray-text;
 
-		transition: border-color $transition-duration $transition-timing-function;
+		transition: 
+		border-color $transition-duration $transition-timing-function, 
+		color $transition-duration $transition-timing-function;
 
 		&:hover,
-		&:focus,
-		&:active {
+		&:focus {
 			border-color: $accent;
 			outline: none;
+
+			&+.text-field-icon {
+			fill: $accent;
+		}
 		}
 
 		&.comment-field {

@@ -181,18 +181,13 @@ body {
 
 .icon {
 	fill: currentColor;
-	// transition: fill $transition-duration $transition-timing-function;
+	transition: fill $transition-duration $transition-timing-function;
 
 	.social-link & {
 
 		.footer & {
 			fill: $contrast;
 		}
-
-		// &:hover .icon,
-		// &:focus .icon {
-		// 	fill: $contrast;
-		// }
 	}
 }
 
