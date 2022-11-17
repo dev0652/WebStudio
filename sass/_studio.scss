@@ -195,8 +195,6 @@
 		font-size: 20px;
 		font-weight: 700;
 		letter-spacing: 0.03em;
-		// text-align: center;
-
 		margin-bottom: 12px;
 	}
 
@@ -205,14 +203,22 @@
 	.text-fields {
 		margin-bottom: 20px;
 		text-align: left;
-		gap: $list-spacing;
+
+		& li {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+
+			&:not(:last-of-type) {
+				margin-bottom: 10px;
+			}
+		}
 	}
 
 	.text-field-label {
 		font-size: 12px;
 		letter-spacing: 0.01em;
 		color: $light-gray-text;
-		margin-bottom: 4px;
 	}
 
 	.text-field-wrapper {
@@ -244,8 +250,6 @@
 
 		border: 1px solid rgba(33, 33, 33, 0.2);
 		border-radius: 4px;
-
-		margin-bottom: 10px;
 
 		color: $dark-gray-text;
 

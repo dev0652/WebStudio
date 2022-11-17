@@ -387,6 +387,8 @@ body {
   width: 100%;
 }
 .subscribe-form .text-field {
+  font-size: 16px;
+  line-height: 1.25;
   border: 1px solid rgba(255, 255, 255, 0.3);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -586,13 +588,19 @@ body {
 .modal-form .text-fields {
   margin-bottom: 20px;
   text-align: left;
-  gap: 10px;
+}
+.modal-form .text-fields li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.modal-form .text-fields li:not(:last-of-type) {
+  margin-bottom: 10px;
 }
 .modal-form .text-field-label {
   font-size: 12px;
   letter-spacing: 0.01em;
   color: #757575;
-  margin-bottom: 4px;
 }
 .modal-form .text-field-wrapper {
   position: relative;
@@ -612,7 +620,6 @@ body {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   color: #212121;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
