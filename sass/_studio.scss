@@ -233,9 +233,10 @@
 
 		border: 1px solid rgba(33, 33, 33, 0.2);
 		border-radius: 4px;
+		outline-offset: 2px;
 
 		color: $dark-gray-text;
-		outline-color: $accent;
+		outline-color: #2195f36c;
 
 		transition:
 			border-color $transition-duration $transition-timing-function,
@@ -270,14 +271,46 @@
 		left: 12px;
 	}
 
-	.checkbox-wrapper {
+	.accept-terms-wrapper {
 		margin-bottom: 30px;
 	}
 }
 
-/* Link to Terms and Conditions */
+.checkbox {
+	appearance: none;
+	position: absolute;
+}
+
 .accept-terms-label {
 	color: $light-gray-text;
+	user-select: none;
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	// Custom checkbox
+	&::before {
+		content: '';
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+
+		border: 2px solid $dark-gray-text;
+		border-radius: 2px;
+		background-color: transparent;
+
+		.checkbox:checked+& {
+			background-color: $accent;
+			background-image: url('../images/icons/svg/check-converted.svg');
+			background-origin: border-box;
+			border-color: transparent;
+		}
+	}
+
+	& a {
+		text-decoration-skip-ink: none;
+	}
 }
 
 .accented {
