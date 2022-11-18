@@ -284,11 +284,6 @@
 	margin-bottom: 30px;
 }
 
-.checkbox {
-	appearance: none;
-	position: absolute;
-}
-
 .accept-terms-label {
 	color: $light-gray-text;
 	user-select: none;
@@ -317,7 +312,8 @@
 			border-color $transition-duration $transition-timing-function,
 			background $transition-duration $transition-timing-function;
 
-		.checkbox:focus+& {
+		.checkbox:focus+&,
+		.checkbox:hover+& {
 			outline: 2px solid #2195f36c;
 			outline-offset: 1px;
 		}
@@ -334,18 +330,16 @@
 	}
 }
 
-.accept-terms-wrapper {
-
-	&:hover .accept-terms-label::before {
-		border-color: $accent-darker;
-	}
+.checkbox {
+	appearance: none;
+	position: absolute;
 }
 
 .modal-submit-button {
 	padding: 10px 52px;
 }
 
-.close-button {
+.modal-close-button {
 	position: fixed;
 	top: 8px;
 	right: 8px;
