@@ -300,6 +300,7 @@
 		border-radius: 2px;
 		background-color: transparent;
 
+		// Custom checked icon
 		.checkbox:checked+& {
 			background-color: $accent;
 			background-image: url('../images/icons/svg/check-converted.svg');
