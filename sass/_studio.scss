@@ -313,8 +313,11 @@
 		border-radius: 2px;
 		background-color: transparent;
 
+		transition:
+			border-color $transition-duration $transition-timing-function,
+			background $transition-duration $transition-timing-function;
+
 		.checkbox:focus+& {
-			// outline: 2px solid black;
 			outline: 2px solid #2195f36c;
 			outline-offset: 1px;
 		}
@@ -324,8 +327,17 @@
 			border-color: transparent;
 			background-origin: border-box;
 			background-color: $accent;
-			background-image: url('../images/icons/svg/check-converted.svg');
+			background-image: url('../images/icons/check-converted.svg');
+			// background-position: center;
+			// background-size: contain;
 		}
+	}
+}
+
+.accept-terms-wrapper {
+
+	&:hover .accept-terms-label::before {
+		border-color: $accent-darker;
 	}
 }
 
