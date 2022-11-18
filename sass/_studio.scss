@@ -282,15 +282,19 @@
 
 .accept-terms-wrapper {
 	margin-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
 
 .accept-terms-label {
 	color: $light-gray-text;
 	user-select: none;
 
-	display: flex;
-	align-items: center;
-	gap: 8px;
+	// display: flex;
+	// align-items: center;
+	// gap: 8px;
 
 	& a {
 		text-decoration-skip-ink: none;
@@ -298,41 +302,64 @@
 	}
 
 	// Custom checkbox
-	&::before {
-		content: '';
-		display: inline-block;
-		width: 16px;
-		height: 16px;
+	// &::before {
+	// 	content: '';
+	// 	display: inline-block;
+	// 	width: 16px;
+	// 	height: 16px;
 
-		border: 2px solid $dark-gray-text;
-		border-radius: 2px;
-		background-color: transparent;
+	// 	border: 2px solid $dark-gray-text;
+	// 	border-radius: 2px;
+	// 	background-color: transparent;
 
-		transition:
-			border-color $transition-duration $transition-timing-function,
-			background $transition-duration $transition-timing-function;
+	// 	transition:
+	// 		border-color $transition-duration $transition-timing-function,
+	// 		background $transition-duration $transition-timing-function;
 
-		.checkbox:focus+&,
-		.checkbox:hover+& {
-			outline: 2px solid #2195f36c;
-			outline-offset: 1px;
-		}
+	// 	.checkbox:focus+&,
+	// 	.checkbox:hover+& {
+	// 		outline: 2px solid #2195f36c;
+	// 		outline-offset: 1px;
+	// 	}
 
-		// Custom checked icon
-		.checkbox:checked+& {
-			border-color: transparent;
-			background-origin: border-box;
-			background-color: $accent;
-			background-image: url('../images/icons/check-converted.svg');
-			// background-position: center;
-			// background-size: contain;
-		}
-	}
+	// 	// Custom checked icon
+	// 	.checkbox:checked+& {
+	// 		border-color: transparent;
+	// 		background-origin: border-box;
+	// 		background-color: $accent;
+	// 		background-image: url('../images/icons/check-converted.svg');
+	// 		// background-position: center;
+	// 		// background-size: contain;
+	// 	}
+	// }
 }
 
 .checkbox {
 	appearance: none;
-	position: absolute;
+	// position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 2px solid $dark-gray-text;
+	border-radius: 2px;
+
+	transition:
+		border-color $transition-duration $transition-timing-function,
+		background $transition-duration $transition-timing-function;
+
+	&:focus,
+	&:hover {
+		outline: 2px solid #2195f36c;
+		outline-offset: 1px;
+	}
+
+	&:checked {
+		border-color: transparent;
+		background-origin: border-box;
+		background-color: $accent;
+		background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.796 7.172-3.3 3.146-.188-.18a278.251 278.251 0 0 0-2.411-2.291c-.017-.007-.864.782-.878.817-.006.017 2.977 2.88 3.357 3.223l.126.114 3.748-3.576 3.748-3.576-.326-.313c-.368-.355-.538-.509-.56-.509-.008 0-1.5 1.415-3.316 3.145' fill='%23fff' fill-rule='evenodd'/%3E%3C/svg%3E");
+		// background-position: center;
+		// background-size: contain;
+	}
 }
 
 .modal-submit-button {
