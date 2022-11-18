@@ -302,6 +302,7 @@
 	}
 
 	// Custom checkbox
+
 	// &::before {
 	// 	content: '';
 	// 	display: inline-block;
@@ -336,9 +337,10 @@
 
 .checkbox {
 	appearance: none;
-	// position: absolute;
+
 	width: 16px;
 	height: 16px;
+
 	border: 2px solid $dark-gray-text;
 	border-radius: 2px;
 
