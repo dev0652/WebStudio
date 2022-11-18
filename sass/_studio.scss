@@ -289,6 +289,10 @@
 	align-items: center;
 	gap: 8px;
 
+	& a {
+		text-decoration-skip-ink: none;
+	}
+
 	// Custom checkbox
 	&::before {
 		content: '';
@@ -302,24 +306,12 @@
 
 		// Custom checked icon
 		.checkbox:checked+& {
+			border-color: transparent;
+			background-origin: border-box;
 			background-color: $accent;
 			background-image: url('../images/icons/svg/check-converted.svg');
-			background-origin: border-box;
-			border-color: transparent;
 		}
 	}
-
-	& a {
-		text-decoration-skip-ink: none;
-	}
-}
-
-.accented {
-	color: $accent;
-}
-
-.underlined {
-	text-decoration: underline;
 }
 
 .modal-submit-button {

@@ -136,6 +136,10 @@ address {
   overflow: hidden;
 }
 
+.underlined {
+  text-decoration: underline;
+}
+
 /* Get rid of user-agent-defined spacing after list items and images by changing their display to "block" */
 .no-end-spacing {
   display: block;
@@ -207,6 +211,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .link:hover, .link:focus, .link.current {
+  color: #2196f3;
+}
+
+.accented {
   color: #2196f3;
 }
 
@@ -673,6 +681,10 @@ body {
   align-items: center;
   gap: 8px;
 }
+.accept-terms-label a {
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
 .accept-terms-label::before {
   content: "";
   display: inline-block;
@@ -683,22 +695,10 @@ body {
   background-color: transparent;
 }
 .checkbox:checked + .accept-terms-label::before {
+  border-color: transparent;
+  background-origin: border-box;
   background-color: #2196f3;
   background-image: url("../images/icons/svg/check-converted.svg");
-  background-origin: border-box;
-  border-color: transparent;
-}
-.accept-terms-label a {
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-}
-
-.accented {
-  color: #2196f3;
-}
-
-.underlined {
-  text-decoration: underline;
 }
 
 .modal-submit-button {
