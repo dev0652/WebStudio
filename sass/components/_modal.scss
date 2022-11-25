@@ -1,0 +1,251 @@
+/* Modal window */
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(2px);
+	cursor: not-allowed;
+
+	opacity: 1;
+	transition: opacity $transition-duration $transition-timing-function;
+	transition: opacity 500ms linear;
+}
+
+.modal {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%) scale(1);
+	z-index: 3;
+
+	width: 528px;
+	height: 581px;
+	padding: 40px;
+	background-color: $light-bg;
+	cursor: auto;
+
+	text-align: center;
+
+	border-radius: 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+
+	transition: transform $transition-duration $transition-timing-function;
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+
+	& .modal {
+		transform: translate(-50%, -50%) scale(0);
+	}
+}
+
+.modal-form {
+
+	.modal-form-title {
+		font-size: 20px;
+		font-weight: 700;
+		letter-spacing: 0.03em;
+		margin-bottom: 12px;
+	}
+
+	/* Text field group */
+
+	.text-field-group {
+		margin-bottom: 20px;
+		text-align: left;
+
+		& li {
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+
+			&:not(:last-of-type) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.text-field-label {
+		font-size: 12px;
+		letter-spacing: 0.01em;
+		color: $light-gray-text;
+	}
+
+	.text-field-wrapper {
+		position: relative;
+	}
+
+	.text-field {
+		width: 100%;
+		height: 40px;
+
+		padding: 12px;
+		padding-left: 42px;
+
+		border: 1px solid rgba(33, 33, 33, 0.2);
+		border-radius: 4px;
+		outline-offset: 2px;
+
+		color: $dark-gray-text;
+		outline-color: rgba($accent, 0.6);
+
+		transition:
+			border-color $transition-duration $transition-timing-function,
+			color $transition-duration $transition-timing-function;
+
+		&:hover,
+		&:focus {
+			border-color: $accent;
+
+			&+.text-field-icon {
+				fill: $accent;
+			}
+		}
+
+		&.comment-field {
+			min-height: 120px;
+			padding: 12px 16px;
+			resize: none;
+
+			&::placeholder {
+				font-size: 12px;
+				letter-spacing: 0.01em;
+				color: rgba($light-gray-text, 0.5);
+			}
+		}
+	}
+
+	.text-field-icon {
+		position: absolute;
+		top: 11px;
+		left: 12px;
+	}
+}
+
+.accept-terms-wrapper {
+	margin-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.accept-terms-label {
+	color: $light-gray-text;
+	user-select: none;
+
+	// display: flex;
+	// align-items: center;
+	// gap: 8px;
+
+	& a {
+		text-decoration-skip-ink: none;
+		outline-color: #2195f36c;
+	}
+
+	// Custom checkbox
+
+	// &::before {
+	// 	content: '';
+	// 	display: inline-block;
+	// 	width: 16px;
+	// 	height: 16px;
+
+	// 	border: 2px solid $dark-gray-text;
+	// 	border-radius: 2px;
+	// 	background-color: transparent;
+
+	// 	transition:
+	// 		border-color $transition-duration $transition-timing-function,
+	// 		background $transition-duration $transition-timing-function;
+
+	// 	.checkbox:focus+&,
+	// 	.checkbox:hover+& {
+	// 		outline: 2px solid rgba($accent, 0.6);
+	// 		outline-offset: 1px;
+	// 	}
+
+	// 	// Custom checked icon
+	// 	.checkbox:checked+& {
+	// 		border-color: transparent;
+	// 		background-origin: border-box;
+	// 		background-color: $accent;
+	// 		background-image: url('../images/icons/check-converted.svg');
+	// 		// background-position: center;
+	// 		// background-size: contain;
+	// 	}
+	// }
+}
+
+.checkbox {
+	appearance: none;
+
+	width: 16px;
+	height: 16px;
+
+	border: 2px solid $dark-gray-text;
+	border-radius: 2px;
+
+	transition:
+		border-color $transition-duration $transition-timing-function,
+		background $transition-duration $transition-timing-function;
+
+	&:focus,
+	&:hover {
+		outline: 2px solid rgba($accent, 0.6);
+		outline-offset: 1px;
+	}
+
+	&:checked {
+		border-color: transparent;
+		background-origin: border-box;
+		background-color: $accent;
+		background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.796 7.172-3.3 3.146-.188-.18a278.251 278.251 0 0 0-2.411-2.291c-.017-.007-.864.782-.878.817-.006.017 2.977 2.88 3.357 3.223l.126.114 3.748-3.576 3.748-3.576-.326-.313c-.368-.355-.538-.509-.56-.509-.008 0-1.5 1.415-3.316 3.145' fill='%23fff' fill-rule='evenodd'/%3E%3C/svg%3E");
+		// background-position: center;
+		// background-size: contain;
+	}
+}
+
+.modal-submit-button {
+	padding: 10px 52px;
+}
+
+.modal-close-button {
+	position: fixed;
+	top: 8px;
+	right: 8px;
+
+	width: 30px;
+	height: 30px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+
+	color: #000;
+	background-color: $contrast;
+
+	transition: color $transition-duration $transition-timing-function;
+
+	&:hover,
+	&:focus {
+		color: $accent;
+	}
+}
+
+.accept-terms-link {
+	color: $accent;
+	text-decoration: underline;
+}

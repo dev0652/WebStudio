@@ -1,17 +1,28 @@
 /* Logos */
 
 .logo {
-	font-family: "Raleway", sans-serif;
+	@extend .link;
+
+	font-family: $secondary-font;
 	font-size: 26px;
 	font-weight: 700;
 	display: block;
-	color: $accent;
 
-	&.black span {
+	color: $accent;
+}
+
+.header__logo {
+	@extend .logo;
+
+	& span {
 		color: #000;
 	}
+}
 
-	&.white span {
+.footer__logo {
+	@extend .logo;
+
+	& span {
 		color: $contrast;
 	}
 }
