@@ -1,0 +1,33 @@
+/* Links */
+
+.link {
+	text-decoration: none;
+	font-weight: 500;
+
+	transition: color $transition-duration $transition-timing-function;
+
+	.header-nav & {
+		color: $dark-gray-text;
+	}
+
+	.contact & {
+		color: $light-gray-text;
+		display: flex;
+		align-items: center;
+		gap: $list-spacing;
+	}
+
+	.footer & {
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	&:hover,
+	&:focus,
+	&.current {
+		color: $accent;
+	}
+}
+
+.accented {
+	color: $accent;
+}

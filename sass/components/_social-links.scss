@@ -1,0 +1,28 @@
+/* Social media links */
+/* (icons styled separately) */
+
+.social-link {
+	color: $link-inactive;
+	height: 44px;
+	width: 44px;
+	// border: none;
+	border-radius: 50%;
+
+	transition:
+		color $transition-duration $transition-timing-function,
+		background-color $transition-duration $transition-timing-function;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.footer & {
+		background: rgba(255, 255, 255, 0.1);
+	}
+
+	&:hover,
+	&:focus {
+		color: $contrast;
+		background-color: $accent;
+	}
+}

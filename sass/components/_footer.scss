@@ -1,0 +1,43 @@
+/* Footer */
+
+.footer {
+	text-align: left;
+	padding: 60px 0;
+
+	color: $contrast;
+	background-color: $dark-bg;
+
+	.logo {
+		margin-bottom: $regular-spacing;
+	}
+
+	address {
+		font-style: normal;
+
+		li {
+			min-width: 231px;
+			line-height: calc(24/14);
+			letter-spacing: 0.03em;
+
+			&:not(:last-child) {
+				margin-bottom: 9px;
+			}
+		}
+	}
+}
+
+.footer-title {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: $regular-spacing;
+}
+
+.footer-container {
+	gap: $footer-items-spacing;
+	align-items: baseline;
+}
+
+.footer-submit-button {
+	padding: 10px 28px;
+}

@@ -1,0 +1,17 @@
+/* Logos */
+
+.logo {
+	font-family: "Raleway", sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	display: block;
+	color: $accent;
+
+	&.black span {
+		color: #000;
+	}
+
+	&.white span {
+		color: $contrast;
+	}
+}
