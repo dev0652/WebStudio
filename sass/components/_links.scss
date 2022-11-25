@@ -18,7 +18,7 @@
 	}
 
 	.footer & {
-		color: rgba(255, 255, 255, 0.6);
+		color: rgba($contrast, 0.6);
 	}
 
 	&:hover,
@@ -26,8 +26,4 @@
 	&.current {
 		color: $accent;
 	}
-}
-
-.accented {
-	color: $accent;
 }
