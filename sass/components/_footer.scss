@@ -9,6 +9,7 @@
 
 	.container {
 		@extend .flex-container;
+
 		gap: $footer-items-spacing;
 		align-items: baseline;
 	}
@@ -29,17 +30,15 @@
 			}
 		}
 	}
-}
 
-.footer-title {
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
-	margin-bottom: $regular-spacing;
-}
+	&-title {
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: $regular-spacing;
+	}
 
-
-
-.footer-submit-button {
-	padding: 10px 28px;
+	&-submit-button {
+		padding: 10px 28px;
+	}
 }
