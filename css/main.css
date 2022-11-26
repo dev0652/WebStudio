@@ -424,29 +424,29 @@ body {
 }
 
 /* Links */
-.link, .footer-logo, .header-logo {
+.link, .logo, .footer-logo, .header-logo {
   text-decoration: none;
   font-weight: 500;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-nav .link, .header-nav .footer-logo, .header-nav .header-logo {
+.header-nav .link, .header-nav .logo, .header-nav .footer-logo, .header-nav .header-logo {
   color: #212121;
 }
-.contact .link, .contact .footer-logo, .contact .header-logo {
+.contact .link, .contact .logo, .contact .footer-logo, .contact .header-logo {
   color: #757575;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.footer .link:not(.footer-logo):not(.header-logo), .footer .footer-logo:not(.footer-logo):not(.header-logo), .footer .header-logo:not(.footer-logo):not(.header-logo) {
+.footer .link:not(.logo):not(.footer-logo):not(.header-logo), .footer .logo:not(.logo):not(.footer-logo):not(.header-logo), .footer .footer-logo:not(.logo):not(.footer-logo):not(.header-logo), .footer .header-logo:not(.logo):not(.footer-logo):not(.header-logo) {
   color: rgba(255, 255, 255, 0.6);
 }
-.link:hover, .footer-logo:hover, .header-logo:hover, .link:focus, .footer-logo:focus, .header-logo:focus, .link.current, .current.footer-logo, .current.header-logo {
+.link:hover, .logo:hover, .footer-logo:hover, .header-logo:hover, .link:focus, .logo:focus, .footer-logo:focus, .header-logo:focus, .link.current, .current.logo, .current.footer-logo, .current.header-logo {
   color: #2196f3;
 }
 
 /* Logos */
-.footer-logo, .header-logo {
+.logo, .footer-logo, .header-logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -538,7 +538,7 @@ body {
   margin-left: auto;
 }
 
-.header-nav .link, .header-nav .header-logo, .header-nav .footer-logo, .header-contacts .link, .header-contacts .header-logo, .header-contacts .footer-logo {
+.header-nav .link, .header-nav .logo, .header-nav .header-logo, .header-nav .footer-logo, .header-contacts .link, .header-contacts .logo, .header-contacts .header-logo, .header-contacts .footer-logo {
   padding: 32px 0;
   letter-spacing: 0.02em;
 }

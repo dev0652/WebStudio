@@ -1,6 +1,6 @@
 /* Logos */
 
-%logo {
+.logo {
 	@extend .link;
 
 	font-family: $secondary-font;
@@ -12,7 +12,7 @@
 }
 
 .header-logo {
-	@extend %logo;
+	@extend .logo;
 
 	& span {
 		color: #000;
@@ -20,7 +20,7 @@
 }
 
 .footer-logo {
-	@extend %logo;
+	@extend .logo;
 
 	& span {
 		color: $contrast;
