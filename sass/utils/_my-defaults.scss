@@ -1,0 +1,24 @@
+/* My defaults */
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	background-color: transparent;
+	text-decoration: none;
+	color: inherit;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	cursor: pointer;
+	font-family: inherit;
+	text-align: center;
+}
+
+address {
+	font-style: normal;
+}

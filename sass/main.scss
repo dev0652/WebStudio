@@ -1,9 +1,10 @@
 // Normalize and defaults
-@import "../../_sass/normalize";
+@import "./utils/my-normalize";
+@import "./utils/my-defaults";
 
 // Utilities and variables
 @import "./utils/variables";
-@import "../../_sass/utilities";
+@import "./utils/utilities";
 
 // Page styles
 @import "./pages/shared";
@@ -12,9 +13,9 @@
 
 // Components
 @import "./components/links";
-@import "./components/icons";
 @import "./components/logos";
-@import "./components/buttons.scss";
+@import "./components/icons";
+@import "./components/buttons";
 @import "./components/social-links";
 
 @import "./components/header";

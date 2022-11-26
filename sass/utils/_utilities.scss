@@ -1,0 +1,128 @@
+/* Utility classes */
+
+/* Remove markers in semantic ul's and ol's */
+
+.markup-list {
+	list-style: none;
+}
+
+/* Flex-boxes */
+
+.flex {
+	display: flex;
+
+	&.column {
+		flex-direction: column;
+	}
+
+	// Justify content
+
+	&.space-between {
+		justify-content: space-between;
+	}
+
+	&.space-around {
+		justify-content: space-around;
+	}
+
+	&.justify-center {
+		justify-content: center;
+	}
+
+	&.justify-end {
+		justify-content: end;
+	}
+
+	// Align items
+
+	&.align-center {
+		align-items: center;
+	}
+
+	&.align-end {
+		align-items: end;
+	}
+
+	&.align-baseline {
+		align-items: baseline;
+	}
+
+	// Wrap
+
+	&.wrap {
+		flex-wrap: wrap;
+	}
+
+	&.regular-gap {
+		gap: $regular-gap;
+	}
+
+	&.regular-spacing {
+		gap: $regular-spacing;
+	}
+
+	&.large-spacing {
+		gap: $large-spacing;
+	}
+}
+
+/* Other */
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.visually-hidden {
+	position: absolute;
+	z-index: -1;
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	border: none;
+	// clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+/* Get rid of user-agent-defined spacing after list items and images by changing their display to "block" */
+.no-end-spacing {
+	display: block;
+}
+
+/* For testing */
+
+.outline {
+	outline: auto;
+}
+
+.frame {
+	outline: 1px solid steelblue;
+}
+
+/* Colors */
+
+.black {
+	color: black;
+}
+
+.white {
+	color: white;
+}
+
+/* Letter case */
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}

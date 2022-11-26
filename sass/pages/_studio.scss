@@ -63,7 +63,7 @@
 
 .feature-icon-wrapper {
 	background-color: $mid-bg;
-	border-radius: 4px;
+	border-radius: $standard-radius;
 	width: 270px;
 	height: 120px;
 	margin-bottom: 30px;
@@ -140,7 +140,7 @@
 
 	color: $link-inactive;
 	border: 1px solid currentColor;
-	border-radius: 4px;
+	border-radius: $standard-radius;
 
 	&:hover,
 	&:focus {

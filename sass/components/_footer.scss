@@ -7,12 +7,17 @@
 	color: $contrast;
 	background-color: $dark-bg;
 
-	&__logo {
+	.container {
+		@extend .flex-container;
+		gap: $footer-items-spacing;
+		align-items: baseline;
+	}
+
+	&-logo {
 		margin-bottom: $regular-spacing;
 	}
 
-	address {
-		font-style: normal;
+	&-address {
 
 		li {
 			min-width: 231px;
@@ -33,10 +38,7 @@
 	margin-bottom: $regular-spacing;
 }
 
-.footer-container {
-	gap: $footer-items-spacing;
-	align-items: baseline;
-}
+
 
 .footer-submit-button {
 	padding: 10px 28px;

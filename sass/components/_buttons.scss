@@ -2,7 +2,7 @@
 
 .button {
 	border: none;
-	border-radius: 4px;
+	border-radius: $standard-radius;
 	font-size: 16px;
 }
 
@@ -13,7 +13,7 @@
 	letter-spacing: 0.06em;
 
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
+	border-radius: $standard-radius;
 
 	background-color: $accent;
 	color: $contrast;
