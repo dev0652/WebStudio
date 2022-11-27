@@ -21,7 +21,6 @@
 
 	border-radius: $standard-radius;
 
-	// transition: background-color $transition-duration $transition-timing-function;
 	@include transition(background-color);
 
 	&:hover,

@@ -18,3 +18,21 @@
 	transition-timing-function: $function;
 	transition-delay: $delay;
 }
+
+@mixin transition-multiple($property...) {
+	transition-property: $property;
+	transition-duration: $transition-duration;
+	transition-timing-function: $transition-timing-function;
+}
+
+@mixin positioning-centered($top: 0, $left: 0, $shift-x: -50%, $shift-y: $shift-x) {
+	top: $top;
+	left: $left;
+	transform: translateX($shift-x) translateY($shift-y);
+}
+
+@mixin flex-align($align-items: center, $justify-content: center) {
+	display: flex;
+	align-items: $align-items;
+	justify-content: $justify-content;
+}

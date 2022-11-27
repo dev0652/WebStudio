@@ -17,9 +17,7 @@
 	line-height: calc(26/16);
 	padding: 6px 22px;
 
-	@include transition(color);
-	@include transition(background-color);
-	@include transition(box-shadow);
+	@include transition-multiple(color, background-color, box-shadow);
 
 	background-color: $mid-bg;
 	color: $dark-gray-text;

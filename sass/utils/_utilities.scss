@@ -1,12 +1,12 @@
 /* Utility classes */
 
-/* Remove markers in semantic ul's and ol's */
+// Remove markers in semantic ul's and ol's
 
 .markup-list {
 	list-style: none;
 }
 
-/* Flex-boxes */
+// Flex-boxes
 
 .flex {
 	display: flex;
@@ -15,7 +15,7 @@
 		flex-direction: column;
 	}
 
-	// Justify content
+	// Flex - justify content
 
 	&.space-between {
 		justify-content: space-between;
@@ -33,7 +33,7 @@
 		justify-content: end;
 	}
 
-	// Align items
+	// Flex - align items
 
 	&.align-center {
 		align-items: center;
@@ -47,7 +47,7 @@
 		align-items: baseline;
 	}
 
-	// Wrap
+	// Flex - wrap
 
 	&.wrap {
 		flex-wrap: wrap;
@@ -66,7 +66,15 @@
 	}
 }
 
-/* Other */
+// Flex - centered
+
+.flex-centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Other
 
 .relative {
 	position: relative;
@@ -92,7 +100,7 @@
 	text-decoration: underline;
 }
 
-/* For testing */
+// For testing
 
 .outline {
 	outline: auto;
@@ -102,7 +110,7 @@
 	outline: 1px solid steelblue;
 }
 
-/* Colors */
+// Colors
 
 .black {
 	color: black;
@@ -112,7 +120,7 @@
 	color: white;
 }
 
-/* Letter case */
+// Letter case
 
 .uppercase {
 	text-transform: uppercase;

@@ -157,12 +157,10 @@
 
 .client-link {
 	@extend .link;
+	@extend %flex-centered;
 
 	width: 170px;
 	height: 92px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 
 	color: $link-inactive;
 	border: 1px solid currentColor;

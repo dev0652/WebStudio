@@ -2,8 +2,6 @@
 
 .icon {
 	fill: currentColor;
-
-	// transition: fill $transition-duration $transition-timing-function;
 	@include transition(fill);
 
 	.social-link & {

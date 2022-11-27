@@ -7,6 +7,7 @@
 
 .social-link {
 	@extend .link, .icon-transformable;
+	@extend %flex-centered;
 
 	color: $link-inactive;
 	height: 44px;
@@ -14,12 +15,7 @@
 	// border: none;
 	border-radius: 50%;
 
-	@include transition(color);
-	@include transition(background-color);
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include transition-multiple(color, background-color);
 
 	.footer & {
 		background: rgba(255, 255, 255, 0.1);
