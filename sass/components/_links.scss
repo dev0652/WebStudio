@@ -4,7 +4,7 @@
 	text-decoration: none;
 	font-weight: 500;
 
-	transition: color $transition-duration $transition-timing-function;
+	@include transition(color);
 
 	.header-nav & {
 		color: $dark-gray-text;
@@ -17,7 +17,7 @@
 		gap: $list-spacing;
 	}
 
-	.footer &:not(.logo) {
+	.footer &:not(%logo) {
 		color: rgba($contrast, 0.6);
 	}
 

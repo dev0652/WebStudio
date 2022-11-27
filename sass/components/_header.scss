@@ -10,13 +10,22 @@
 	left: 0;
 	z-index: 1;
 
-	.header-logo {
+	.container {
+		@extend .flex, .align-center;
+	}
+
+	&-logo {
 		margin-right: 93px;
 	}
-}
 
-.header-contacts {
-	margin-left: auto;
+	&-nav {
+		@extend .markup-list, .flex;
+	}
+
+	&-contacts {
+		@extend .markup-list, .flex;
+		margin-left: auto;
+	}
 }
 
 .link {

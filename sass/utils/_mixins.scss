@@ -1,0 +1,20 @@
+// @mixin font-size($typical: 16px) {
+// 	font-size: $typical;
+// }
+
+// @mixin section-padding($padding-top: 94px,
+// 	$padding-bottom :94px,
+// 	$padding-horizontal: 0) {
+
+// 	padding-top: $padding-top;
+// 	padding-bottom: $padding-bottom;
+// 	padding-right: $padding-horizontal;
+// 	padding-left: $padding-horizontal;
+// }
+
+@mixin transition($property: all, $duration: $transition-duration, $function: $transition-timing-function, $delay: 0s) {
+	transition-property: $property;
+	transition-duration: $duration;
+	transition-timing-function: $function;
+	transition-delay: $delay;
+}

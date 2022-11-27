@@ -22,3 +22,8 @@ button,
 address {
 	font-style: normal;
 }
+
+//  Get rid of user-agent-defined spacing after list items and images by changing their display to "block"
+img {
+	display: block;
+}

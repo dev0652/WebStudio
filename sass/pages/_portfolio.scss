@@ -3,26 +3,23 @@
 /* 'Filter' buttons */
 
 .filter-buttons {
-	margin-bottom: 50px;
+	@extend .markup-list;
+
 	display: inline-flex;
-}
-
-.flex {
-
-	&.filter-buttons {
-		gap: 8px;
-	}
+	gap: 8px;
+	margin-bottom: 50px;
 }
 
 .filter-button {
+	@extend .button;
+
 	font-weight: 500;
 	line-height: calc(26/16);
 	padding: 6px 22px;
 
-	transition:
-		color $transition-duration $transition-timing-function,
-		background-color $transition-duration $transition-timing-function,
-		box-shadow $transition-duration $transition-timing-function;
+	@include transition(color);
+	@include transition(background-color);
+	@include transition(box-shadow);
 
 	background-color: $mid-bg;
 	color: $dark-gray-text;
@@ -40,14 +37,18 @@
 
 /* Project cards */
 
+.project-cards {
+	@extend .markup-list, .flex, .wrap, .regular-gap;
+}
+
 .project-card {
 	background: $light-bg;
 
-	/* Flex-basis calculation */
-	flex-basis: calc((100% - $spacing * $number-of-gaps) / $items-per-row);
 	// flex-basis: 370px;
+	// Flex-basis calculation:
+	flex-basis: calc((100% - $spacing * $number-of-gaps) / $items-per-row);
 
-	transition: box-shadow $transition-duration $transition-timing-function;
+	@include transition(box-shadow);
 
 	&:hover,
 	&:focus {
@@ -90,15 +91,14 @@
 	padding: 63px 24px;
 
 	opacity: 0;
-	transition: opacity $transition-duration $transition-timing-function 200ms;
+
+	@include transition($property: background-color, $delay: 200ms);
 
 	.project-card:hover &,
 	.project-card:focus & {
 		opacity: 1;
 	}
 }
-
-
 
 .thumb-overlay {
 	position: absolute;
@@ -109,9 +109,10 @@
 	background-color: rgba(33, 150, 243, 0.9);
 
 	transform: translateY(100%);
-	transition: transform $transition-duration $transition-timing-function;
-}
 
-.project-card:hover .thumb-overlay {
-	transform: translateY(0);
+	@include transition(transform);
+
+	.project-card:hover & {
+		transform: translateY(0);
+	}
 }

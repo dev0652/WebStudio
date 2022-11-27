@@ -11,14 +11,11 @@ body {
 
 .container {
 	width: (1600px - 215px*2 + 15px*2);
+
 	padding-left: 15px;
 	padding-right: 15px;
-	margin: 0 auto;
-}
 
-.flex-container {
-	@extend .container;
-	display: flex;
+	margin: 0 auto;
 }
 
 .page {
@@ -29,6 +26,7 @@ body {
 
 .section {
 	padding: 94px 0;
+	// @include section-padding;
 
 	h2 {
 		font-size: 36px;
@@ -36,14 +34,6 @@ body {
 		margin-bottom: 50px;
 	}
 }
-
-// /* Images */
-
-//  img {
-// 	display: block;
-// 	max-width: 100%;
-// 	height: auto;
-// } 
 
 /* Card captions */
 

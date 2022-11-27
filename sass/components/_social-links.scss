@@ -1,16 +1,21 @@
 /* Social media links */
 /* (icons styled separately) */
 
+.social-links {
+	@extend .markup-list, .flex, .spaced-list, .justify-center;
+}
+
 .social-link {
+	@extend .link, .icon-transformable;
+
 	color: $link-inactive;
 	height: 44px;
 	width: 44px;
 	// border: none;
 	border-radius: 50%;
 
-	transition:
-		color $transition-duration $transition-timing-function,
-		background-color $transition-duration $transition-timing-function;
+	@include transition(color);
+	@include transition(background-color);
 
 	display: flex;
 	justify-content: center;

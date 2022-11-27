@@ -14,7 +14,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<!-- ---------- CSS ---------- -->
-	<link rel="stylesheet" href="./css/main.min.css" />
+	<link rel="stylesheet" href="./css/portfolio.min.css" />
 
 	<!-- ---------- Fonts ---------- -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,15 +26,16 @@
 <body>
 	<!-- ---------- Header ---------- -->
 	<header class="header">
-		<div class="container flex align-center">
+		<div class="container">
 			<!-- Header logo -->
-			<a class="logo link black" href="./index.html">
+			<a class="header-logo" href="./index.html">
 				Web<span>Studio</span>
 			</a>
 
 			<!-- Header navigation -->
 			<nav>
-				<ul class="header-nav markup-list flex">
+
+				<ul class="header-nav">
 					<li>
 						<a class="link" href="./index.html">Студія</a>
 					</li>
@@ -45,10 +46,12 @@
 						<a class="link" href="">Контакти</a>
 					</li>
 				</ul>
+
 			</nav>
 
 			<!-- Header contacts -->
-			<ul class="header-contacts markup-list flex">
+			<ul class="header-contacts">
+
 				<li class="contact">
 					<a class="link icon-transformable" href="mailto:info@devstudio.com">
 						<svg class="icon contacts-icon rotatable" width="16" height="12">
@@ -65,46 +68,56 @@
 						+38 096 111 11 11
 					</a>
 				</li>
+
 			</ul>
 		</div>
 	</header>
 
 	<!-- Main -->
 	<main class="page portfolio">
+
 		<section class="section projects">
 			<div class="container">
+
 				<!-- Filter buttons -->
-				<ul class="markup-list filter-buttons flex">
+				<ul class="filter-buttons">
+
 					<li>
-						<button type="button" class="button filter-button">Усі</button>
+						<button type="button" class="filter-button">Усі</button>
 					</li>
+
 					<li>
-						<button type="button" class="button filter-button">
+						<button type="button" class="filter-button">
 							Веб-сайти
 						</button>
 					</li>
+
 					<li>
-						<button type="button" class="button filter-button">
+						<button type="button" class="filter-button">
 							Додатки
 						</button>
 					</li>
+
 					<li>
-						<button type="button" class="button filter-button">Дизайн</button>
+						<button type="button" class="filter-button">Дизайн</button>
 					</li>
+
 					<li>
-						<button type="button" class="button filter-button">
+						<button type="button" class="filter-button">
 							Маркетинг
 						</button>
 					</li>
+
 				</ul>
 
 				<!-- Project cards -->
-				<ul class="markup-list project-cards flex wrap regular-gap">
+				<ul class="project-cards">
+
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project1.jpg"
-									alt="Сайт-візитівка, відкритий на екрані ноутбука" width="370" />
+								<img src="./images/portfolio/project1.jpg" alt="Сайт-візитівка, відкритий на екрані ноутбука"
+									width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -126,7 +139,7 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project2.jpg"
+								<img src="./images/portfolio/project2.jpg"
 									alt="Постер з двома баскетболістами в білій та бузковій формі" width="370" />
 
 								<div class="thumb-overlay">
@@ -149,8 +162,8 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project3.jpg"
-									alt="Логотип з назвою ресторану та зображенням риби на фоні" width="370" />
+								<img src="./images/portfolio/project3.jpg" alt="Логотип з назвою ресторану та зображенням риби на фоні"
+									width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -172,7 +185,7 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project4.jpg" alt="Великі навушники" width="370" />
+								<img src="./images/portfolio/project4.jpg" alt="Великі навушники" width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -194,8 +207,8 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project5.jpg"
-									alt="Біла та коричнева коробки різного розміру" width="370" />
+								<img src="./images/portfolio/project5.jpg" alt="Біла та коричнева коробки різного розміру"
+									width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -217,8 +230,8 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project6.jpg"
-									alt="Веб-сайт в темних тонах, відритий на ерані Apple iMac" width="370" />
+								<img src="./images/portfolio/project6.jpg" alt="Веб-сайт в темних тонах, відритий на ерані Apple iMac"
+									width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -240,8 +253,8 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project7.jpg"
-									alt="Розворот друкованого видання з фотографіями" width="370" />
+								<img src="./images/portfolio/project7.jpg" alt="Розворот друкованого видання з фотографіями"
+									width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -263,8 +276,8 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project8.jpg"
-									alt="Біла бірка із золотистою мотузкою та написом Lab El Tag" width="370" />
+								<img src="./images/portfolio/project8.jpg" alt="Біла бірка із золотистою мотузкою та написом Lab El Tag"
+									width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -286,8 +299,7 @@
 					<li class="project-card">
 						<a href="">
 							<div class="thumb">
-								<img class="no-end-spacing" src="./images/portfolio/project9.jpg"
-									alt="Додаток, відкритий на екрані ноутбука" width="370" />
+								<img src="./images/portfolio/project9.jpg" alt="Додаток, відкритий на екрані ноутбука" width="370" />
 
 								<div class="thumb-overlay">
 									<p class="description">
@@ -306,19 +318,22 @@
 						</a>
 					</li>
 				</ul>
+
 			</div>
 		</section>
 	</main>
 
 	<!-- ---------- Footer ---------- -->
 	<footer class="footer">
-		<div class="container flex footer-container">
+		<div class="container">
 			<div>
+
 				<!-- Footer Logo -->
-				<a class="logo white" href="./index.html"> Web<span>Studio</span> </a>
+				<a class="footer-logo" href="./index.html"> Web<span>Studio</span> </a>
+
 				<!-- Address & Contacts -->
-				<address>
-					<ul class="markup-list">
+				<address class="footer-address">
+					<ul class="footer-address-list">
 						<li class="address">м. Київ, пр-т Лесі Українки, 26</li>
 						<li class="contact">
 							<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
@@ -328,25 +343,25 @@
 						</li>
 					</ul>
 				</address>
+
 			</div>
 
 			<!-- Join Us -->
 			<div class="join-us">
 				<p class="footer-title">Приєднуйтесь</p>
 
-				<ul class="markup-list social-links flex spaced-list justify-center">
+				<ul class="social-links">
 					<!-- Instagram -->
 					<li>
-						<a href="" class="link social-link icon-transformable" aria-label="instagram icon"
-							rel="noopener noreferrer nofollow" target="_blank">
+						<a href="" class="social-link" aria-label="instagram icon" rel="noopener noreferrer nofollow"
+							target="_blank">
 							<svg class="icon social-icon rotatable" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-instagram"></use>
 							</svg></a>
 					</li>
 					<!-- Twitter -->
 					<li>
-						<a href="" class="link social-link icon-transformable" aria-label="twitter icon" target="_blank"
-							rel="noopener noreferrer nofollow">
+						<a href="" class="social-link" aria-label="twitter icon" target="_blank" rel="noopener noreferrer nofollow">
 							<svg class="icon social-icon rotatable" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-twitter"></use>
 							</svg>
@@ -354,7 +369,7 @@
 					</li>
 					<!-- Facebook -->
 					<li>
-						<a href="" class="link social-link icon-transformable" aria-label="facebook icon" target="_blank"
+						<a href="" class="social-link" aria-label="facebook icon" target="_blank"
 							rel="noopener noreferrer nofollow">
 							<svg class="icon social-icon rotatable" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-facebook"></use>
@@ -363,7 +378,7 @@
 					</li>
 					<!-- LinkedIn -->
 					<li>
-						<a href="" class="link social-link icon-transformable" aria-label="linkedin icon" target="_blank"
+						<a href="" class="social-link" aria-label="linkedin icon" target="_blank"
 							rel="noopener noreferrer nofollow">
 							<svg class="icon social-icon rotatable" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-linkedin"></use>
@@ -375,13 +390,15 @@
 
 			<!-- Subscribe -->
 			<div class="subscribe">
+
 				<form class="subscribe-form">
+
 					<p class="footer-title">Підпишіться на розсилку</p>
 
 					<div class="subscribe-wrapper">
 						<input type="email" name="email" class="text-field" placeholder="E-mail" />
 
-						<button type="submit" class="button accented-button footer-submit-button flex spaced-list align-center">
+						<button type="submit" class=" footer-submit-button">
 							Підписатися
 
 							<svg class="icon icon-send" width="24" height="24">

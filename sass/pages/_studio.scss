@@ -1,6 +1,6 @@
 /* Page STUDIO */
 
-/* Hero */
+/* Hero section */
 
 .hero {
 	text-align: center;
@@ -35,14 +35,21 @@
 }
 
 .hero-button {
+	@extend .accented-button;
+
 	padding: 10px 32px;
-	color: currentColor;
+	// color: currentColor;
 }
 
-/* Features */
+/* Features section */
 
-.section.features {
+.features {
+	@extend .section;
 	padding-bottom: 0;
+}
+
+.features-list {
+	@extend .markup-list, .flex, .space-between;
 }
 
 .feature {
@@ -62,19 +69,28 @@
 }
 
 .feature-icon-wrapper {
-	background-color: $mid-bg;
-	border-radius: $standard-radius;
+	display: flex;
+	align-items: center;
+
 	width: 270px;
 	height: 120px;
 	margin-bottom: 30px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
+	background-color: $mid-bg;
+	border-radius: $standard-radius;
 }
 
-/* What We Do */
+/* What We Do section */
 
-.activity-cnt {
+.what-we-do {
+	@extend .section;
+}
+
+.activities-list {
+	@extend .markup-list, .flex, .space-between;
+}
+
+.activity-wrapper {
 	position: relative;
 }
 
@@ -94,10 +110,15 @@
 	background-color: rgba($dark-bg, 0.8);
 }
 
-/* Out Team */
+/* Out Team section */
 
-.section.team {
+.team {
+	@extend .section;
 	background: $mid-bg;
+}
+
+.team-cards-list {
+	@extend .markup-list, .flex, .space-between;
 }
 
 .team-card {
@@ -120,17 +141,22 @@
 	}
 }
 
-/* Regular Clients */
+/* Regular Clients section */
 
 .clients {
+	@extend .section;
+}
+
+.clients-list {
+	@extend .markup-list, .flex, .space-between;
+
 	& h2 {
 		margin-bottom: $large-spacing;
 	}
 }
 
 .client-link {
-	// display: block;
-	// padding: 16px 32px;
+	@extend .link;
 
 	width: 170px;
 	height: 92px;

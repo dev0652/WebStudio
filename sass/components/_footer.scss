@@ -8,37 +8,88 @@
 	background-color: $dark-bg;
 
 	.container {
-		@extend .flex-container;
+		@extend .container, .flex;
 
 		gap: $footer-items-spacing;
 		align-items: baseline;
 	}
+}
 
-	&-logo {
-		margin-bottom: $regular-spacing;
+.footer-logo {
+	margin-bottom: $regular-spacing;
+}
+
+.footer-address-list {
+	@extend .markup-list;
+
+	li {
+		min-width: 231px;
+		line-height: calc(24/14);
+		letter-spacing: 0.03em;
+
+		&:not(:last-child) {
+			margin-bottom: 9px;
+		}
+	}
+}
+
+.footer-title {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: $regular-spacing;
+}
+
+/* Subscribe Form */
+
+.subscribe {
+	flex-grow: 1;
+}
+
+.subscribe-form {
+
+	.subscribe-wrapper {
+		display: flex;
+		gap: 12px;
+		width: 100%;
 	}
 
-	&-address {
+	.text-field {
+		font-size: 16px;
+		line-height: calc(20/16);
 
-		li {
-			min-width: 231px;
-			line-height: calc(24/14);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+
+		// transition: border-color $transition-duration $transition-timing-function;
+		@include transition(border-color);
+
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: $accent;
+			outline: none;
+		}
+
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+		border-radius: $standard-radius;
+		background-color: inherit;
+		color: currentColor;
+
+		padding: 15px 16px;
+
+		flex-grow: 1;
+
+		&::placeholder {
+			font-size: 16px;
+			line-height: calc(20/16);
 			letter-spacing: 0.03em;
-
-			&:not(:last-child) {
-				margin-bottom: 9px;
-			}
+			color: rgba(255, 255, 255, 0.6);
 		}
 	}
 
-	&-title {
-		font-size: 14px;
-		font-weight: 700;
-		text-transform: uppercase;
-		margin-bottom: $regular-spacing;
-	}
+	.footer-submit-button {
+		@extend .accented-button, .flex, .spaced-list, .align-center;
 
-	&-submit-button {
-		padding: 10px 28px;
+		padding: 13px 28px;
 	}
 }
