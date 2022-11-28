@@ -56,19 +56,19 @@ img {
 
 /* Variables */
 .flex.regular-gap, .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
-.regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links, .regular-gap.client-list, .regular-gap.team-cards-list, .regular-gap.activity-list, .regular-gap.feature-list {
+.regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links-list, .regular-gap.client-list, .regular-gap.team-cards-list, .regular-gap.activity-list, .regular-gap.feature-list {
   gap: 30px;
 }
 .flex.regular-spacing, .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
-.regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links, .regular-spacing.client-list, .regular-spacing.team-cards-list, .regular-spacing.activity-list, .regular-spacing.feature-list {
+.regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links-list, .regular-spacing.client-list, .regular-spacing.team-cards-list, .regular-spacing.activity-list, .regular-spacing.feature-list {
   gap: 20px;
 }
 .flex.large-spacing, .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
-.large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links, .large-spacing.client-list, .large-spacing.team-cards-list, .large-spacing.activity-list, .large-spacing.feature-list {
+.large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links-list, .large-spacing.client-list, .large-spacing.team-cards-list, .large-spacing.activity-list, .large-spacing.feature-list {
   gap: 44px;
 }
 .flex.spaced-list, .subscribe-form-button, .footer .spaced-list.container, .footer .container.subscribe-form-button, .spaced-list.nav-list,
-.spaced-list.contact-list, .header .spaced-list.container, .header .container.subscribe-form-button, .social-links, .spaced-list.client-list, .spaced-list.team-cards-list, .spaced-list.activity-list, .spaced-list.feature-list {
+.spaced-list.contact-list, .header .spaced-list.container, .header .container.subscribe-form-button, .social-links-list, .spaced-list.client-list, .spaced-list.team-cards-list, .spaced-list.activity-list, .spaced-list.feature-list {
   gap: 10px;
 }
 
@@ -79,60 +79,60 @@ img {
 
 /* Utility classes */
 .markup-list, .address-list, .text-field-group, .nav-list,
-.contact-list, .social-links, .client-list, .team-cards-list, .activity-list, .feature-list {
+.contact-list, .social-links-list, .client-list, .team-cards-list, .activity-list, .feature-list {
   list-style: none;
 }
 
 .flex, .subscribe-form-button, .footer .container, .nav-list,
-.contact-list, .header .container, .social-links, .client-list, .team-cards-list, .activity-list, .feature-list {
+.contact-list, .header .container, .social-links-list, .client-list, .team-cards-list, .activity-list, .feature-list {
   display: flex;
 }
 .flex.column, .column.subscribe-form-button, .footer .column.container, .column.nav-list,
-.column.contact-list, .header .column.container, .column.social-links, .column.client-list, .column.team-cards-list, .column.activity-list, .column.feature-list {
+.column.contact-list, .header .column.container, .column.social-links-list, .column.client-list, .column.team-cards-list, .column.activity-list, .column.feature-list {
   flex-direction: column;
 }
 .flex.space-between, .space-between.subscribe-form-button, .footer .space-between.container, .space-between.nav-list,
-.space-between.contact-list, .header .space-between.container, .space-between.social-links, .client-list, .team-cards-list, .activity-list, .feature-list {
+.space-between.contact-list, .header .space-between.container, .space-between.social-links-list, .client-list, .team-cards-list, .activity-list, .feature-list {
   justify-content: space-between;
 }
 .flex.space-around, .space-around.subscribe-form-button, .footer .space-around.container, .space-around.nav-list,
-.space-around.contact-list, .header .space-around.container, .space-around.social-links, .space-around.client-list, .space-around.team-cards-list, .space-around.activity-list, .space-around.feature-list {
+.space-around.contact-list, .header .space-around.container, .space-around.social-links-list, .space-around.client-list, .space-around.team-cards-list, .space-around.activity-list, .space-around.feature-list {
   justify-content: space-around;
 }
 .flex.justify-center, .justify-center.subscribe-form-button, .footer .justify-center.container, .justify-center.nav-list,
-.justify-center.contact-list, .header .justify-center.container, .social-links, .justify-center.client-list, .justify-center.team-cards-list, .justify-center.activity-list, .justify-center.feature-list {
+.justify-center.contact-list, .header .justify-center.container, .social-links-list, .justify-center.client-list, .justify-center.team-cards-list, .justify-center.activity-list, .justify-center.feature-list {
   justify-content: center;
 }
 .flex.justify-end, .justify-end.subscribe-form-button, .footer .justify-end.container, .justify-end.nav-list,
-.justify-end.contact-list, .header .justify-end.container, .justify-end.social-links, .justify-end.client-list, .justify-end.team-cards-list, .justify-end.activity-list, .justify-end.feature-list {
+.justify-end.contact-list, .header .justify-end.container, .justify-end.social-links-list, .justify-end.client-list, .justify-end.team-cards-list, .justify-end.activity-list, .justify-end.feature-list {
   justify-content: end;
 }
 .flex.align-center, .subscribe-form-button, .footer .align-center.container, .footer .container.subscribe-form-button, .align-center.nav-list,
-.align-center.contact-list, .header .container, .align-center.social-links, .align-center.client-list, .align-center.team-cards-list, .align-center.activity-list, .align-center.feature-list {
+.align-center.contact-list, .header .container, .align-center.social-links-list, .align-center.client-list, .align-center.team-cards-list, .align-center.activity-list, .align-center.feature-list {
   align-items: center;
 }
 .flex.align-end, .align-end.subscribe-form-button, .footer .align-end.container, .align-end.nav-list,
-.align-end.contact-list, .header .align-end.container, .align-end.social-links, .align-end.client-list, .align-end.team-cards-list, .align-end.activity-list, .align-end.feature-list {
+.align-end.contact-list, .header .align-end.container, .align-end.social-links-list, .align-end.client-list, .align-end.team-cards-list, .align-end.activity-list, .align-end.feature-list {
   align-items: end;
 }
 .flex.align-baseline, .align-baseline.subscribe-form-button, .footer .align-baseline.container, .align-baseline.nav-list,
-.align-baseline.contact-list, .header .align-baseline.container, .align-baseline.social-links, .align-baseline.client-list, .align-baseline.team-cards-list, .align-baseline.activity-list, .align-baseline.feature-list {
+.align-baseline.contact-list, .header .align-baseline.container, .align-baseline.social-links-list, .align-baseline.client-list, .align-baseline.team-cards-list, .align-baseline.activity-list, .align-baseline.feature-list {
   align-items: baseline;
 }
 .flex.wrap, .wrap.subscribe-form-button, .footer .wrap.container, .wrap.nav-list,
-.wrap.contact-list, .header .wrap.container, .wrap.social-links, .wrap.client-list, .wrap.team-cards-list, .wrap.activity-list, .wrap.feature-list {
+.wrap.contact-list, .header .wrap.container, .wrap.social-links-list, .wrap.client-list, .wrap.team-cards-list, .wrap.activity-list, .wrap.feature-list {
   flex-wrap: wrap;
 }
 .flex.regular-gap, .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
-.regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links, .regular-gap.client-list, .regular-gap.team-cards-list, .regular-gap.activity-list, .regular-gap.feature-list {
+.regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links-list, .regular-gap.client-list, .regular-gap.team-cards-list, .regular-gap.activity-list, .regular-gap.feature-list {
   gap: 30px;
 }
 .flex.regular-spacing, .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
-.regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links, .regular-spacing.client-list, .regular-spacing.team-cards-list, .regular-spacing.activity-list, .regular-spacing.feature-list {
+.regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links-list, .regular-spacing.client-list, .regular-spacing.team-cards-list, .regular-spacing.activity-list, .regular-spacing.feature-list {
   gap: 20px;
 }
 .flex.large-spacing, .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
-.large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links, .large-spacing.client-list, .large-spacing.team-cards-list, .large-spacing.activity-list, .large-spacing.feature-list {
+.large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links-list, .large-spacing.client-list, .large-spacing.team-cards-list, .large-spacing.activity-list, .large-spacing.feature-list {
   gap: 44px;
 }
 
@@ -189,7 +189,7 @@ img {
   text-transform: lowercase;
 }
 
-.close-button, .accept-terms-wrapper, .social-links__link, .client-link, .feature-icon-wrapper {
+.close-button, .accept-terms-wrapper, .social-link, .client-link, .feature-icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,7 +355,7 @@ body {
 
 /* Links */
 .link, .address-link, .nav-link,
-.contact-link, .social-links__link, .footer-logo, .header-logo, .client-link {
+.contact-link, .social-link, .footer-logo, .header-logo, .client-link {
   text-decoration: none;
   font-weight: 500;
   transition-property: color;
@@ -364,9 +364,9 @@ body {
   transition-delay: 0s;
 }
 .link:hover, .address-link:hover, .nav-link:hover,
-.contact-link:hover, .social-links__link:hover, .footer-logo:hover, .header-logo:hover, .client-link:hover, .link:focus, .address-link:focus, .nav-link:focus,
-.contact-link:focus, .social-links__link:focus, .footer-logo:focus, .header-logo:focus, .client-link:focus, .link.current, .current.address-link, .current.nav-link,
-.current.contact-link, .current.social-links__link, .current.footer-logo, .current.header-logo, .current.client-link {
+.contact-link:hover, .social-link:hover, .footer-logo:hover, .header-logo:hover, .client-link:hover, .link:focus, .address-link:focus, .nav-link:focus,
+.contact-link:focus, .social-link:focus, .footer-logo:focus, .header-logo:focus, .client-link:focus, .link.current, .current.address-link, .current.nav-link,
+.current.contact-link, .current.social-link, .current.footer-logo, .current.header-logo, .current.client-link {
   color: #2196f3;
 }
 
@@ -380,7 +380,7 @@ body {
 }
 
 /* SVG icons */
-.icon, .subscribe-button-icon, .close-button-icon, .text-field-icon, .contact-icon, .social-links__icon, .client-icon {
+.icon, .subscribe-button-icon, .close-button-icon, .text-field-icon, .contact-icon, .social-icon, .client-icon {
   fill: currentColor;
   transition-property: fill;
   transition-duration: 250ms;
@@ -388,13 +388,13 @@ body {
   transition-delay: 0s;
 }
 
-.rotatable, .social-links__icon {
+.rotatable, .social-icon {
   transition-property: transform;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
   transition-delay: 10ms;
 }
-.icon-transformable:hover .rotatable, .icon-transformable:hover .social-links__icon, .social-links__link:hover .rotatable, .social-links__link:hover .social-links__icon, .icon-transformable:focus .rotatable, .icon-transformable:focus .social-links__icon, .social-links__link:focus .rotatable, .social-links__link:focus .social-links__icon {
+.icon-transformable:hover .rotatable, .icon-transformable:hover .social-icon, .social-link:hover .rotatable, .social-link:hover .social-icon, .icon-transformable:focus .rotatable, .icon-transformable:focus .social-icon, .social-link:focus .rotatable, .social-link:focus .social-icon {
   transform: rotate(360deg);
 }
 
@@ -424,7 +424,7 @@ body {
 }
 
 /* Social media links (icons styled separately) */
-.social-links__link {
+.social-link {
   color: #afb1b8;
   height: 44px;
   width: 44px;
@@ -433,15 +433,15 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer .social-links__link {
+.footer .social-link {
   background: rgba(255, 255, 255, 0.1);
 }
-.social-links__link:hover, .social-links__link:focus {
+.social-link:hover, .social-link:focus {
   color: #fff;
   background-color: #2196f3;
 }
 
-.footer .social-links__icon {
+.footer .social-icon {
   fill: #fff;
 }
 

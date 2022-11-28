@@ -1,10 +1,10 @@
 /* Social media links (icons styled separately) */
 
-.social-links {
+.social-links-list {
 	@extend .markup-list, .flex, .spaced-list, .justify-center;
 }
 
-.social-links__link {
+.social-link {
 	@extend .link, .icon-transformable;
 	@extend %flex-centered;
 
@@ -27,7 +27,7 @@
 	}
 }
 
-.social-links__icon {
+.social-icon {
 	@extend .icon, .rotatable;
 
 	.footer & {
