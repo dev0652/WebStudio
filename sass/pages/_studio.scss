@@ -149,14 +149,14 @@
 
 .clients {
 	@extend .section;
-}
-
-.client-list {
-	@extend .markup-list, .flex, .space-between;
 
 	& .section-heading {
 		margin-bottom: $large-spacing;
 	}
+}
+
+.client-list {
+	@extend .markup-list, .flex, .space-between;
 }
 
 .client-link {
