@@ -55,20 +55,20 @@ img {
 }
 
 /* Variables */
-.flex.regular-gap, .subscribe-form .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
+.flex.regular-gap, .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
 .regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links-list, .regular-gap.client-list, .regular-gap.team-cards-list, .regular-gap.activity-list, .regular-gap.feature-list {
   gap: 30px;
 }
-.flex.regular-spacing, .subscribe-form .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
+.flex.regular-spacing, .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
 .regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links-list, .regular-spacing.client-list, .regular-spacing.team-cards-list, .regular-spacing.activity-list, .regular-spacing.feature-list {
   gap: 20px;
 }
-.flex.large-spacing, .subscribe-form .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
+.flex.large-spacing, .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
 .large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links-list, .large-spacing.client-list, .large-spacing.team-cards-list, .large-spacing.activity-list, .large-spacing.feature-list {
   gap: 44px;
 }
-.flex.spaced-list, .subscribe-form .subscribe-form-button, .footer .spaced-list.container, .spaced-list.nav-list,
-.spaced-list.contact-list, .header .spaced-list.container, .social-links-list, .spaced-list.client-list, .spaced-list.team-cards-list, .spaced-list.activity-list, .spaced-list.feature-list {
+.flex.spaced-list, .subscribe-form-button, .footer .spaced-list.container, .footer .container.subscribe-form-button, .spaced-list.nav-list,
+.spaced-list.contact-list, .header .spaced-list.container, .header .container.subscribe-form-button, .social-links-list, .spaced-list.client-list, .spaced-list.team-cards-list, .spaced-list.activity-list, .spaced-list.feature-list {
   gap: 10px;
 }
 
@@ -83,55 +83,55 @@ img {
   list-style: none;
 }
 
-.flex, .subscribe-form .subscribe-form-button, .footer .container, .nav-list,
+.flex, .subscribe-form-button, .footer .container, .nav-list,
 .contact-list, .header .container, .social-links-list, .client-list, .team-cards-list, .activity-list, .feature-list {
   display: flex;
 }
-.flex.column, .subscribe-form .column.subscribe-form-button, .footer .column.container, .column.nav-list,
+.flex.column, .column.subscribe-form-button, .footer .column.container, .column.nav-list,
 .column.contact-list, .header .column.container, .column.social-links-list, .column.client-list, .column.team-cards-list, .column.activity-list, .column.feature-list {
   flex-direction: column;
 }
-.flex.space-between, .subscribe-form .space-between.subscribe-form-button, .footer .space-between.container, .space-between.nav-list,
+.flex.space-between, .space-between.subscribe-form-button, .footer .space-between.container, .space-between.nav-list,
 .space-between.contact-list, .header .space-between.container, .space-between.social-links-list, .client-list, .team-cards-list, .activity-list, .feature-list {
   justify-content: space-between;
 }
-.flex.space-around, .subscribe-form .space-around.subscribe-form-button, .footer .space-around.container, .space-around.nav-list,
+.flex.space-around, .space-around.subscribe-form-button, .footer .space-around.container, .space-around.nav-list,
 .space-around.contact-list, .header .space-around.container, .space-around.social-links-list, .space-around.client-list, .space-around.team-cards-list, .space-around.activity-list, .space-around.feature-list {
   justify-content: space-around;
 }
-.flex.justify-center, .subscribe-form .justify-center.subscribe-form-button, .footer .justify-center.container, .justify-center.nav-list,
+.flex.justify-center, .justify-center.subscribe-form-button, .footer .justify-center.container, .justify-center.nav-list,
 .justify-center.contact-list, .header .justify-center.container, .social-links-list, .justify-center.client-list, .justify-center.team-cards-list, .justify-center.activity-list, .justify-center.feature-list {
   justify-content: center;
 }
-.flex.justify-end, .subscribe-form .justify-end.subscribe-form-button, .footer .justify-end.container, .justify-end.nav-list,
+.flex.justify-end, .justify-end.subscribe-form-button, .footer .justify-end.container, .justify-end.nav-list,
 .justify-end.contact-list, .header .justify-end.container, .justify-end.social-links-list, .justify-end.client-list, .justify-end.team-cards-list, .justify-end.activity-list, .justify-end.feature-list {
   justify-content: end;
 }
-.flex.align-center, .subscribe-form .subscribe-form-button, .footer .align-center.container, .align-center.nav-list,
+.flex.align-center, .subscribe-form-button, .footer .align-center.container, .footer .container.subscribe-form-button, .align-center.nav-list,
 .align-center.contact-list, .header .container, .align-center.social-links-list, .align-center.client-list, .align-center.team-cards-list, .align-center.activity-list, .align-center.feature-list {
   align-items: center;
 }
-.flex.align-end, .subscribe-form .align-end.subscribe-form-button, .footer .align-end.container, .align-end.nav-list,
+.flex.align-end, .align-end.subscribe-form-button, .footer .align-end.container, .align-end.nav-list,
 .align-end.contact-list, .header .align-end.container, .align-end.social-links-list, .align-end.client-list, .align-end.team-cards-list, .align-end.activity-list, .align-end.feature-list {
   align-items: end;
 }
-.flex.align-baseline, .subscribe-form .align-baseline.subscribe-form-button, .footer .align-baseline.container, .align-baseline.nav-list,
+.flex.align-baseline, .align-baseline.subscribe-form-button, .footer .align-baseline.container, .align-baseline.nav-list,
 .align-baseline.contact-list, .header .align-baseline.container, .align-baseline.social-links-list, .align-baseline.client-list, .align-baseline.team-cards-list, .align-baseline.activity-list, .align-baseline.feature-list {
   align-items: baseline;
 }
-.flex.wrap, .subscribe-form .wrap.subscribe-form-button, .footer .wrap.container, .wrap.nav-list,
+.flex.wrap, .wrap.subscribe-form-button, .footer .wrap.container, .wrap.nav-list,
 .wrap.contact-list, .header .wrap.container, .wrap.social-links-list, .wrap.client-list, .wrap.team-cards-list, .wrap.activity-list, .wrap.feature-list {
   flex-wrap: wrap;
 }
-.flex.regular-gap, .subscribe-form .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
+.flex.regular-gap, .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
 .regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links-list, .regular-gap.client-list, .regular-gap.team-cards-list, .regular-gap.activity-list, .regular-gap.feature-list {
   gap: 30px;
 }
-.flex.regular-spacing, .subscribe-form .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
+.flex.regular-spacing, .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
 .regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links-list, .regular-spacing.client-list, .regular-spacing.team-cards-list, .regular-spacing.activity-list, .regular-spacing.feature-list {
   gap: 20px;
 }
-.flex.large-spacing, .subscribe-form .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
+.flex.large-spacing, .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
 .large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links-list, .large-spacing.client-list, .large-spacing.team-cards-list, .large-spacing.activity-list, .large-spacing.feature-list {
   gap: 44px;
 }
@@ -380,7 +380,7 @@ body {
 }
 
 /* SVG icons */
-.icon, .close-button-icon, .text-field-icon, .contact-icon, .social-icon, .client-icon {
+.icon, .subscribe-button-icon, .close-button-icon, .text-field-icon, .contact-icon, .social-icon, .client-icon {
   fill: currentColor;
   transition-property: fill;
   transition-duration: 250ms;
@@ -399,13 +399,13 @@ body {
 }
 
 /* Buttons */
-.button, .accented-button, .subscribe-form .subscribe-form-button, .modal-form-button, .hero-button {
+.button, .accented-button, .subscribe-form-button, .modal-form-button, .hero-button {
   border: none;
   border-radius: 4px;
   font-size: 16px;
 }
 
-.accented-button, .subscribe-form .subscribe-form-button, .modal-form-button, .hero-button {
+.accented-button, .subscribe-form-button, .modal-form-button, .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -419,7 +419,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.accented-button:hover, .subscribe-form .subscribe-form-button:hover, .modal-form-button:hover, .hero-button:hover, .accented-button:focus, .subscribe-form .subscribe-form-button:focus, .modal-form-button:focus, .hero-button:focus {
+.accented-button:hover, .subscribe-form-button:hover, .modal-form-button:hover, .hero-button:hover, .accented-button:focus, .subscribe-form-button:focus, .modal-form-button:focus, .hero-button:focus {
   background-color: #188ce8;
 }
 
@@ -741,12 +741,13 @@ body {
   flex-grow: 1;
 }
 
-.subscribe-form .subscribe-form-elements {
+.subscribe-form-elements {
   display: flex;
   gap: 12px;
   width: 100%;
 }
-.subscribe-form .subscribe-form-input {
+
+.subscribe-form-input {
   font-size: 16px;
   line-height: 1.25;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -762,27 +763,28 @@ body {
   padding: 15px 16px;
   flex-grow: 1;
 }
-.subscribe-form .subscribe-form-input:hover, .subscribe-form .subscribe-form-input:focus, .subscribe-form .subscribe-form-input:active {
+.subscribe-form-input:hover, .subscribe-form-input:focus, .subscribe-form-input:active {
   border-color: #2196f3;
 }
-.subscribe-form .subscribe-form-input::-moz-placeholder {
+.subscribe-form-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form .subscribe-form-input:-ms-input-placeholder {
+.subscribe-form-input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form .subscribe-form-input::placeholder {
+.subscribe-form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form .subscribe-form-button {
+
+.subscribe-form-button {
   padding: 13px 28px;
 }/*# sourceMappingURL=main.css.map */
