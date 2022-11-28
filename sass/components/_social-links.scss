@@ -1,7 +1,6 @@
-/* Social media links */
-/* (icons styled separately) */
+/* Social media links (icons styled separately) */
 
-.social-links {
+.social-links-list {
 	@extend .markup-list, .flex, .spaced-list, .justify-center;
 }
 
@@ -25,5 +24,13 @@
 	&:focus {
 		color: $contrast;
 		background-color: $accent;
+	}
+}
+
+.social-icon {
+	@extend .icon, .rotatable;
+
+	.footer & {
+		fill: $contrast;
 	}
 }

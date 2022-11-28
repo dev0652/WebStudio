@@ -27,42 +27,45 @@
 	<!-- ---------- Header ---------- -->
 	<header class="header">
 		<div class="container">
+
 			<!-- Header logo -->
 			<a class="header-logo" href="./index.html">
 				Web<span>Studio</span>
 			</a>
 
 			<!-- Header navigation -->
-			<nav>
+			<nav class="header-nav">
+				<ul class="nav-list">
 
-				<ul class="header-nav">
-					<li>
-						<a class="link" href="./index.html">Студія</a>
+					<li class="nav-list-item">
+						<a class="nav-link" href="./index.html">Студія</a>
 					</li>
-					<li>
-						<a class="link current" aria-current="page" href="./portfolio.html">Портфоліо</a>
+
+					<li class="nav-list-item">
+						<a class="nav-link current" aria-current="page" href="./portfolio.html">Портфоліо</a>
 					</li>
-					<li>
-						<a class="link" href="">Контакти</a>
+
+					<li class="nav-list-item">
+						<a class="nav-link" href="">Контакти</a>
 					</li>
+
 				</ul>
-
 			</nav>
 
 			<!-- Header contacts -->
-			<ul class="header-contacts">
+			<ul class="contact-list">
 
-				<li class="contact">
-					<a class="link icon-transformable" href="mailto:info@devstudio.com">
-						<svg class="icon contacts-icon rotatable" width="16" height="12">
+				<li class="contact-list-item">
+					<a class="contact-link" href="mailto:info@devstudio.com">
+						<svg class="contact-icon" width="16" height="12">
 							<use href="./images/icons/icons.svg#icon-envelope"></use>
 						</svg>
 						info@devstudio.com</a>
 				</li>
 
-				<li class="contact">
-					<a class="link icon-transformable" href="tel:+380961111111">
-						<svg class="icon contacts-icon rotatable" width="10" height="16">
+				<li class="contact-list-item">
+					<a class="contact-link" href="tel:+380961111111">
+						<svg class="contact-icon" width="10" height="16">
 							<use href="./images/icons/icons.svg#icon-smartphone"></use>
 						</svg>
 						+38 096 111 11 11
@@ -76,34 +79,34 @@
 	<!-- Main -->
 	<main class="page portfolio">
 
-		<section class="section projects">
+		<section class="projects">
 			<div class="container">
 
 				<!-- Filter buttons -->
 				<ul class="filter-buttons">
 
-					<li>
-						<button type="button" class="filter-button">Усі</button>
+					<li class="filter-buttons-item">
+						<button class="filter-button" type="button">Усі</button>
 					</li>
 
-					<li>
-						<button type="button" class="filter-button">
+					<li class="filter-buttons-item">
+						<button class="filter-button" type="button">
 							Веб-сайти
 						</button>
 					</li>
 
-					<li>
-						<button type="button" class="filter-button">
+					<li class="filter-buttons-item">
+						<button class="filter-button" type="button">
 							Додатки
 						</button>
 					</li>
 
-					<li>
-						<button type="button" class="filter-button">Дизайн</button>
+					<li class="filter-buttons-item">
+						<button class="filter-button" type="button">Дизайн</button>
 					</li>
 
-					<li>
-						<button type="button" class="filter-button">
+					<li class="filter-buttons-item">
+						<button class="filter-button" type="button">
 							Маркетинг
 						</button>
 					</li>
@@ -114,13 +117,13 @@
 				<ul class="project-cards">
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a href="" class="project-card-link">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project1.jpg" alt="Сайт-візитівка, відкритий на екрані ноутбука"
 									width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Ресурс пропонує комплексні пропозиції з різним рівнем
 										функціоналу та сервісів. Все це дозволить відвідувачу
 										отримати вичерпні відомості про компанію чи приватну
@@ -129,21 +132,21 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Технокряк</h3>
-								<p>Веб-сайт</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Технокряк</h3>
+								<p class="project-type">Веб-сайт</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project2.jpg"
 									alt="Постер з двома баскетболістами в білій та бузковій формі" width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -152,21 +155,21 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Постер New Orlean vs Golden Star</h3>
-								<p>Дизайн</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Постер New Orlean vs Golden Star</h3>
+								<p class="project-type">Дизайн</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project3.jpg" alt="Логотип з назвою ресторану та зображенням риби на фоні"
 									width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -175,20 +178,20 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Ресторан Seafood</h3>
-								<p>Додаток</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Ресторан Seafood</h3>
+								<p class="project-type">Додаток</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project4.jpg" alt="Великі навушники" width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -197,21 +200,21 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Проєкт Prime</h3>
-								<p>Маркетинг</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Проєкт Prime</h3>
+								<p class="project-type">Маркетинг</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project5.jpg" alt="Біла та коричнева коробки різного розміру"
 									width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -220,21 +223,21 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Проєкт Boxes</h3>
-								<p>Додаток</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Проєкт Boxes</h3>
+								<p class="project-type">Додаток</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project6.jpg" alt="Веб-сайт в темних тонах, відритий на ерані Apple iMac"
 									width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -243,21 +246,21 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Inspiration has no Borders</h3>
-								<p>Веб-сайт</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Inspiration has no Borders</h3>
+								<p class="project-type">Веб-сайт</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project7.jpg" alt="Розворот друкованого видання з фотографіями"
 									width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -266,21 +269,21 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Видання Limited Edition</h3>
-								<p>Дизайн</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Видання Limited Edition</h3>
+								<p class="project-type">Дизайн</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project8.jpg" alt="Біла бірка із золотистою мотузкою та написом Lab El Tag"
 									width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -289,20 +292,20 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Проєкт LAB</h3>
-								<p>Маркетинг</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Проєкт LAB</h3>
+								<p class="project-type">Маркетинг</p>
 							</div>
 						</a>
 					</li>
 
 					<li class="project-card">
-						<a href="">
-							<div class="thumb">
+						<a class="project-card-link" href="">
+							<div class="project-card-thumb">
 								<img src="./images/portfolio/project9.jpg" alt="Додаток, відкритий на екрані ноутбука" width="370" />
 
 								<div class="thumb-overlay">
-									<p class="description">
+									<p class="project-description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 										Molestiae assumenda magni adipisci quo at? Facilis iste
 										nulla impedit, ut illo doloribus et cumque consequatur
@@ -311,9 +314,9 @@
 								</div>
 							</div>
 
-							<div class="caption">
-								<h3>Growing Business</h3>
-								<p>Додаток</p>
+							<div class="project-card-meta">
+								<h3 class="project-name">Growing Business</h3>
+								<p class="project-type">Додаток</p>
 							</div>
 						</a>
 					</li>
@@ -327,86 +330,105 @@
 	<footer class="footer">
 		<div class="container">
 			<div>
-
 				<!-- Footer Logo -->
-				<a class="footer-logo" href="./index.html"> Web<span>Studio</span> </a>
+				<a class="footer-logo" href="./index.html"> Web<span>Studio</span>
+				</a>
 
-				<!-- Address & Contacts -->
+				<!-- Address / Footer contacts -->
 				<address class="footer-address">
-					<ul class="footer-address-list">
-						<li class="address">м. Київ, пр-т Лесі Українки, 26</li>
-						<li class="contact">
-							<a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+
+					<ul class="address-list">
+						<li class="address-list-item">
+							м. Київ, пр-т Лесі Українки, 26
 						</li>
-						<li class="contact">
-							<a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+						<li class="address-list-item">
+							<a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a>
+						</li>
+
+						<li class="address-list-item">
+							<a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 						</li>
 					</ul>
-				</address>
 
+				</address>
 			</div>
 
-			<!-- Join Us -->
-			<div class="join-us">
-				<p class="footer-title">Приєднуйтесь</p>
+			<!-- Join Us block -->
+			<div>
+				<p class="footer-heading">Приєднуйтесь</p>
 
-				<ul class="social-links">
+				<ul class="social-links-list">
+
 					<!-- Instagram -->
-					<li>
+					<li class="social-links-item">
 						<a href="" class="social-link" aria-label="instagram icon" rel="noopener noreferrer nofollow"
 							target="_blank">
-							<svg class="icon social-icon rotatable" width="20" height="20">
+
+							<svg class="social-icon" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-instagram"></use>
-							</svg></a>
+							</svg>
+						</a>
 					</li>
+
 					<!-- Twitter -->
-					<li>
+					<li class="social-links-item">
 						<a href="" class="social-link" aria-label="twitter icon" target="_blank" rel="noopener noreferrer nofollow">
-							<svg class="icon social-icon rotatable" width="20" height="20">
+							<svg class="social-icon" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-twitter"></use>
 							</svg>
 						</a>
 					</li>
+
 					<!-- Facebook -->
-					<li>
+					<li class="social-links-item">
 						<a href="" class="social-link" aria-label="facebook icon" target="_blank"
 							rel="noopener noreferrer nofollow">
-							<svg class="icon social-icon rotatable" width="20" height="20">
+							<svg class="social-icon" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-facebook"></use>
 							</svg>
 						</a>
 					</li>
+
 					<!-- LinkedIn -->
-					<li>
+					<li class="social-links-item">
 						<a href="" class="social-link" aria-label="linkedin icon" target="_blank"
 							rel="noopener noreferrer nofollow">
-							<svg class="icon social-icon rotatable" width="20" height="20">
+							<svg class="social-icon" width="20" height="20">
 								<use href="./images/icons/icons.svg#icon-linkedin"></use>
 							</svg>
 						</a>
 					</li>
+
 				</ul>
 			</div>
 
-			<!-- Subscribe -->
-			<div class="subscribe">
+			<!-- Subscribe block -->
+			<div class="subscribe-block-wrapper">
 
+				<!-- Subscribe form -->
 				<form class="subscribe-form">
 
-					<p class="footer-title">Підпишіться на розсилку</p>
+					<p class="footer-heading">Підпишіться на розсилку</p>
 
-					<div class="subscribe-wrapper">
-						<input type="email" name="email" class="text-field" placeholder="E-mail" />
+					<div class="subscribe-form-elements">
 
-						<button type="submit" class=" footer-submit-button">
+						<!-- Text field -->
+						<input type="email" name="email" class="subscribe-form-input" placeholder="E-mail" />
+
+						<!-- Submit button -->
+						<button type="submit" class="subscribe-form-button">
 							Підписатися
 
 							<svg class="icon icon-send" width="24" height="24">
 								<use href="./images/icons/icons.svg#icon-send"></use>
 							</svg>
 						</button>
+
 					</div>
+
 				</form>
+
 			</div>
 		</div>
 	</footer>

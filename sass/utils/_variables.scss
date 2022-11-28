@@ -2,10 +2,10 @@
 
 // Fonts
 
-$primary-font: "Roboto",
-	sans-serif;
-$secondary-font: "Raleway",
-	sans-serif;
+$primary-font: "Roboto", sans-serif;
+$primary-font-size: 14px;
+
+$secondary-font: "Raleway", sans-serif;
 
 // Colors
 
@@ -14,19 +14,19 @@ $accent: #2196f3;
 $accent-darker: #188ce8;
 $contrast: #fff;
 
-// Text 
+// Text
 $dark-gray-text: #212121;
 $light-gray-text: #757575;
 
 // Background
 $light-bg: #fff;
 $mid-bg: #f5f4fa;
-$gray-bg: #C4C4C4;
+$gray-bg: #c4c4c4;
 $dark-bg: #2f303a;
 $overlay-color: rgba($dark-bg, 0.4);
 
 // SVG
-$link-inactive: #AFB1B8;
+$link-inactive: #afb1b8;
 
 // Borders
 $header-border: #ececec;
@@ -34,7 +34,7 @@ $project-border: #eeeeee;
 
 $standard-radius: 4px;
 
-// Flex gap values 
+// Flex gap values
 $regular-gap: 30px;
 $regular-spacing: 20px;
 $large-spacing: 44px;
@@ -48,7 +48,6 @@ $spacing: $regular-gap;
 $number-of-gaps: $items-per-row - 1;
 
 .flex {
-
 	&.regular-gap {
 		gap: $regular-gap;
 	}

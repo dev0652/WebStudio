@@ -1,6 +1,10 @@
 /* Page PORTFOLIO */
 
-/* 'Filter' buttons */
+.projects {
+	@extend .section;
+}
+
+// 'Filter' buttons
 
 .filter-buttons {
 	@extend .markup-list;
@@ -14,7 +18,7 @@
 	@extend .button;
 
 	font-weight: 500;
-	line-height: calc(26/16);
+	line-height: calc(26 / 16);
 	padding: 6px 22px;
 
 	@include transition-multiple(color, background-color, box-shadow);
@@ -25,15 +29,13 @@
 	&:hover,
 	&:focus {
 		background-color: $accent;
-		box-shadow:
-			0px 3px 1px rgba(0, 0, 0, 0.1),
-			0px 1px 2px rgba(0, 0, 0, 0.08),
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 			0px 2px 2px rgba(0, 0, 0, 0.12);
 		color: $contrast;
 	}
 }
 
-/* Project cards */
+// Project cards
 
 .project-cards {
 	@extend .markup-list, .flex, .wrap, .regular-gap;
@@ -52,39 +54,41 @@
 	&:focus {
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
-
-	a {
-		color: inherit;
-		text-decoration: none;
-		text-align: left;
-	}
-
-	.caption {
-		padding: $regular-spacing calc($regular-spacing + $regular-spacing * 0.2);
-		border: 1px solid $project-border;
-		border-top: none;
-
-		h3 {
-			font-size: 18px;
-			line-height: 2;
-			letter-spacing: 0.06em;
-		}
-
-		p {
-			font-size: 16px;
-			line-height: 1.88;
-		}
-	}
 }
 
-.thumb {
+.project-card-link {
+	color: inherit;
+	text-decoration: none;
+	text-align: left;
+}
+
+.project-card-thumb {
 	position: relative;
 	overflow: hidden;
 }
 
-.description {
+.project-card-meta {
+	@extend .caption;
+
+	padding: $regular-spacing calc($regular-spacing + $regular-spacing * 0.2);
+	border: 1px solid $project-border;
+	border-top: none;
+}
+
+.project-name {
 	font-size: 18px;
-	line-height: calc(28/18);
+	line-height: 2;
+	letter-spacing: 0.06em;
+}
+
+.project-type {
+	font-size: 16px;
+	line-height: 1.88;
+}
+
+.project-description {
+	font-size: 18px;
+	line-height: calc(28 / 18);
 	color: $contrast;
 	padding: 63px 24px;
 

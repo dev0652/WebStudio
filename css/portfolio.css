@@ -55,16 +55,20 @@ img {
 }
 
 /* Variables */
-.flex.regular-gap, .subscribe-form .regular-gap.footer-submit-button, .footer .regular-gap.container, .regular-gap.header-contacts, .regular-gap.header-nav, .header .regular-gap.container, .regular-gap.social-links, .project-cards {
+.flex.regular-gap, .subscribe-form .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
+.regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links-list, .project-cards {
   gap: 30px;
 }
-.flex.regular-spacing, .subscribe-form .regular-spacing.footer-submit-button, .footer .regular-spacing.container, .regular-spacing.header-contacts, .regular-spacing.header-nav, .header .regular-spacing.container, .regular-spacing.social-links, .regular-spacing.project-cards {
+.flex.regular-spacing, .subscribe-form .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
+.regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links-list, .regular-spacing.project-cards {
   gap: 20px;
 }
-.flex.large-spacing, .subscribe-form .large-spacing.footer-submit-button, .footer .large-spacing.container, .large-spacing.header-contacts, .large-spacing.header-nav, .header .large-spacing.container, .large-spacing.social-links, .large-spacing.project-cards {
+.flex.large-spacing, .subscribe-form .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
+.large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links-list, .large-spacing.project-cards {
   gap: 44px;
 }
-.flex.spaced-list, .subscribe-form .footer-submit-button, .footer .spaced-list.container, .spaced-list.header-contacts, .spaced-list.header-nav, .header .spaced-list.container, .social-links, .spaced-list.project-cards {
+.flex.spaced-list, .subscribe-form .subscribe-form-button, .footer .spaced-list.container, .spaced-list.nav-list,
+.spaced-list.contact-list, .header .spaced-list.container, .social-links-list, .spaced-list.project-cards {
   gap: 10px;
 }
 
@@ -74,47 +78,61 @@ img {
 }
 
 /* Utility classes */
-.markup-list, .footer-address-list, .header-contacts, .header-nav, .social-links, .project-cards, .filter-buttons {
+.markup-list, .address-list, .nav-list,
+.contact-list, .social-links-list, .project-cards, .filter-buttons {
   list-style: none;
 }
 
-.flex, .subscribe-form .footer-submit-button, .footer .container, .header-contacts, .header-nav, .header .container, .social-links, .project-cards {
+.flex, .subscribe-form .subscribe-form-button, .footer .container, .nav-list,
+.contact-list, .header .container, .social-links-list, .project-cards {
   display: flex;
 }
-.flex.column, .subscribe-form .column.footer-submit-button, .footer .column.container, .column.header-contacts, .column.header-nav, .header .column.container, .column.social-links, .column.project-cards {
+.flex.column, .subscribe-form .column.subscribe-form-button, .footer .column.container, .column.nav-list,
+.column.contact-list, .header .column.container, .column.social-links-list, .column.project-cards {
   flex-direction: column;
 }
-.flex.space-between, .subscribe-form .space-between.footer-submit-button, .footer .space-between.container, .space-between.header-contacts, .space-between.header-nav, .header .space-between.container, .space-between.social-links, .space-between.project-cards {
+.flex.space-between, .subscribe-form .space-between.subscribe-form-button, .footer .space-between.container, .space-between.nav-list,
+.space-between.contact-list, .header .space-between.container, .space-between.social-links-list, .space-between.project-cards {
   justify-content: space-between;
 }
-.flex.space-around, .subscribe-form .space-around.footer-submit-button, .footer .space-around.container, .space-around.header-contacts, .space-around.header-nav, .header .space-around.container, .space-around.social-links, .space-around.project-cards {
+.flex.space-around, .subscribe-form .space-around.subscribe-form-button, .footer .space-around.container, .space-around.nav-list,
+.space-around.contact-list, .header .space-around.container, .space-around.social-links-list, .space-around.project-cards {
   justify-content: space-around;
 }
-.flex.justify-center, .subscribe-form .justify-center.footer-submit-button, .footer .justify-center.container, .justify-center.header-contacts, .justify-center.header-nav, .header .justify-center.container, .social-links, .justify-center.project-cards {
+.flex.justify-center, .subscribe-form .justify-center.subscribe-form-button, .footer .justify-center.container, .justify-center.nav-list,
+.justify-center.contact-list, .header .justify-center.container, .social-links-list, .justify-center.project-cards {
   justify-content: center;
 }
-.flex.justify-end, .subscribe-form .justify-end.footer-submit-button, .footer .justify-end.container, .justify-end.header-contacts, .justify-end.header-nav, .header .justify-end.container, .justify-end.social-links, .justify-end.project-cards {
+.flex.justify-end, .subscribe-form .justify-end.subscribe-form-button, .footer .justify-end.container, .justify-end.nav-list,
+.justify-end.contact-list, .header .justify-end.container, .justify-end.social-links-list, .justify-end.project-cards {
   justify-content: end;
 }
-.flex.align-center, .subscribe-form .footer-submit-button, .footer .align-center.container, .align-center.header-contacts, .align-center.header-nav, .header .container, .align-center.social-links, .align-center.project-cards {
+.flex.align-center, .subscribe-form .subscribe-form-button, .footer .align-center.container, .align-center.nav-list,
+.align-center.contact-list, .header .container, .align-center.social-links-list, .align-center.project-cards {
   align-items: center;
 }
-.flex.align-end, .subscribe-form .align-end.footer-submit-button, .footer .align-end.container, .align-end.header-contacts, .align-end.header-nav, .header .align-end.container, .align-end.social-links, .align-end.project-cards {
+.flex.align-end, .subscribe-form .align-end.subscribe-form-button, .footer .align-end.container, .align-end.nav-list,
+.align-end.contact-list, .header .align-end.container, .align-end.social-links-list, .align-end.project-cards {
   align-items: end;
 }
-.flex.align-baseline, .subscribe-form .align-baseline.footer-submit-button, .footer .align-baseline.container, .align-baseline.header-contacts, .align-baseline.header-nav, .header .align-baseline.container, .align-baseline.social-links, .align-baseline.project-cards {
+.flex.align-baseline, .subscribe-form .align-baseline.subscribe-form-button, .footer .align-baseline.container, .align-baseline.nav-list,
+.align-baseline.contact-list, .header .align-baseline.container, .align-baseline.social-links-list, .align-baseline.project-cards {
   align-items: baseline;
 }
-.flex.wrap, .subscribe-form .wrap.footer-submit-button, .footer .wrap.container, .wrap.header-contacts, .wrap.header-nav, .header .wrap.container, .wrap.social-links, .project-cards {
+.flex.wrap, .subscribe-form .wrap.subscribe-form-button, .footer .wrap.container, .wrap.nav-list,
+.wrap.contact-list, .header .wrap.container, .wrap.social-links-list, .project-cards {
   flex-wrap: wrap;
 }
-.flex.regular-gap, .subscribe-form .regular-gap.footer-submit-button, .footer .regular-gap.container, .regular-gap.header-contacts, .regular-gap.header-nav, .header .regular-gap.container, .regular-gap.social-links, .project-cards {
+.flex.regular-gap, .subscribe-form .regular-gap.subscribe-form-button, .footer .regular-gap.container, .regular-gap.nav-list,
+.regular-gap.contact-list, .header .regular-gap.container, .regular-gap.social-links-list, .project-cards {
   gap: 30px;
 }
-.flex.regular-spacing, .subscribe-form .regular-spacing.footer-submit-button, .footer .regular-spacing.container, .regular-spacing.header-contacts, .regular-spacing.header-nav, .header .regular-spacing.container, .regular-spacing.social-links, .regular-spacing.project-cards {
+.flex.regular-spacing, .subscribe-form .regular-spacing.subscribe-form-button, .footer .regular-spacing.container, .regular-spacing.nav-list,
+.regular-spacing.contact-list, .header .regular-spacing.container, .regular-spacing.social-links-list, .regular-spacing.project-cards {
   gap: 20px;
 }
-.flex.large-spacing, .subscribe-form .large-spacing.footer-submit-button, .footer .large-spacing.container, .large-spacing.header-contacts, .large-spacing.header-nav, .header .large-spacing.container, .large-spacing.social-links, .large-spacing.project-cards {
+.flex.large-spacing, .subscribe-form .large-spacing.subscribe-form-button, .footer .large-spacing.container, .large-spacing.nav-list,
+.large-spacing.contact-list, .header .large-spacing.container, .large-spacing.social-links-list, .large-spacing.project-cards {
   gap: 44px;
 }
 
@@ -198,26 +216,25 @@ body {
 }
 
 /* Sections other than hero */
-.section {
+.section, .projects {
   padding: 94px 0;
 }
-.section h2 {
+
+.section-heading {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 50px;
 }
 
-/* Card captions */
-.caption {
+.caption, .project-card-meta {
   padding: 30px 0;
   font-size: 16px;
 }
-.caption p {
+.caption p, .project-card-meta p {
   color: #757575;
 }
 
 /* Page PORTFOLIO */
-/* 'Filter' buttons */
 .filter-buttons {
   display: inline-flex;
   gap: 8px;
@@ -240,7 +257,6 @@ body {
   color: #fff;
 }
 
-/* Project cards */
 .project-card {
   background: #fff;
   flex-basis: calc((100% - 60px) / 3);
@@ -252,32 +268,36 @@ body {
 .project-card:hover, .project-card:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.project-card a {
+
+.project-card-link {
   color: inherit;
   text-decoration: none;
   text-align: left;
 }
-.project-card .caption {
-  padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
-}
-.project-card .caption h3 {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.project-card .caption p {
-  font-size: 16px;
-  line-height: 1.88;
-}
 
-.thumb {
+.project-card-thumb {
   position: relative;
   overflow: hidden;
 }
 
-.description {
+.project-card-meta {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.project-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.project-description {
   font-size: 18px;
   line-height: 1.5555555556;
   color: #fff;
@@ -288,7 +308,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 200ms;
 }
-.project-card:hover .description, .project-card:focus .description {
+.project-card:hover .project-description, .project-card:focus .project-description {
   opacity: 1;
 }
 
@@ -310,7 +330,8 @@ body {
 }
 
 /* Links */
-.link, .social-link, .footer-logo, .header-logo {
+.link, .address-link, .nav-link,
+.contact-link, .social-link, .footer-logo, .header-logo {
   text-decoration: none;
   font-weight: 500;
   transition-property: color;
@@ -318,19 +339,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.header-nav .link, .header-nav .social-link, .header-nav .footer-logo, .header-nav .header-logo {
-  color: #212121;
-}
-.contact .link, .contact .social-link, .contact .footer-logo, .contact .header-logo {
-  color: #757575;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.footer .link:not(.footer-logo):not(.header-logo), .footer .social-link:not(.footer-logo):not(.header-logo), .footer .footer-logo:not(.footer-logo):not(.header-logo), .footer .header-logo:not(.footer-logo):not(.header-logo) {
-  color: rgba(255, 255, 255, 0.6);
-}
-.link:hover, .social-link:hover, .footer-logo:hover, .header-logo:hover, .link:focus, .social-link:focus, .footer-logo:focus, .header-logo:focus, .link.current, .current.social-link, .current.footer-logo, .current.header-logo {
+.link:hover, .address-link:hover, .nav-link:hover,
+.contact-link:hover, .social-link:hover, .footer-logo:hover, .header-logo:hover, .link:focus, .address-link:focus, .nav-link:focus,
+.contact-link:focus, .social-link:focus, .footer-logo:focus, .header-logo:focus, .link.current, .current.address-link, .current.nav-link,
+.current.contact-link, .current.social-link, .current.footer-logo, .current.header-logo {
   color: #2196f3;
 }
 
@@ -343,44 +355,33 @@ body {
   color: #2196f3;
 }
 
-.header-logo span {
-  color: #000;
-}
-
-.footer-logo span {
-  color: #fff;
-}
-
 /* SVG icons */
-.icon {
+.icon, .contact-icon, .social-icon {
   fill: currentColor;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.footer .social-link .icon {
-  fill: #fff;
-}
 
-.rotatable {
+.rotatable, .social-icon {
   transition-property: transform;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
   transition-delay: 10ms;
 }
-.icon-transformable:hover .rotatable, .social-link:hover .rotatable, .icon-transformable:focus .rotatable, .social-link:focus .rotatable {
+.icon-transformable:hover .rotatable, .icon-transformable:hover .social-icon, .social-link:hover .rotatable, .social-link:hover .social-icon, .icon-transformable:focus .rotatable, .icon-transformable:focus .social-icon, .social-link:focus .rotatable, .social-link:focus .social-icon {
   transform: rotate(360deg);
 }
 
 /* Buttons */
-.button, .accented-button, .subscribe-form .footer-submit-button, .filter-button {
+.button, .accented-button, .subscribe-form .subscribe-form-button, .filter-button {
   border: none;
   border-radius: 4px;
   font-size: 16px;
 }
 
-.accented-button, .subscribe-form .footer-submit-button {
+.accented-button, .subscribe-form .subscribe-form-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -394,14 +395,13 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0s;
 }
-.accented-button:hover, .subscribe-form .footer-submit-button:hover, .accented-button:focus, .subscribe-form .footer-submit-button:focus {
+.accented-button:hover, .subscribe-form .subscribe-form-button:hover, .accented-button:focus, .subscribe-form .subscribe-form-button:focus {
   background-color: #188ce8;
 }
 
-/* Social media links */
-/* (icons styled separately) */
+/* Social media links (icons styled separately) */
 .social-link {
-  color: #AFB1B8;
+  color: #afb1b8;
   height: 44px;
   width: 44px;
   border-radius: 50%;
@@ -417,6 +417,10 @@ body {
   background-color: #2196f3;
 }
 
+.footer .social-icon {
+  fill: #fff;
+}
+
 /* Header */
 .header {
   background-color: #fff;
@@ -430,19 +434,28 @@ body {
 .header-logo {
   margin-right: 93px;
 }
-.header-contacts {
-  margin-left: auto;
+.header-logo span {
+  color: #000;
 }
 
-.header-nav .link, .header-nav .header-logo, .header-nav .footer-logo, .header-nav .social-link, .header-contacts .link, .header-contacts .header-logo, .header-contacts .footer-logo, .header-contacts .social-link {
+.nav-list,
+.contact-list {
+  gap: 50px;
+}
+
+.nav-link,
+.contact-link {
   padding: 32px 0;
   letter-spacing: 0.02em;
 }
 
-.current {
+.nav-link {
+  color: #212121;
+}
+.nav-link.current {
   position: relative;
 }
-.current::after {
+.nav-link.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -452,6 +465,17 @@ body {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
+}
+
+.contact-list {
+  margin-left: auto;
+}
+
+.contact-link {
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Footer */
@@ -469,37 +493,44 @@ body {
 .footer-logo {
   margin-bottom: 20px;
 }
+.footer-logo span {
+  color: #fff;
+}
 
-.footer-address-list li {
+.address-list-item {
   min-width: 231px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
-.footer-address-list li:not(:last-child) {
+.address-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-title {
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-heading {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-/* Subscribe Form */
-.subscribe {
+.subscribe-block-wrapper {
   flex-grow: 1;
 }
 
-.subscribe-form .subscribe-wrapper {
+.subscribe-form .subscribe-form-elements {
   display: flex;
   gap: 12px;
   width: 100%;
 }
-.subscribe-form .text-field {
+.subscribe-form .subscribe-form-input {
   font-size: 16px;
   line-height: 1.25;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  outline-offset: 2px;
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -511,28 +542,27 @@ body {
   padding: 15px 16px;
   flex-grow: 1;
 }
-.subscribe-form .text-field:hover, .subscribe-form .text-field:focus, .subscribe-form .text-field:active {
+.subscribe-form .subscribe-form-input:hover, .subscribe-form .subscribe-form-input:focus, .subscribe-form .subscribe-form-input:active {
   border-color: #2196f3;
-  outline: none;
 }
-.subscribe-form .text-field::-moz-placeholder {
+.subscribe-form .subscribe-form-input::-moz-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form .text-field:-ms-input-placeholder {
+.subscribe-form .subscribe-form-input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form .text-field::placeholder {
+.subscribe-form .subscribe-form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form .footer-submit-button {
+.subscribe-form .subscribe-form-button {
   padding: 13px 28px;
 }/*# sourceMappingURL=portfolio.css.map */

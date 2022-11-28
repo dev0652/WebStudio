@@ -13,45 +13,75 @@
 	.container {
 		@extend .flex, .align-center;
 	}
+}
 
-	&-logo {
-		margin-right: 93px;
-	}
+// Header logo
 
-	&-nav {
-		@extend .markup-list, .flex;
-	}
+.header-logo {
+	@extend %logo;
+	margin-right: 93px;
 
-	&-contacts {
-		@extend .markup-list, .flex;
-		margin-left: auto;
+	& span {
+		color: #000;
 	}
 }
 
-.link {
+// Header ul's
 
-	.header-nav &,
-	.header-contacts & {
-		padding: 32px 0;
-		letter-spacing: 0.02em;
+.nav-list,
+.contact-list {
+	@extend .markup-list, .flex;
+	gap: $header-items-spacing;
+}
+
+// Header links - shared styles
+
+.nav-link,
+.contact-link {
+	@extend .link;
+
+	padding: 32px 0;
+	letter-spacing: 0.02em;
+}
+
+// Header navigation links
+
+.nav-link {
+	color: $dark-gray-text;
+
+	&.current {
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			//to make up for header bottom border
+			transform: translateY(1px);
+
+			width: 100%;
+			height: 4px;
+
+			background: $accent;
+			border-radius: 2px;
+		}
 	}
 }
 
-.current {
-	position: relative;
+// Header contacts
 
-	&::after {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		//to make up for header bottom border
-		transform: translateY(1px);
+.contact-list {
+	margin-left: auto;
+}
 
-		width: 100%;
-		height: 4px;
+.contact-link {
+	color: $light-gray-text;
+	display: flex;
+	align-items: center;
+	gap: $list-spacing;
+}
 
-		background: $accent;
-		border-radius: 2px;
-	}
+.contact-icon {
+	@extend .icon;
 }

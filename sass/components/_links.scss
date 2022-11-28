@@ -6,21 +6,6 @@
 
 	@include transition(color);
 
-	.header-nav & {
-		color: $dark-gray-text;
-	}
-
-	.contact & {
-		color: $light-gray-text;
-		display: flex;
-		align-items: center;
-		gap: $list-spacing;
-	}
-
-	.footer &:not(%logo) {
-		color: rgba($contrast, 0.6);
-	}
-
 	&:hover,
 	&:focus,
 	&.current {

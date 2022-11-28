@@ -10,19 +10,3 @@
 
 	color: $accent;
 }
-
-.header-logo {
-	@extend %logo;
-
-	& span {
-		color: #000;
-	}
-}
-
-.footer-logo {
-	@extend %logo;
-
-	& span {
-		color: $contrast;
-	}
-}

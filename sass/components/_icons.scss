@@ -3,13 +3,6 @@
 .icon {
 	fill: currentColor;
 	@include transition(fill);
-
-	.social-link & {
-
-		.footer & {
-			fill: $contrast;
-		}
-	}
 }
 
 .rotatable {
