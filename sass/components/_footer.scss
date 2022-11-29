@@ -17,12 +17,11 @@
 
 .footer-logo {
 	@extend %logo;
+	margin-bottom: $regular-spacing;
 
 	& span {
 		color: $contrast;
 	}
-
-	margin-bottom: $regular-spacing;
 }
 
 // Footer address block
@@ -80,7 +79,6 @@
 	&:focus,
 	&:active {
 		border-color: $accent;
-		// outline: none;
 	}
 
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
