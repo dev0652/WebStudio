@@ -21,6 +21,8 @@
 	line-height: calc(26 / 16);
 	padding: 6px 22px;
 
+	white-space: nowrap;
+
 	@include transition-multiple(color, background-color, box-shadow);
 
 	background-color: $mid-bg;
@@ -38,21 +40,51 @@
 // Project cards
 
 .project-cards {
-	@extend .markup-list, .flex, .wrap, .regular-gap;
+	// @extend .markup-list, .flex, .regular-gap;
+
+	// @media screen and (max-width: ($tablet - 1px)) {
+	// 	flex-direction: column;
+	// }
+
+	@extend .markup-list;
+
+	// @media screen and (min-width: $tablet) {
+	// 	display: flex;
+
+	// }
+
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		align-items: center;
+		align-items: stretch;
+		flex-wrap: wrap;
+		gap: $regular-gap;
+	}
 }
 
 .project-card {
 	background: $light-bg;
-
-	// flex-basis: 370px;
-	// Flex-basis calculation:
-	flex-basis: calc((100% - $spacing * $number-of-gaps) / $items-per-row);
 
 	@include transition(box-shadow);
 
 	&:hover,
 	&:focus {
 		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	@media screen and (max-width: ($tablet - 1px)) {
+		// width: 450px;
+		@include flex-basis(1);
+	}
+
+	@media screen and (min-width: $tablet) {
+		// width: 354px;
+		@include flex-basis(2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		// width: 370px;
+		@include flex-basis(3);
 	}
 }
 
@@ -65,10 +97,20 @@
 .project-card-thumb {
 	position: relative;
 	overflow: hidden;
+
+	// width: 100%;
+}
+
+.project-card-image {
+	width: 100%;
+	// height: 294px;
+	object-fit: cover;
+	object-position: center;
 }
 
 .project-card-meta {
 	@extend .caption;
+	// height: 100%;
 
 	padding: $regular-spacing calc($regular-spacing + $regular-spacing * 0.2);
 	border: 1px solid $project-border;
@@ -86,15 +128,17 @@
 	line-height: 1.88;
 }
 
-.project-description {
+.project-popup-description {
 	font-size: 18px;
 	line-height: calc(28 / 18);
+	letter-spacing: 0.03em;
+
 	color: $contrast;
-	padding: 63px 24px;
+	padding: 0 24px;
 
 	opacity: 0;
 
-	@include transition($property: background-color, $delay: 200ms);
+	@include transition($property: opacity, $delay: 200ms);
 
 	.project-card:hover &,
 	.project-card:focus & {
@@ -106,13 +150,17 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(33, 150, 243, 0.9);
-
 	transform: translateY(100%);
 
 	@include transition(transform);
+
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	align-items: center;
+
+	background-color: rgba(33, 150, 243, 0.9);
 
 	.project-card:hover & {
 		transform: translateY(0);

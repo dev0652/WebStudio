@@ -12,7 +12,12 @@
 // 	padding-left: $padding-horizontal;
 // }
 
-@mixin transition($property: all, $duration: $transition-duration, $function: $transition-timing-function, $delay: 0s) {
+@mixin transition(
+	$property: all,
+	$duration: $transition-duration,
+	$function: $transition-timing-function,
+	$delay: 0s
+) {
 	transition-property: $property;
 	transition-duration: $duration;
 	transition-timing-function: $function;
@@ -25,7 +30,12 @@
 	transition-timing-function: $transition-timing-function;
 }
 
-@mixin positioning-centered($top: 0, $left: 0, $shift-x: -50%, $shift-y: $shift-x) {
+@mixin positioning-centered(
+	$top: 0,
+	$left: 0,
+	$shift-x: -50%,
+	$shift-y: $shift-x
+) {
 	top: $top;
 	left: $left;
 	transform: translateX($shift-x) translateY($shift-y);
@@ -35,4 +45,12 @@
 	display: flex;
 	align-items: $align-items;
 	justify-content: $justify-content;
+}
+
+// Flex-basis calculation
+
+@mixin flex-basis($items-per-row, $spacing: $regular-gap) {
+	// Number of gaps = items per row - 1;
+
+	flex-basis: calc((100% - $spacing * ($items-per-row - 1)) / $items-per-row);
 }

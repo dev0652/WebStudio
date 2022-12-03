@@ -3,76 +3,136 @@
 /* Hero section */
 
 .hero {
-	text-align: center;
 	color: $contrast;
 
 	& .container {
-		padding: 200px 0;
+		@media screen and (max-width: ($desktop - 1)) {
+			padding: 118px 0;
+		}
+
+		@media screen and (min-width: $desktop) {
+			padding: 200px 0;
+		}
 	}
 }
 
 .hero-overlay {
-	max-width: 1600px;
-	height: 600px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 
 	background-color: $gray-bg;
-	background-image: linear-gradient(to right, $overlay-color, $overlay-color),
-		url(../images/studio/hero.jpg);
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
+
+	background-image: linear-gradient(to right, $overlay-color, $overlay-color),
+		url(../images/studio/hero-tablet.jpg);
+
+	@media screen and (max-width: ($tablet - 1px)) {
+		min-height: 400px;
+	}
+
+	@media screen and (min-width: $tablet) {
+		min-height: 400px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		max-width: $desktop;
+	}
 }
 
 .hero-heading {
+	font-family: "Roboto";
 	font-weight: 900;
-	font-size: 44px;
-	line-height: calc(60 / 44);
-	letter-spacing: 0.06em;
 	text-transform: uppercase;
+	letter-spacing: 0.06em;
 
-	width: 700px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 30px;
+
+	@media screen and (max-width: ($desktop - 1)) {
+		font-size: 26px;
+		line-height: calc(42 / 26);
+		max-width: 360px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 44px;
+		line-height: calc(60 / 44);
+		max-width: 700px;
+	}
 }
 
 .hero-button {
 	@extend .accented-button;
 
 	padding: 10px 32px;
-	// color: currentColor;
 }
 
 /* Features section */
 
 .features {
 	@extend .section;
-	padding-bottom: 0;
+
+	@media screen and (min-width: $desktop) {
+		padding-bottom: 0;
+	}
 }
 
 .feature-list {
-	@extend .markup-list, .flex, .space-between;
+	@extend .markup-list, .flex;
+	gap: $regular-gap;
+
+	@media screen and (max-width: ($tablet - 1px)) {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: $tablet) {
+		flex-wrap: wrap;
+	}
 }
 
 .feature {
 	text-align: left;
-	flex-basis: 270px;
+
+	// &:not(:last-child) {
+	// 	@media screen and (max-width: ($tablet - 1px)) {
+	// 		margin-bottom: $regular-gap;
+	// 	}
+
+	@media screen and (min-width: $tablet) {
+		// flex-basis: 354px;
+		@include flex-basis(2);
+	}
+
+	@media screen and (min-width: $desktop) {
+		// flex-basis: 270px;
+		@include flex-basis(4);
+	}
 }
 
 .feature-icon-wrapper {
-	@extend %flex-centered;
-
-	width: 270px;
 	height: 120px;
-	margin-bottom: 30px;
+	width: 100%;
+	margin-bottom: $regular-gap;
 
 	background-color: $mid-bg;
 	border-radius: $standard-radius;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .feature-name {
 	font-size: inherit;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+
+	@media screen and (max-width: ($tablet - 1px)) {
+		text-align: center;
+	}
 }
 
 .feature-description {
@@ -84,6 +144,13 @@
 
 .what-we-do {
 	@extend .section;
+
+	display: none;
+
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .activity-list {
@@ -118,7 +185,16 @@
 }
 
 .team-cards-list {
-	@extend .markup-list, .flex, .space-between;
+	@extend .markup-list, .flex;
+	gap: $regular-gap;
+
+	@media screen and (max-width: ($tablet - 1px)) {
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+		flex-wrap: wrap;
+	}
 }
 
 .team-card {
@@ -127,9 +203,20 @@
 
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	// &:not(:last-child) {
+	// 	@media screen and (max-width: ($tablet - 1px)) {
+	// 		margin-bottom: $regular-gap;
+	// 	}
+	// }
+
+	@media screen and (min-width: $tablet) {
+		// flex-basis: 354px;
+		@include flex-basis(2);
+	}
 }
 
-// Team card meta
+// .team-member-photo {}
 
 .team-card-meta {
 	@extend .caption;
@@ -150,21 +237,46 @@
 .clients {
 	@extend .section;
 
-	& .section-heading {
-		margin-bottom: $large-spacing;
+	@media screen and (min-width: $tablet) {
+		& .section-heading {
+			margin-bottom: $large-spacing;
+		}
 	}
 }
 
 .client-list {
-	@extend .markup-list, .flex, .space-between;
+	@extend .markup-list, .flex;
+
+	flex-wrap: wrap;
+	gap: $regular-gap;
+}
+
+.client-list-item {
+	// enter the number of items per row
+
+	@media screen and (max-width: ($tablet - 1px)) {
+		// width: 210px;
+		@include flex-basis(2);
+	}
+
+	@media screen and (min-width: $tablet) {
+		// width: 226px;
+		@include flex-basis(3);
+	}
+
+	@media screen and (min-width: $desktop) {
+		// width: 170px;
+		@include flex-basis(6);
+	}
 }
 
 .client-link {
 	@extend .link;
 	@extend %flex-centered;
+	// outline: auto;
 
-	width: 170px;
 	height: 92px;
+	width: 100%;
 
 	color: $link-inactive;
 	border: 1px solid currentColor;

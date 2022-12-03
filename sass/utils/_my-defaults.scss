@@ -11,9 +11,9 @@ a {
 }
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
 	cursor: pointer;
 	font-family: inherit;
 	text-align: center;
@@ -23,7 +23,8 @@ address {
 	font-style: normal;
 }
 
-//  Get rid of user-agent-defined spacing after list items and images by changing their display to "block"
 img {
 	display: block;
+	min-width: 100%;
+	height: auto;
 }

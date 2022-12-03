@@ -9,30 +9,58 @@ body {
 	background-color: $light-bg;
 }
 
-.container {
-	width: (1600px - 215px * 2 + 15px * 2);
-
-	padding-left: 15px;
-	padding-right: 15px;
-
-	margin: 0 auto;
-}
-
 .page {
 	text-align: center;
 }
 
-/* Sections other than hero */
+.container {
+	padding-left: $container-padding;
+	padding-right: $container-padding;
+	margin-left: auto;
+	margin-right: auto;
+
+	// outline: auto;
+
+	@media screen and (min-width: $mobile) {
+		width: $mobile;
+	}
+
+	@media screen and (min-width: $tablet) {
+		width: $tablet;
+	}
+
+	@media screen and (min-width: $desktop) {
+		$paddings: $container-padding * 2;
+		$margins: $desktop-version-margin * 2;
+
+		width: ($desktop - $margins + $paddings);
+	}
+}
+
+// Sections other than hero
 
 .section {
-	padding: 94px 0;
-	// @include section-padding;
+	@media screen and (max-width: ($desktop - 1px)) {
+		padding: $regular-gap * 2 0;
+	}
+
+	@media screen and (min-width: $desktop) {
+		padding: 94px 0;
+	}
 }
 
 .section-heading {
-	font-size: 36px;
 	font-weight: 700;
-	margin-bottom: 50px;
+
+	@media screen and (max-width: ($desktop - 1px)) {
+		font-size: 28px;
+		margin-bottom: $single-margin-mobile;
+	}
+
+	@media screen and (min-width: $desktop) {
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
 }
 
 // Card captions/meta

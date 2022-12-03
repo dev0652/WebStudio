@@ -33,46 +33,62 @@
 				Web<span>Studio</span>
 			</a>
 
-			<!-- Header navigation -->
-			<nav class="header-nav">
-				<ul class="nav-list">
+			<div class="header-menu-wrapper">
+				<!-- Header navigation -->
+				<nav class="header-nav">
+					<ul class="nav-list">
 
-					<li class="nav-list-item">
-						<a class="nav-link current" aria-current="page" href="./index.html">Студія</a>
+						<li class="nav-list-item">
+							<a class="nav-link current" aria-current="page" href="./index.html">Студія</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="./portfolio.html">Портфоліо</a>
+						</li>
+
+						<li class="nav-list-item">
+							<a class="nav-link" href="">Контакти</a>
+						</li>
+
+					</ul>
+				</nav>
+
+				<!-- Header contacts -->
+				<ul class="contact-list">
+
+					<li class="contact-list-item">
+						<a class="contact-link" href="mailto:info@devstudio.com">
+							<svg class="contact-icon" width="16" height="12">
+								<use href="./images/icons/icons.svg#icon-envelope"></use>
+							</svg>
+							info@devstudio.com</a>
 					</li>
 
-					<li class="nav-list-item">
-						<a class="nav-link" href="./portfolio.html">Портфоліо</a>
-					</li>
-
-					<li class="nav-list-item">
-						<a class="nav-link" href="">Контакти</a>
+					<li class="contact-list-item">
+						<a class="contact-link" href="tel:+380961111111">
+							<svg class="contact-icon" width="10" height="16">
+								<use href="./images/icons/icons.svg#icon-smartphone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
 					</li>
 
 				</ul>
-			</nav>
 
-			<!-- Header contacts -->
-			<ul class="contact-list">
+			</div>
 
-				<li class="contact-list-item">
-					<a class="contact-link" href="mailto:info@devstudio.com">
-						<svg class="contact-icon" width="16" height="12">
-							<use href="./images/icons/icons.svg#icon-envelope"></use>
-						</svg>
-						info@devstudio.com</a>
-				</li>
+			<div class="burger">
 
-				<li class="contact-list-item">
-					<a class="contact-link" href="tel:+380961111111">
-						<svg class="contact-icon" width="10" height="16">
-							<use href="./images/icons/icons.svg#icon-smartphone"></use>
-						</svg>
-						+38 096 111 11 11
-					</a>
-				</li>
+				<button class="header-menu-button" type="button" aria-expanded="false" aria-controls="">
+					<svg class="header-menu-icon" width="" height="">
 
-			</ul>
+						<use class="icon-menu-burger" href="./images/icons/icons.svg#icon-menu-burger"></use>
+
+						<use class="icon-menu-close" href="./images/icons/icons.svg#icon-menu-close"></use>
+					</svg>
+			</div>
+			</button>
+
 		</div>
 	</header>
 
@@ -224,8 +240,8 @@
 
 					<li class="team-card">
 
-						<img src="./images/studio/photo1.jpg" alt="Усміхнений молодий чоловік в сорочці, з бородою та в окулярах."
-							width="270" />
+						<img class="team-member-photo" src="./images/studio/photo1.jpg"
+							alt="Усміхнений молодий чоловік в сорочці, з бородою та в окулярах." width="270" />
 
 						<!-- Team card caption -->
 						<div class="team-card-meta">
@@ -275,8 +291,8 @@
 
 					<li class="team-card">
 
-						<img src="./images/studio/photo2.jpg" alt="Усміхнена білява жінка в діловому костюмі та окулярах."
-							width="270" />
+						<img class="team-member-photo" src="./images/studio/photo2.jpg"
+							alt="Усміхнена білява жінка в діловому костюмі та окулярах." width="270" />
 
 						<!-- Team card caption -->
 						<div class="team-card-meta">
@@ -326,7 +342,8 @@
 					</li>
 
 					<li class="team-card">
-						<img src="./images/studio/photo3.jpg" alt="Усміхнений молодий чоловік в сорочці" width="270" />
+						<img class="team-member-photo" src="./images/studio/photo3.jpg" alt="Усміхнений молодий чоловік в сорочці"
+							width="270" />
 
 						<!-- Team card caption -->
 						<div class="team-card-meta">
@@ -376,7 +393,7 @@
 					</li>
 
 					<li class="team-card">
-						<img src="./images/studio/photo4.jpg"
+						<img class="team-member-photo" src="./images/studio/photo4.jpg"
 							alt="Темноволосий молодий чоловік в футболці, з бородою та в окулярах." width="270" />
 
 						<!-- Team card caption -->
@@ -500,8 +517,8 @@
 
 	<!-- Footer -->
 	<footer class="footer">
-		<div class="container">
-			<div>
+		<div class="container ">
+			<div class="footer-logo-wrapper">
 				<!-- Footer Logo -->
 				<a class="footer-logo" href="./index.html"> Web<span>Studio</span>
 				</a>
@@ -527,7 +544,7 @@
 			</div>
 
 			<!-- Join Us block -->
-			<div>
+			<div class="join-us-block-wrapper">
 				<p class="footer-heading">Приєднуйтесь</p>
 
 				<ul class="social-links-list">

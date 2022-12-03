@@ -3,3 +3,9 @@
 	align-items: center;
 	justify-content: center;
 }
+
+%mb-mobile {
+	@media screen and (max-width: $mobile) {
+		margin-bottom: $single-margin-mobile;
+	}
+}

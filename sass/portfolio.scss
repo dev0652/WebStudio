@@ -1,4 +1,5 @@
-// Normalize and defaults
+// Defaults
+// @import "./utils/modern-normalize";
 @import "./utils/my-normalize";
 @import "./utils/my-defaults";
 
@@ -14,12 +15,8 @@
 @import "./pages/portfolio";
 
 // Components
-@import "./components/links";
-@import "./components/logos";
-@import "./components/icons";
-@import "./components/buttons";
-@import "./components/social-links";
-
+// @import "./components/fonts";
+@import "./components/common";
 @import "./components/header";
 // @import "./components/modal";
 @import "./components/footer";

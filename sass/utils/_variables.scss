@@ -1,5 +1,25 @@
 /* Variables */
 
+// Breakpoints
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1600px;
+
+// Spacings
+$container-padding: 15px;
+$desktop-version-margin: 215px;
+
+$regular-gap: 30px;
+$regular-spacing: 20px;
+$large-spacing: 44px;
+$list-spacing: 10px;
+
+$header-items-spacing: 50px;
+$header-items-spacing-mobile: 32px;
+$footer-items-spacing: 70px;
+$single-margin-mobile: 30px;
+
 // Fonts
 
 $primary-font: "Roboto", sans-serif;
@@ -34,18 +54,7 @@ $project-border: #eeeeee;
 
 $standard-radius: 4px;
 
-// Flex gap values
-$regular-gap: 30px;
-$regular-spacing: 20px;
-$large-spacing: 44px;
-$list-spacing: 10px;
-$header-items-spacing: 50px;
-$footer-items-spacing: 70px;
-
-// For 'flex-basis' calculation
-$items-per-row: 3;
-$spacing: $regular-gap;
-$number-of-gaps: $items-per-row - 1;
+// Flex utility classes
 
 .flex {
 	&.regular-gap {
