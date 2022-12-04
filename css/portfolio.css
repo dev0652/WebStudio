@@ -225,6 +225,10 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   background-color: #fff;
+  min-width: 280px;
+}
+body.scroll-locked {
+  overflow: hidden;
 }
 
 .page {
@@ -690,7 +694,8 @@ body {
     left: 0;
     width: 100%;
     z-index: 2;
-    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
     padding: 48px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -699,10 +704,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    background-color: #fff;
+    -webkit-transform: translateX(100vw);
+            transform: translateX(100vw);
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;

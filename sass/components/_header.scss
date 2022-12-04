@@ -111,8 +111,6 @@
 .header-menu-wrapper {
 	//
 	@media screen and (max-width: ($tablet - 1px)) {
-		// display: none;
-
 		position: fixed;
 		top: 100%; // якщо буде виводитись під футером
 		top: 0; // якщо буде виводитись поверх футера
@@ -120,19 +118,16 @@
 		width: 100%;
 		z-index: 2;
 
-		background-color: #fff;
-
-		padding: 48px 40px;
-		display: flex;
-		flex-direction: column;
-		// justify-content: space-between;
-
-		// width: 80vw;
 		width: 100vw;
 		height: 100vh;
+		padding: 48px 40px;
 
-		transform: translateX(100%);
+		display: flex;
+		flex-direction: column;
 
+		background-color: #fff;
+
+		transform: translateX(100vw);
 		@include transition(transform);
 
 		&.is-open {

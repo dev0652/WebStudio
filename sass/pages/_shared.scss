@@ -7,6 +7,12 @@ body {
 
 	color: $dark-gray-text;
 	background-color: $light-bg;
+
+	min-width: 280px;
+
+	&.scroll-locked {
+		overflow: hidden;
+	}
 }
 
 .page {
