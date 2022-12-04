@@ -57,23 +57,27 @@
 	background-color: transparent;
 	border: none;
 
-	.icon-menu-close {
-		display: none;
-	}
-
 	&.is-open {
-		position: absolute;
+		// position: absolute;
 		position: relative;
-		top: 0;
-		// right: 15px;
+		// top: 0;
 
 		z-index: 3;
 
 		.icon-menu-close {
-			display: block;
+			// display: block;
+			opacity: 1;
+			transform: scale(1);
+
+			.header-menu-button:hover & {
+				fill: $accent;
+			}
 		}
+
 		.icon-menu-burger {
-			display: none;
+			// display: none;
+			opacity: 0;
+			transform: scale(0);
 		}
 	}
 }
@@ -83,7 +87,27 @@
 	// width: 40px;
 	// height: 40px;
 	fill: currentColor;
-	// fill: red;
+
+	@include transition(fill);
+
+	.icon-menu-burger {
+		// display: none;
+		opacity: 1;
+		transform: scale(1);
+
+		transform-origin: center;
+
+		@include transition-multiple(opacity, transform);
+	}
+
+	.icon-menu-close {
+		// display: none;
+		opacity: 0;
+		transform: scale(0);
+		transform-origin: center;
+
+		@include transition-multiple(opacity, transform);
+	}
 }
 
 // Header menu items wrapper

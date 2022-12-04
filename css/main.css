@@ -718,25 +718,65 @@ body {
   background-color: transparent;
   border: none;
 }
-.header-menu-button .icon-menu-close {
-  display: none;
-}
 .header-menu-button.is-open {
-  position: absolute;
   position: relative;
-  top: 0;
   z-index: 3;
 }
 .header-menu-button.is-open .icon-menu-close {
-  display: block;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.header-menu-button:hover .header-menu-button.is-open .icon-menu-close {
+  fill: #2196f3;
 }
 .header-menu-button.is-open .icon-menu-burger {
-  display: none;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .header-menu-icon {
   display: block;
   fill: currentColor;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+.header-menu-icon .icon-menu-burger {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-menu-icon .icon-menu-close {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (max-width: 767px) {
