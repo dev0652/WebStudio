@@ -33,7 +33,7 @@
 				Web<span>Studio</span>
 			</a>
 
-			<div class="header-menu-wrapper">
+			<div class="header-menu-wrapper" data-menu>
 
 				<!-- Header navigation -->
 				<nav class="header-nav">
@@ -113,9 +113,10 @@
 
 			<div class="burger">
 
-				<button class="header-menu-button" type="button" aria-expanded="false" aria-controls="">
+				<button class="header-menu-button" data-menu-button type="button" aria-expanded="false"
+					aria-controls="mobile-menu">
 
-					<svg class="header-menu-icon" width="" height="">
+					<svg class="header-menu-icon" width="40" height="40" aria-label="Перемикач мобільного меню">
 
 						<use class="icon-menu-burger" href="./images/icons/icons.svg#icon-menu-burger"></use>
 
@@ -741,10 +742,25 @@
 		</div>
 	</div>
 
-	<!-- Scripts -->
-	<script src="./js/modal.js"></script>
 
-	<script src="./js/dynamic-padding.js"></script>
+
+	<!-- ***** Scripts ***** -->
+
+	<!-- Dynamic body padding for fixed header -->
+	<script defer src="./js/dynamic-padding.js"></script>
 </body>
+
+<!-- Modal window open-close -->
+<script defer src="./js/modal.js"></script>
+
+<!-- Mobile menu open-close (old version) -->
+<script defer src="js/mobile-menu-old.js"></script>
+
+<!-- Mobile menu open-close -->
+<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+	integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+	crossorigin="anonymous"></script>
+
+<script defer src="js/mobile-menu.js"></script> -->
 
 </html>
