@@ -59,16 +59,16 @@ img {
 }
 
 /* Variables */
-.flex.regular-gap, .regular-gap.subscribe-form-button, .regular-gap.contact-list, .regular-gap.nav-list, .header .regular-gap.container, .regular-gap.social-links-list {
+.flex.regular-gap, .regular-gap.subscribe-form-button, .regular-gap.header-social-links-list, .regular-gap.contact-list, .regular-gap.nav-list, .header .regular-gap.container, .regular-gap.social-links-list {
   gap: 30px;
 }
-.flex.regular-spacing, .regular-spacing.subscribe-form-button, .regular-spacing.contact-list, .regular-spacing.nav-list, .header .regular-spacing.container, .regular-spacing.social-links-list {
+.flex.regular-spacing, .regular-spacing.subscribe-form-button, .regular-spacing.header-social-links-list, .regular-spacing.contact-list, .regular-spacing.nav-list, .header .regular-spacing.container, .regular-spacing.social-links-list {
   gap: 20px;
 }
-.flex.large-spacing, .large-spacing.subscribe-form-button, .large-spacing.contact-list, .large-spacing.nav-list, .header .large-spacing.container, .large-spacing.social-links-list {
+.flex.large-spacing, .large-spacing.subscribe-form-button, .large-spacing.header-social-links-list, .large-spacing.contact-list, .large-spacing.nav-list, .header .large-spacing.container, .large-spacing.social-links-list {
   gap: 44px;
 }
-.flex.spaced-list, .subscribe-form-button, .spaced-list.contact-list, .spaced-list.nav-list, .header .spaced-list.container, .header .container.subscribe-form-button, .social-links-list {
+.flex.spaced-list, .subscribe-form-button, .header-social-links-list, .spaced-list.contact-list, .spaced-list.nav-list, .header .spaced-list.container, .header .container.subscribe-form-button, .header .container.header-social-links-list, .social-links-list {
   gap: 10px;
 }
 
@@ -78,66 +78,66 @@ img {
 }
 
 /* Utility classes */
-.markup-list, .address-list, .contact-list, .nav-list, .social-links-list, .project-cards, .filter-buttons {
+.markup-list, .address-list, .header-social-links-list, .contact-list, .nav-list, .social-links-list, .project-cards, .filter-buttons {
   list-style: none;
 }
 
-.flex, .subscribe-form-button, .contact-list, .nav-list, .header .container, .social-links-list {
+.flex, .subscribe-form-button, .header-social-links-list, .contact-list, .nav-list, .header .container, .social-links-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.flex.column, .column.subscribe-form-button, .column.contact-list, .column.nav-list, .header .column.container, .column.social-links-list {
+.flex.column, .column.subscribe-form-button, .column.header-social-links-list, .column.contact-list, .column.nav-list, .header .column.container, .column.social-links-list {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.flex.space-between, .space-between.subscribe-form-button, .space-between.contact-list, .space-between.nav-list, .header .space-between.container, .space-between.social-links-list {
+.flex.space-between, .space-between.subscribe-form-button, .space-between.header-social-links-list, .space-between.contact-list, .space-between.nav-list, .header .space-between.container, .space-between.social-links-list {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.flex.space-around, .space-around.subscribe-form-button, .space-around.contact-list, .space-around.nav-list, .header .space-around.container, .space-around.social-links-list {
+.flex.space-around, .space-around.subscribe-form-button, .space-around.header-social-links-list, .space-around.contact-list, .space-around.nav-list, .header .space-around.container, .space-around.social-links-list {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
-.flex.justify-center, .justify-center.subscribe-form-button, .justify-center.contact-list, .justify-center.nav-list, .header .justify-center.container, .social-links-list {
+.flex.justify-center, .justify-center.subscribe-form-button, .justify-center.header-social-links-list, .justify-center.contact-list, .justify-center.nav-list, .header .justify-center.container, .social-links-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-.flex.justify-end, .justify-end.subscribe-form-button, .justify-end.contact-list, .justify-end.nav-list, .header .justify-end.container, .justify-end.social-links-list {
+.flex.justify-end, .justify-end.subscribe-form-button, .justify-end.header-social-links-list, .justify-end.contact-list, .justify-end.nav-list, .header .justify-end.container, .justify-end.social-links-list {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
-.flex.align-center, .subscribe-form-button, .align-center.contact-list, .align-center.nav-list, .header .container, .align-center.social-links-list {
+.flex.align-center, .subscribe-form-button, .align-center.header-social-links-list, .align-center.contact-list, .align-center.nav-list, .header .container, .align-center.social-links-list {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.flex.align-end, .align-end.subscribe-form-button, .align-end.contact-list, .align-end.nav-list, .header .align-end.container, .align-end.social-links-list {
+.flex.align-end, .align-end.subscribe-form-button, .align-end.header-social-links-list, .align-end.contact-list, .align-end.nav-list, .header .align-end.container, .align-end.social-links-list {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
 }
-.flex.align-baseline, .align-baseline.subscribe-form-button, .align-baseline.contact-list, .align-baseline.nav-list, .header .align-baseline.container, .align-baseline.social-links-list {
+.flex.align-baseline, .align-baseline.subscribe-form-button, .align-baseline.header-social-links-list, .align-baseline.contact-list, .align-baseline.nav-list, .header .align-baseline.container, .align-baseline.social-links-list {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-.flex.wrap, .wrap.subscribe-form-button, .wrap.contact-list, .wrap.nav-list, .header .wrap.container, .wrap.social-links-list {
+.flex.wrap, .wrap.subscribe-form-button, .header-social-links-list, .wrap.contact-list, .wrap.nav-list, .header .wrap.container, .header .container.header-social-links-list, .wrap.social-links-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.flex.regular-gap, .regular-gap.subscribe-form-button, .regular-gap.contact-list, .regular-gap.nav-list, .header .regular-gap.container, .regular-gap.social-links-list {
+.flex.regular-gap, .regular-gap.subscribe-form-button, .regular-gap.header-social-links-list, .regular-gap.contact-list, .regular-gap.nav-list, .header .regular-gap.container, .regular-gap.social-links-list {
   gap: 30px;
 }
-.flex.regular-spacing, .regular-spacing.subscribe-form-button, .regular-spacing.contact-list, .regular-spacing.nav-list, .header .regular-spacing.container, .regular-spacing.social-links-list {
+.flex.regular-spacing, .regular-spacing.subscribe-form-button, .regular-spacing.header-social-links-list, .regular-spacing.contact-list, .regular-spacing.nav-list, .header .regular-spacing.container, .regular-spacing.social-links-list {
   gap: 20px;
 }
-.flex.large-spacing, .large-spacing.subscribe-form-button, .large-spacing.contact-list, .large-spacing.nav-list, .header .large-spacing.container, .large-spacing.social-links-list {
+.flex.large-spacing, .large-spacing.subscribe-form-button, .large-spacing.header-social-links-list, .large-spacing.contact-list, .large-spacing.nav-list, .header .large-spacing.container, .large-spacing.social-links-list {
   gap: 44px;
 }
 
@@ -200,7 +200,7 @@ img {
   text-transform: lowercase;
 }
 
-.header-menu-icon, .social-link {
+.social-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,7 +212,7 @@ img {
           justify-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .join-us-block-wrapper, .address-list {
     margin-bottom: 30px;
   }
@@ -461,7 +461,7 @@ body {
 }
 
 /* Links */
-.link, .address-link, .nav-link,
+.link, .address-link, .header-social-link, .nav-link,
 .contact-link, .social-link, .footer-logo, .header-logo {
   text-decoration: none;
   font-weight: 500;
@@ -474,9 +474,9 @@ body {
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
 }
-.link:hover, .address-link:hover, .nav-link:hover,
-.contact-link:hover, .social-link:hover, .footer-logo:hover, .header-logo:hover, .link:focus, .address-link:focus, .nav-link:focus,
-.contact-link:focus, .social-link:focus, .footer-logo:focus, .header-logo:focus, .link.current, .current.address-link, .current.nav-link,
+.link:hover, .address-link:hover, .header-social-link:hover, .nav-link:hover,
+.contact-link:hover, .social-link:hover, .footer-logo:hover, .header-logo:hover, .link:focus, .address-link:focus, .header-social-link:focus, .nav-link:focus,
+.contact-link:focus, .social-link:focus, .footer-logo:focus, .header-logo:focus, .link.current, .current.address-link, .current.header-social-link, .current.nav-link,
 .current.contact-link, .current.social-link, .current.footer-logo, .current.header-logo {
   color: #2196f3;
 }
@@ -521,7 +521,7 @@ body {
 }
 
 /* SVG icons */
-.icon, .subscribe-button-icon, .contact-icon, .social-icon {
+.icon, .subscribe-button-icon, .contact-link .contact-icon, .social-icon {
   fill: currentColor;
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -612,44 +612,6 @@ body {
   }
 }
 
-.burger {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-}
-
-.header-menu-button {
-  width: 40px;
-  height: 40px;
-  background-color: inherit;
-  border: none;
-}
-
-@media screen and (max-width: 767px) {
-  .header-menu-wrapper {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-menu-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-}
-
 .nav-link,
 .contact-link {
   letter-spacing: 0.02em;
@@ -662,13 +624,18 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .nav-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 32px;
+  }
+  .nav-list .nav-list-item {
+    font-size: 40px;
+    line-height: 1.175;
+    color: #212121;
   }
 }
 @media screen and (min-width: 768px) {
@@ -719,9 +686,14 @@ body {
     gap: 10px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .contact-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     gap: 32px;
+    margin-top: auto;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -736,7 +708,6 @@ body {
 }
 
 .contact-link {
-  color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -744,6 +715,52 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
+  color: #757575;
+}
+@media screen and (max-width: 767px) {
+  .contact-list-item:first-child .contact-link {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-list-item:nth-child(2) .contact-list-item:first-child .contact-link {
+    font-size: 34px;
+    line-height: 1.1764705882;
+    color: #2196f3;
+  }
+}
+/* Social media links (text, mobile menu only) */
+.header-social-links-list {
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header-social-links-list {
+    display: none;
+  }
+}
+
+.header-social-links-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-social-links-item:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
+.header-social-link {
+  color: #2196f3;
+  font-size: 18px;
+  line-height: 1.2222222222;
 }
 
 /* Footer */

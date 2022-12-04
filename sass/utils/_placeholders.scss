@@ -5,7 +5,7 @@
 }
 
 %mb-mobile {
-	@media screen and (max-width: $mobile) {
-		margin-bottom: $single-margin-mobile;
+	@media screen and (max-width: ($tablet - 1px)) {
+		margin-bottom: $regular-gap;
 	}
 }

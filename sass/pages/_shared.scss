@@ -54,7 +54,7 @@ body {
 
 	@media screen and (max-width: ($desktop - 1px)) {
 		font-size: 28px;
-		margin-bottom: $single-margin-mobile;
+		margin-bottom: $regular-gap;
 	}
 
 	@media screen and (min-width: $desktop) {
