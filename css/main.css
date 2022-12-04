@@ -1026,13 +1026,13 @@ body.scroll-locked {
 }
 
 .modal-window {
-  padding: 40px;
   background-color: #fff;
   cursor: auto;
   text-align: center;
   border-radius: 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -1043,6 +1043,11 @@ body.scroll-locked {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+@media screen and (max-width: 320px) {
+  .modal-window {
+    padding: 12vw;
+  }
 }
 @media screen and (max-width: 767px) {
   .modal-window {
@@ -1168,8 +1173,18 @@ body.scroll-locked {
 }
 
 .accept-terms-wrapper {
-  gap: 8px;
   margin-bottom: 30px;
+  gap: 8px;
+}
+@media screen and (max-width: 320px) {
+  .accept-terms-wrapper {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .accept-terms-wrapper {
+    gap: 15px;
+  }
 }
 
 .accept-terms-label {
@@ -1178,6 +1193,20 @@ body.scroll-locked {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+@media screen and (max-width: 479px) {
+  .accept-terms-label {
+    max-width: 180px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .accept-terms-label {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .accept-terms-link {
@@ -1202,6 +1231,8 @@ body.scroll-locked {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 .accept-terms-checkbox:focus, .accept-terms-checkbox:hover {
   outline: 2px solid rgba(33, 150, 243, 0.6);
@@ -1213,9 +1244,19 @@ body.scroll-locked {
   background-color: #2196f3;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9.796 7.172-3.3 3.146-.188-.18a278.251 278.251 0 0 0-2.411-2.291c-.017-.007-.864.782-.878.817-.006.017 2.977 2.88 3.357 3.223l.126.114 3.748-3.576 3.748-3.576-.326-.313c-.368-.355-.538-.509-.56-.509-.008 0-1.5 1.415-3.316 3.145' fill='%23fff' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
+@media screen and (max-width: 479px) {
+  .accept-terms-checkbox {
+    margin-left: 10px;
+  }
+}
 
 .modal-form-button {
   padding: 10px 52px;
+}
+@media screen and (max-width: 320px) {
+  .modal-form-button {
+    padding: 2vw 13vw;
+  }
 }
 
 .close-button {

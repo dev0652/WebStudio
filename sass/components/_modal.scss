@@ -36,6 +36,20 @@
 }
 
 .modal-window {
+	background-color: $light-bg;
+	cursor: auto;
+	text-align: center;
+
+	border-radius: $standard-radius;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	padding: 40px;
+
+	@media screen and (max-width: 320px) {
+		padding: 12vw;
+	}
+
 	@media screen and (max-width: ($tablet - 1px)) {
 		position: static;
 		max-width: 450px;
@@ -56,16 +70,6 @@
 		// height: 581px;
 		padding: 40px;
 	}
-
-	padding: 40px;
-	background-color: $light-bg;
-	cursor: auto;
-
-	text-align: center;
-
-	border-radius: $standard-radius;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-		0px 2px 1px rgba(0, 0, 0, 0.2);
 
 	@include transition(transform);
 
@@ -163,14 +167,36 @@
 
 .accept-terms-wrapper {
 	@extend %flex-centered;
-	gap: 8px;
 
 	margin-bottom: 30px;
+
+	gap: 8px;
+
+	@media screen and (max-width: 320px) {
+		gap: 5px;
+	}
+
+	@media screen and (max-width: ($mobile - 1px)) {
+		gap: 15px;
+	}
 }
 
 .accept-terms-label {
 	color: $light-gray-text;
 	user-select: none;
+
+	@media screen and (max-width: ($mobile - 1px)) {
+		max-width: 180px;
+		text-align: left;
+	}
+
+	font-size: 12px;
+	line-height: calc(14 / 12);
+
+	@media screen and (min-width: $desktop) {
+		font-size: 14px;
+		line-height: calc(24 / 14);
+	}
 }
 
 .accept-terms-link {
@@ -192,6 +218,8 @@
 
 	@include transition-multiple(border-color, background-color);
 
+	flex-shrink: 0;
+
 	&:focus,
 	&:hover {
 		outline: 2px solid rgba($accent, 0.6);
@@ -206,6 +234,10 @@
 		// background-position: center;
 		// background-size: contain;
 	}
+
+	@media screen and (max-width: ($mobile - 1px)) {
+		margin-left: 10px;
+	}
 }
 
 // Modal form submit button
@@ -213,6 +245,10 @@
 .modal-form-button {
 	@extend .accented-button;
 	padding: 10px 52px;
+
+	@media screen and (max-width: 320px) {
+		padding: 2vw 13vw;
+	}
 }
 
 // Modal window close button
