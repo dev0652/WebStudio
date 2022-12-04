@@ -28,6 +28,8 @@
 	background-image: linear-gradient(to right, $overlay-color, $overlay-color),
 		url(../images/studio/hero-tablet.jpg);
 
+	// resolution
+
 	@media screen and (max-width: ($tablet - 1px)) {
 		min-height: 400px;
 	}
