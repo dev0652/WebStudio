@@ -43,19 +43,15 @@
 	}
 }
 
-// Mobile - burger menu
-
-.burger {
-	display: block;
-
-	@media screen and (min-width: $tablet) {
-		display: none;
-	}
-}
+// Mobile menu button
 
 .header-menu-button {
 	background-color: transparent;
 	border: none;
+
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
 
 	&.is-open {
 		// position: absolute;
@@ -113,30 +109,36 @@
 // Header menu items wrapper
 
 .header-menu-wrapper {
+	//
 	@media screen and (max-width: ($tablet - 1px)) {
-		//
-		display: none;
+		// display: none;
+
+		position: fixed;
+		top: 100%; // якщо буде виводитись під футером
+		top: 0; // якщо буде виводитись поверх футера
+		left: 0;
+		width: 100%;
+		z-index: 2;
+
+		background-color: #fff;
+
+		padding: 48px 40px;
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-between;
+
+		// width: 80vw;
+		width: 100vw;
+		height: 100vh;
+
+		transform: translateX(100%);
+
+		@include transition(transform);
 
 		&.is-open {
-			display: block;
-
-			position: absolute;
-			top: 100%; // якщо буде виводитись під футером
-			top: 0; // якщо буде виводитись поверх футера
-			left: 0;
-			width: 100%;
-			z-index: 2;
-
-			background-color: #fff;
-
-			padding: 48px 40px;
-			display: flex;
-			flex-direction: column;
-			// justify-content: space-between;
-
-			// width: 80vw;
-			width: 100vw;
-			height: 100vh;
+			// display: block;
+			transform: translateX(0);
+			transition-delay: 100ms;
 		}
 	}
 

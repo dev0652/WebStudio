@@ -612,18 +612,14 @@ body {
   }
 }
 
-.burger {
-  display: block;
-}
-@media screen and (min-width: 768px) {
-  .burger {
-    display: none;
-  }
-}
-
 .header-menu-button {
   background-color: transparent;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .header-menu-button {
+    display: none;
+  }
 }
 .header-menu-button.is-open {
   position: relative;
@@ -688,11 +684,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .header-menu-wrapper {
-    display: none;
-  }
-  .header-menu-wrapper.is-open {
-    display: block;
-    position: absolute;
+    position: fixed;
     top: 100%;
     top: 0;
     left: 0;
@@ -709,6 +701,24 @@ body {
             flex-direction: column;
     width: 100vw;
     height: 100vh;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  .header-menu-wrapper.is-open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition-delay: 100ms;
+            transition-delay: 100ms;
   }
 }
 @media screen and (min-width: 768px) {
