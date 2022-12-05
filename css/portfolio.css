@@ -1070,6 +1070,7 @@ body.scroll-locked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
 }
 @media screen and (max-width: 1599px) {
   .subscribe-form-elements {
@@ -1077,7 +1078,6 @@ body.scroll-locked {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 20px;
   }
 }
 

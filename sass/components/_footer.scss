@@ -109,10 +109,10 @@
 
 .subscribe-form-elements {
 	display: flex;
+	gap: $regular-spacing;
 
 	@media screen and (max-width: ($desktop - 1px)) {
 		flex-direction: column;
-		gap: $regular-spacing;
 	}
 }
 
