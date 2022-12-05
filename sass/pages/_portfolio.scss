@@ -52,6 +52,8 @@
 .project-card {
 	background: $light-bg;
 
+	border: 1px solid $project-border;
+
 	@include transition(box-shadow);
 
 	&:hover,
@@ -84,8 +86,7 @@
 .project-card-thumb {
 	position: relative;
 	overflow: hidden;
-
-	// width: 100%;
+	margin: -1px;
 }
 
 .project-card-image {
@@ -97,11 +98,8 @@
 
 .project-card-meta {
 	@extend .caption;
-	// height: 100%;
 
 	padding: $regular-spacing calc($regular-spacing + $regular-spacing * 0.2);
-	border: 1px solid $project-border;
-	border-top: none;
 }
 
 .project-name {
@@ -113,6 +111,7 @@
 .project-type {
 	font-size: 16px;
 	line-height: 1.88;
+	// margin-bottom: auto;
 }
 
 .project-popup-description {

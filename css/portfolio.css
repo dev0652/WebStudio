@@ -334,6 +334,7 @@ body.scroll-locked {
 
 .project-card {
   background: #fff;
+  border: 1px solid #eeeeee;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -377,6 +378,7 @@ body.scroll-locked {
 .project-card-thumb {
   position: relative;
   overflow: hidden;
+  margin: -1px;
 }
 
 .project-card-image {
@@ -389,8 +391,6 @@ body.scroll-locked {
 
 .project-card-meta {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
-  border-top: none;
 }
 
 .project-name {
