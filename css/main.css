@@ -1169,10 +1169,14 @@ body.scroll-locked {
 @media screen and (max-width: 767px) {
   .modal-window {
     position: static;
-    max-width: 450px;
     margin: 0 auto;
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-window {
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1183,8 +1187,12 @@ body.scroll-locked {
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
     z-index: 3;
-    width: 528px;
     padding: 40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .modal-window {
+    width: 528px;
   }
 }
 .modal-window .backdrop.is-hidden {
