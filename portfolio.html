@@ -17,10 +17,10 @@
 	<link rel="stylesheet" href="./css/portfolio.min.css" />
 
 	<!-- ---------- Fonts ---------- -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-		rel="stylesheet" />
+		rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -165,13 +165,34 @@
 				</ul>
 
 				<!-- Project cards -->
-				<ul class="project-cards">
+				<ul class="project-cards-list">
 
+					<!-- Card 1 -->
 					<li class="project-card">
 						<a href="" class="project-card-link">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project1.jpg"
-									alt="Сайт-візитівка, відкритий на екрані ноутбука" width="370" />
+
+								<!-- Project card image -->
+								<picture>
+
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project1-large.jpg 1x, ./images/team/project1-large@2x.jpg 2x, ./images/team/project1-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project1-medium.jpg 1x, ./images/team/project1-medium@2x.jpg 2x, ./images/team/project1-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project1-small.jpg 1x, ./images/team/project1-small@2x.jpg 2x, ./images/team/project1-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project1.jpg"
+										alt="Сайт-візитівка, відкритий на екрані ноутбука" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -191,11 +212,32 @@
 						</a>
 					</li>
 
+					<!-- Card 2 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project2.jpg"
-									alt="Постер з двома баскетболістами в білій та бузковій формі" width="370" />
+
+								<!-- Project card image -->
+								<picture>
+
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project2-large.jpg 1x, ./images/team/project2-large@2x.jpg 2x, ./images/team/project2-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project2-medium.jpg 1x, ./images/team/project2-medium@2x.jpg 2x, ./images/team/project2-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project2-small.jpg 1x, ./images/team/project2-small@2x.jpg 2x, ./images/team/project2-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project2.jpg"
+										alt="Постер з двома баскетболістами в білій та бузковій формі" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -214,11 +256,32 @@
 						</a>
 					</li>
 
+					<!-- Card 3 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project3.jpg"
-									alt="Логотип з назвою ресторану та зображенням риби на фоні" width="370" />
+
+								<!-- Project card image -->
+								<picture>
+
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project3-large.jpg 1x, ./images/team/project3-large@2x.jpg 2x, ./images/team/project3-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project3-medium.jpg 1x, ./images/team/project3-medium@2x.jpg 2x, ./images/team/project3-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project3-small.jpg 1x, ./images/team/project3-small@2x.jpg 2x, ./images/team/project3-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project3.jpg"
+										alt="Логотип з назвою ресторану та зображенням риби на фоні" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -237,11 +300,32 @@
 						</a>
 					</li>
 
+					<!-- Card 4 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project4.jpg" alt="Великі навушники"
-									width="370" />
+
+								<!-- Project card image -->
+								<picture>
+
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project4-large.jpg 1x, ./images/team/project4-large@2x.jpg 2x, ./images/team/project4-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project4-medium.jpg 1x, ./images/team/project4-medium@2x.jpg 2x, ./images/team/project4-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project4-small.jpg 1x, ./images/team/project4-small@2x.jpg 2x, ./images/team/project4-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project4.jpg" alt="Великі навушники"
+										width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -260,11 +344,32 @@
 						</a>
 					</li>
 
+					<!-- Card 5 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project5.jpg"
-									alt="Біла та коричнева коробки різного розміру" width="370" />
+
+								<!-- Project card image -->
+								<picture>
+
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project5-large.jpg 1x, ./images/team/project5-large@2x.jpg 2x, ./images/team/project5-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project5-medium.jpg 1x, ./images/team/project5-medium@2x.jpg 2x, ./images/team/project5-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project5-small.jpg 1x, ./images/team/project5-small@2x.jpg 2x, ./images/team/project5-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project5.jpg"
+										alt="Біла та коричнева коробки різного розміру" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -283,11 +388,31 @@
 						</a>
 					</li>
 
+					<!-- Card 6 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project6.jpg"
-									alt="Веб-сайт в темних тонах, відритий на ерані Apple iMac" width="370" />
+
+								<!-- Project card image -->
+								<picture>
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project6-large.jpg 1x, ./images/team/project6-large@2x.jpg 2x, ./images/team/project6-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project6-medium.jpg 1x, ./images/team/project6-medium@2x.jpg 2x, ./images/team/project6-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project6-small.jpg 1x, ./images/team/project6-small@2x.jpg 2x, ./images/team/project6-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project6.jpg"
+										alt="Веб-сайт в темних тонах, відритий на ерані Apple iMac" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -306,11 +431,31 @@
 						</a>
 					</li>
 
+					<!-- Card 7 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project7.jpg"
-									alt="Розворот друкованого видання з фотографіями" width="370" />
+								<!-- Project card image -->
+								<picture>
+
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project7-large.jpg 1x, ./images/team/project7-large@2x.jpg 2x, ./images/team/project7-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project7-medium.jpg 1x, ./images/team/project7-medium@2x.jpg 2x, ./images/team/project7-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project7-small.jpg 1x, ./images/team/project7-small@2x.jpg 2x, ./images/team/project7-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project7.jpg"
+										alt="Розворот друкованого видання з фотографіями" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -329,11 +474,30 @@
 						</a>
 					</li>
 
+					<!-- Card 8 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project8.jpg"
-									alt="Біла бірка із золотистою мотузкою та написом Lab El Tag" width="370" />
+								<!-- Project card image -->
+								<picture>
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project8-large.jpg 1x, ./images/team/project8-large@2x.jpg 2x, ./images/team/project8-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project8-medium.jpg 1x, ./images/team/project8-medium@2x.jpg 2x, ./images/team/project8-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project8-small.jpg 1x, ./images/team/project8-small@2x.jpg 2x, ./images/team/project8-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project8.jpg"
+										alt="Біла бірка із золотистою мотузкою та написом Lab El Tag" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -352,11 +516,31 @@
 						</a>
 					</li>
 
+					<!-- Card 9 -->
 					<li class="project-card">
 						<a class="project-card-link" href="">
 							<div class="project-card-thumb">
-								<img class="project-card-image" src="./images/portfolio/project9.jpg"
-									alt="Додаток, відкритий на екрані ноутбука" width="370" />
+
+								<!-- Project card image -->
+								<picture>
+									<!-- Desktop -->
+									<source media="(min-width: 1200px)"
+										srcset="./images/team/project9-large.jpg 1x, ./images/team/project9-large@2x.jpg 2x, ./images/team/project9-large@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Tablet -->
+									<source media="(min-width: 768px)"
+										srcset="./images/team/project9-medium.jpg 1x, ./images/team/project9-medium@2x.jpg 2x, ./images/team/project9-medium@3x.jpg 3x"
+										type="image/jpg" />
+
+									<!-- Mobile -->
+									<source media="(max-width: 767px)"
+										srcset="./images/team/project9-small.jpg 1x, ./images/team/project9-small@2x.jpg 2x, ./images/team/project9-small@3x.jpg 3x"
+										type="image/jpg" />
+
+									<img class="project-card-image" src="./images/portfolio/project9.jpg"
+										alt="Додаток, відкритий на екрані ноутбука" width="370" loading="lazy" />
+								</picture>
 
 								<div class="thumb-overlay">
 									<p class="project-popup-description">
@@ -374,6 +558,7 @@
 							</div>
 						</a>
 					</li>
+
 				</ul>
 
 			</div>

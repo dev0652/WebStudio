@@ -39,27 +39,8 @@
 
 // Project cards
 
-.project-cards {
-	// @extend .markup-list, .flex, .regular-gap;
-
-	// @media screen and (max-width: ($tablet - 1px)) {
-	// 	flex-direction: column;
-	// }
-
-	@extend .markup-list;
-
-	// @media screen and (min-width: $tablet) {
-	// 	display: flex;
-
-	// }
-
-	@media screen and (min-width: $tablet) {
-		display: flex;
-		align-items: center;
-		align-items: stretch;
-		flex-wrap: wrap;
-		gap: $regular-gap;
-	}
+.project-cards-list {
+	@extend .markup-list, .flex, .wrap, .regular-gap;
 }
 
 .project-card {

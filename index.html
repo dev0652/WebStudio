@@ -17,13 +17,14 @@
 	<link rel="stylesheet" href="./css/main.min.css" />
 
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-		rel="stylesheet" />
+		rel="stylesheet" /> -->
 </head>
 
 <body>
+
 	<!-- Header -->
 	<header class="header">
 		<div class="container">
@@ -33,6 +34,7 @@
 				Web<span>Studio</span>
 			</a>
 
+			<!-- Navigation and Contacts block (container) -->
 			<div class="header-menu-wrapper" id="header-menu-wrapper" data-menu>
 
 				<!-- Header navigation -->
@@ -57,6 +59,7 @@
 				<!-- Header contacts -->
 				<ul class="contact-list">
 
+					<!-- Email -->
 					<li class="contact-list-item">
 						<a class="contact-link" href="mailto:info@devstudio.com">
 							<svg class="contact-icon" width="16" height="12">
@@ -65,6 +68,7 @@
 							info@devstudio.com</a>
 					</li>
 
+					<!-- Phone -->
 					<li class="contact-list-item">
 						<a class="contact-link" href="tel:+380961111111">
 							<svg class="contact-icon" width="10" height="16">
@@ -233,7 +237,11 @@
 					<li class="activity-list-item">
 						<div class="activity">
 
-							<img src="./images/studio/box1.jpg" alt="Програміст працює за комп'ютером" width="370" />
+							<img class="activity-image" srcset="
+							./images/what-we-do/activity1.jpg 1x, 
+							./images/what-we-do/activity1@2x.jpg 2x, 
+							./images/what-we-do/activity1@3x.jpg 3x" src="./images/what-we-do/activity1.jpg"
+								alt="Програміст працює за комп'ютером" width="370" loading="lazy" />
 
 							<p class="activity-caption">Десктопні додатки</p>
 
@@ -242,8 +250,11 @@
 
 					<li class="activity-list-item">
 						<div class="activity">
-							<img src="./images/studio/box2.jpg" alt="Жінка створює макет мобільного застосунка на екрані ноутбука."
-								width="370" />
+							<img class="activity-image" srcset="
+							./images/what-we-do/activity2.jpg 1x, 
+							./images/what-we-do/activity2@2x.jpg 2x, 
+							./images/what-we-do/activity2@3x.jpg 3x" src="./images/what-we-do/activity2.jpg"
+								alt="Жінка створює макет мобільного застосунка на екрані ноутбука." width="370" loading="lazy" />
 
 							<p class="activity-caption">Мобільні додатки</p>
 						</div>
@@ -251,8 +262,11 @@
 
 					<li class="activity-list-item">
 						<div class="activity">
-							<img src="./images/studio/box3.jpg" alt="Дизайнерка тримає в руках планшет з палітрою кольорів."
-								width="370" />
+							<img class="activity-image" srcset="
+							./images/what-we-do/activity3.jpg 1x, 
+							./images/what-we-do/activity3@2x.jpg 2x, 
+							./images/what-we-do/activity3@3x.jpg 3x" src="./images/what-we-do/activity3.jpg"
+								alt="Дизайнерка тримає в руках планшет з палітрою кольорів." width="370" loading="lazy" />
 
 							<p class="activity-caption">Дизайнерські рішення</p>
 						</div>
@@ -273,10 +287,30 @@
 				<!-- Team cards -->
 				<ul class="team-cards-list">
 
+					<!-- Card 1 of 4 -->
 					<li class="team-card">
 
-						<img class="team-member-photo" src="./images/studio/photo1.jpg"
-							alt="Усміхнений молодий чоловік в сорочці, з бородою та в окулярах." width="270" />
+						<!-- Team card image -->
+						<picture>
+
+							<!-- Desktop -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/photo1-large.jpg 1x, ./images/team/photo1-large@2x.jpg 2x, ./images/team/photo1-large@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Tablet -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/photo1-medium.jpg 1x, ./images/team/photo1-medium@2x.jpg 2x, ./images/team/photo1-medium@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Mobile -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/photo1-small.jpg 1x, ./images/team/photo1-small@2x.jpg 2x, ./images/team/photo1-small@3x.jpg 3x"
+								type="image/jpg" />
+
+							<img class="team-card-photo" src="./images/studio/photo1.jpg"
+								alt="Усміхнений молодий чоловік в сорочці, з бородою та в окулярах." width="270" loading="lazy" />
+						</picture>
 
 						<!-- Team card caption -->
 						<div class="team-card-meta">
@@ -322,12 +356,33 @@
 								</li>
 							</ul>
 						</div>
+
 					</li>
 
+					<!-- Card 2 of 4 -->
 					<li class="team-card">
 
-						<img class="team-member-photo" src="./images/studio/photo2.jpg"
-							alt="Усміхнена білява жінка в діловому костюмі та окулярах." width="270" />
+						<!-- Team card image -->
+						<picture>
+
+							<!-- Desktop -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/photo2-large.jpg 1x, ./images/team/photo2-large@2x.jpg 2x, ./images/team/photo2-large@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Tablet -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/photo2-medium.jpg 1x, ./images/team/photo2-medium@2x.jpg 2x, ./images/team/photo2-medium@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Mobile -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/photo2-small.jpg 1x, ./images/team/photo2-small@2x.jpg 2x, ./images/team/photo2-small@3x.jpg 3x"
+								type="image/jpg" />
+
+							<img class="team-card-photo" src="./images/studio/photo2.jpg"
+								alt="Усміхнена білява жінка в діловому костюмі та окулярах." width="270" loading="lazy" />
+						</picture>
 
 						<!-- Team card caption -->
 						<div class="team-card-meta">
@@ -374,11 +429,33 @@
 								</li>
 							</ul>
 						</div>
+
 					</li>
 
+					<!-- Card 3 of 4 -->
 					<li class="team-card">
-						<img class="team-member-photo" src="./images/studio/photo3.jpg" alt="Усміхнений молодий чоловік в сорочці"
-							width="270" />
+
+						<!-- Team card image -->
+						<picture>
+
+							<!-- Desktop -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/photo3-large.jpg 1x, ./images/team/photo3-large@2x.jpg 2x, ./images/team/photo3-large@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Tablet -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/photo3-medium.jpg 1x, ./images/team/photo3-medium@2x.jpg 2x, ./images/team/photo3-medium@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Mobile -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/photo3-small.jpg 1x, ./images/team/photo3-small@2x.jpg 2x, ./images/team/photo3-small@3x.jpg 3x"
+								type="image/jpg" />
+
+							<img class="team-card-photo" src="./images/studio/photo3.jpg" alt="Усміхнений молодий чоловік в сорочці"
+								width="270" loading="lazy" />
+						</picture>
 
 						<!-- Team card caption -->
 						<div class="team-card-meta">
@@ -425,11 +502,32 @@
 								</li>
 							</ul>
 						</div>
+
 					</li>
 
+					<!-- Card 4 of 4 -->
 					<li class="team-card">
-						<img class="team-member-photo" src="./images/studio/photo4.jpg"
-							alt="Темноволосий молодий чоловік в футболці, з бородою та в окулярах." width="270" />
+
+						<!-- Team card image -->
+						<picture>
+							<!-- Desktop -->
+							<source media="(min-width: 1200px)"
+								srcset="./images/team/photo4-large.jpg 1x, ./images/team/photo4-large@2x.jpg 2x, ./images/team/photo4-large@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Tablet -->
+							<source media="(min-width: 768px)"
+								srcset="./images/team/photo4-medium.jpg 1x, ./images/team/photo4-medium@2x.jpg 2x, ./images/team/photo4-medium@3x.jpg 3x"
+								type="image/jpg" />
+
+							<!-- Mobile -->
+							<source media="(max-width: 767px)"
+								srcset="./images/team/photo4-small.jpg 1x, ./images/team/photo4-small@2x.jpg 2x, ./images/team/photo4-small@3x.jpg 3x"
+								type="image/jpg" />
+
+							<img class="team-card-photo" src="./images/studio/photo4.jpg"
+								alt="Темноволосий молодий чоловік в футболці, з бородою та в окулярах." width="270" loading="lazy" />
+						</picture>
 
 						<!-- Team card caption -->
 						<div class="team-card-meta">
@@ -477,7 +575,9 @@
 								</li>
 							</ul>
 						</div>
+
 					</li>
+
 				</ul>
 
 			</div>
