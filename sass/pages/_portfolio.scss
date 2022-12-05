@@ -10,8 +10,14 @@
 	@extend .markup-list;
 
 	display: inline-flex;
+	flex-wrap: wrap;
 	gap: 8px;
 	margin-bottom: 50px;
+
+	@media screen and (max-width: ($tablet - 1px)) {
+		margin-right: 100px;
+		margin-bottom: 40px;
+	}
 }
 
 .filter-button {

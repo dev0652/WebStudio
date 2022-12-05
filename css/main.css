@@ -213,7 +213,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .join-us-block-wrapper, .address-list {
+  .join-us-block-wrapper {
     margin-bottom: 30px;
   }
 }
