@@ -127,7 +127,7 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
 }
-.flex.wrap, .wrap.subscribe-form-button, .header-social-links-list, .wrap.contact-list, .wrap.nav-list, .header .wrap.container, .header .container.header-social-links-list, .wrap.social-links-list, .wrap.client-list, .wrap.team-cards-list, .wrap.activity-list, .wrap.feature-list {
+.flex.wrap, .wrap.subscribe-form-button, .header-social-links-list, .wrap.contact-list, .wrap.nav-list, .header .wrap.container, .header .container.header-social-links-list, .wrap.social-links-list, .wrap.client-list, .team-cards-list, .wrap.activity-list, .feature-list {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -372,23 +372,15 @@ body.scroll-locked {
 .feature-list {
   gap: 30px;
 }
-@media screen and (max-width: 767px) {
-  .feature-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .feature-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .feature {
   text-align: left;
+}
+@media screen and (max-width: 767px) {
+  .feature {
+    -ms-flex-preferred-size: calc((100% - 0px) / 1);
+        flex-basis: calc((100% - 0px) / 1);
+  }
 }
 @media screen and (min-width: 768px) {
   .feature {
@@ -476,20 +468,6 @@ body.scroll-locked {
 .team-cards-list {
   gap: 30px;
 }
-@media screen and (max-width: 767px) {
-  .team-cards-list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1599px) {
-  .team-cards-list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .team-card {
   border-radius: 0px 0px 4px 4px;
@@ -497,10 +475,22 @@ body.scroll-locked {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 767px) {
+  .team-card {
+    -ms-flex-preferred-size: calc((100% - 0px) / 1);
+        flex-basis: calc((100% - 0px) / 1);
+  }
+}
 @media screen and (min-width: 768px) {
   .team-card {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .team-card {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
