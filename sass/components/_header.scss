@@ -54,43 +54,32 @@
 	}
 
 	&.is-open {
-		// position: absolute;
 		position: relative;
-		// top: 0;
-
 		z-index: 3;
 
 		.icon-menu-close {
-			// display: block;
 			opacity: 1;
-			transform: scale(1);
-
-			.header-menu-button:hover & {
-				fill: $accent;
-			}
+			transform: scale(1) rotate(360deg);
+			transition-delay: 250ms;
 		}
 
 		.icon-menu-burger {
-			// display: none;
 			opacity: 0;
-			transform: scale(0);
+			// transform: scale(0);
 		}
 	}
 }
 
 .header-menu-icon {
 	display: block;
-	// width: 40px;
-	// height: 40px;
 	fill: currentColor;
 
-	@include transition(fill);
+	@include transition(transform);
 
 	.icon-menu-burger {
 		// display: none;
 		opacity: 1;
 		transform: scale(1);
-
 		transform-origin: center;
 
 		@include transition-multiple(opacity, transform);
@@ -102,7 +91,11 @@
 		transform: scale(0);
 		transform-origin: center;
 
-		@include transition-multiple(opacity, transform);
+		@include transition-multiple(opacity, transform, fill);
+
+		.header-menu-button:hover & {
+			fill: $accent;
+		}
 	}
 }
 

@@ -667,23 +667,22 @@ body.scroll-locked {
 }
 .header-menu-button.is-open .icon-menu-close {
   opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.header-menu-button:hover .header-menu-button.is-open .icon-menu-close {
-  fill: #2196f3;
+  -webkit-transform: scale(1) rotate(360deg);
+          transform: scale(1) rotate(360deg);
+  -webkit-transition-delay: 250ms;
+          transition-delay: 250ms;
 }
 .header-menu-button.is-open .icon-menu-burger {
   opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 .header-menu-icon {
   display: block;
   fill: currentColor;
-  -webkit-transition-property: fill;
-  transition-property: fill;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -712,14 +711,17 @@ body.scroll-locked {
           transform: scale(0);
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: opacity, transform;
-  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transition-property: opacity, fill, -webkit-transform;
+  transition-property: opacity, fill, -webkit-transform;
+  transition-property: opacity, transform, fill;
+  transition-property: opacity, transform, fill, -webkit-transform;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-menu-button:hover .header-menu-icon .icon-menu-close {
+  fill: #2196f3;
 }
 
 @media screen and (max-width: 767px) {
