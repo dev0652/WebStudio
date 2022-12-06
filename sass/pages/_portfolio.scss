@@ -103,7 +103,8 @@
 .project-card-meta {
 	@extend .caption;
 
-	padding: $regular-spacing calc($regular-spacing + $regular-spacing * 0.2);
+	padding: $regular-spacing
+		calc(#{$regular-spacing} + #{$regular-spacing} * 0.2);
 }
 
 .project-name {

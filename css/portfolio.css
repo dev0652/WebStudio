@@ -395,7 +395,7 @@ body.scroll-locked {
 }
 
 .project-card-meta {
-  padding: 20px 24px;
+  padding: 20px calc(20px + 20px * 0.2);
 }
 
 .project-name {
