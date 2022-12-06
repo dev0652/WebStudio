@@ -308,6 +308,11 @@ body.scroll-locked {
     margin-bottom: 40px;
   }
 }
+@media screen and (max-width: 1599px) {
+  .filter-buttons {
+    margin-bottom: 30px;
+  }
+}
 
 .filter-button {
   font-weight: 500;
