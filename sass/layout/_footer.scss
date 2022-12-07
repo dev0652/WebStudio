@@ -119,7 +119,7 @@
 	font-size: 16px;
 	line-height: calc(20 / 16);
 
-	border: 1px solid rgba(255, 255, 255, 0.3);
+	border: 1px solid rgba(#ffffff, 0.3);
 	outline-offset: 2px;
 
 	@include transition(border-color);
@@ -130,7 +130,7 @@
 		border-color: $accent;
 	}
 
-	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	filter: drop-shadow(0px 4px 4px rgba(#000000, 0.15));
 	border-radius: $standard-radius;
 	background-color: inherit;
 	color: currentColor;
@@ -143,7 +143,7 @@
 		font-size: 16px;
 		line-height: calc(20 / 16);
 		letter-spacing: 0.03em;
-		color: rgba(255, 255, 255, 0.6);
+		color: rgba(#ffffff, 0.6);
 	}
 }
 
