@@ -45,7 +45,7 @@
 	background-color: $accent;
 	color: $contrast;
 
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 4px 4px rgba(#000000, 0.15);
 
 	border-radius: $standard-radius;
 
@@ -93,7 +93,7 @@
 	@include transition-multiple(color, background-color);
 
 	.footer & {
-		background: rgba(255, 255, 255, 0.1);
+		background: rgba(#ffffff, 0.1);
 	}
 
 	&:hover,
