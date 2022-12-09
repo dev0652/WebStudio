@@ -870,8 +870,8 @@ body.scroll-locked {
         -ms-flex-direction: column;
             flex-direction: column;
     background-color: #fff;
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     -webkit-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
     transition-property: transform;

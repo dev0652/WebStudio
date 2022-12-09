@@ -125,7 +125,7 @@
 
 		background-color: #fff;
 
-		transform: translateX(100vw);
+		transform: translateX(100%);
 		@include transition(transform);
 
 		&.is-open {
