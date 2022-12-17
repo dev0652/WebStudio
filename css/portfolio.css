@@ -39,6 +39,10 @@ a {
   color: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
 button,
 [type=button],
 [type=reset],
@@ -52,7 +56,9 @@ address {
   font-style: normal;
 }
 
-img {
+img,
+svg,
+picture {
   display: block;
   max-width: 100%;
   height: auto;
